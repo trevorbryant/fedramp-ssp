@@ -95,7 +95,7 @@ The organization employs automated mechanisms to support the management of infor
 
 |AC-2 (1) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC-2 (2) Control Enhancement (M)
 The information system automatically [Selection: removes; disables] temporary and emergency accounts after [FedRAMP Assignment: no more than 30 days for temporary and emergency account types].
@@ -110,7 +110,7 @@ The information system automatically [Selection: removes; disables] temporary an
 
 |AC-2 (2) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC-2 (3) Control Enhancement (M)
 The information system automatically disables inactive accounts after [FedRAMP Assignment: ninety (90) days for user accounts].<br>
@@ -136,7 +136,7 @@ The information system automatically audits account creation, modification, enab
 
 |AC-2 (4) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC-2 (5) Control Enhancement (M)
 The organization requires that users log out when [Assignment: organization-defined time-period of expected inactivity or description of when to log out].<br>
@@ -152,7 +152,7 @@ The organization requires that users log out when [Assignment: organization-defi
 
 |AC-2 (5) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC-2 (7) Control Enhancement (M)
 The organization:
@@ -188,7 +188,7 @@ The organization only permits the use of shared/group accounts that meet [Assign
 
 |AC-2 (9) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC-2 (10) Control Enhancement (M) (H)
 The information system terminates shared/group account credentials when members leave the group.<br>
@@ -204,7 +204,7 @@ Required if shared/group accounts are deployed.
 
 |AC-2 (10) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC-2 (12) Control Enhancement (M)
 The organization:
@@ -252,7 +252,7 @@ The information system enforces approved authorizations for controlling the flow
 
 |AC-4 What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC-4 (21) Control Enhancement (M) (H)
 The information system separates information flows logically or physically using [Assignment: organization-defined mechanisms and/or techniques] to accomplish [Assignment: organization-defined required separations by types of information].
@@ -267,7 +267,7 @@ The information system separates information flows logically or physically using
 
 |AC-4 What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ## AC-5 Separation of Duties (M) (H)
 The organization:
@@ -333,7 +333,7 @@ Examples of security functions include but are not limited to: establishing syst
 
 |AC-6 (2) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC 6 (5) Control Enhancement (M) (H)
 The organization restricts privileged accounts on the information system to [Assignment: organization-defined personnel or roles].
@@ -347,7 +347,7 @@ The organization restricts privileged accounts on the information system to [Ass
 
 |AC-6 (5) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC-6 (9) Control Enhancement (M) (H)
 The information system audits the execution of privileged functions.
@@ -360,7 +360,7 @@ The information system audits the execution of privileged functions.
 
 |AC-6 (9) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC-6 (10) Control Enhancement (M) (H)
 The information system prevents non-privileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures.
@@ -373,7 +373,7 @@ The information system prevents non-privileged users from executing privileged f
 
 |AC-6 (10) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ## AC-7 Unsuccessful Login Attempts (L) (M)
 The organization:
@@ -464,7 +464,7 @@ The information system limits the number of concurrent sessions for each [Assign
 
 |AC-10 What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ## AC-11 Session Lock (M) (H)
 The information system:
@@ -496,7 +496,7 @@ The information system conceals, via the session lock, information previously vi
 
 |AC-11 (1) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ## AC-12 Session Termination (M) (H)
 The information system automatically terminates a user session after [Assignment: organization-defined conditions or trigger events requiring session disconnect].
@@ -510,7 +510,7 @@ The information system automatically terminates a user session after [Assignment
 
 |AC-12 What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ## AC-14 Permitted Actions without Identification or Authentication (L) (M) (H)
 The organization:
@@ -562,7 +562,7 @@ The information system monitors and controls remote access methods.
 
 |AC-17 (1) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC-17 (2) Control Enhancement (M) (H)
 The information system implements cryptographic mechanisms to protect the confidentiality and integrity of remote access sessions.
@@ -576,7 +576,7 @@ The information system implements cryptographic mechanisms to protect the confid
 
 |AC-17 (2) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC-17 (3) Control Enhancement (M) (H)
 The information system routes all remote accesses through [Assignment: organization-defined number] managed network access control points.
@@ -590,7 +590,7 @@ The information system routes all remote accesses through [Assignment: organizat
 
 |AC-17 (3) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### AC-17 (4) Control Enhancement (M) (H)
 The organization:
@@ -623,7 +623,7 @@ The organization provides the capability to expeditiously disconnect or disable 
 
 |AC-17 (9) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ## AC-18 Wireless Access Restrictions (L) (M) (H)
 The organization:
@@ -656,7 +656,7 @@ The information system protects wireless access to the system using authenticati
 
 |AC-18 (1) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ## AC-19 Access Control for Portable and Mobile Systems (L) (M) (H)
 The organization:
@@ -689,7 +689,7 @@ The organization employs [Selection: full-device encryption; container encryptio
 
 |AC-19 (5) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ## AC-20 Use of External Information Systems (L) (M) (H)
 The organization establishes terms and conditions, consistent with any trust relationships established with other organizations owning, operating, and/or maintaining external information systems, allowing authorized individuals to:
@@ -739,7 +739,7 @@ The organization [Selection: restricts; prohibits] the use of organization-contr
 
 |AC-20 (2) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ## AC-21 Information Sharing (M) (H)
 The organization:

@@ -472,6 +472,7 @@ The information system:
 <ol type="a">
 <li>Prevents further access to the system by initiating a session lock after [FedRAMP Assignment: fifteen (15) minutes] of inactivity or upon receiving a request from a user; and</li>
 <li>Retains the session lock until the user reestablishes access using established identification and authentication procedures.</li>
+</ol>
 
 |AC-11|Control Summary Information|
 |---|---|
@@ -769,6 +770,7 @@ The organization:
 <li>Trains authorized individuals to ensure that publicly accessible information does not contain nonpublic information;</li>
 <li>Reviews the proposed content of information prior to posting onto the publicly accessible information system to ensure that nonpublic information is not included; and</li>
 <li>Reviews the content on the publicly accessible information system for nonpublic information [FedRAMP Assignment: at least quarterly] and removes such information, if discovered.</li>
+</ol>
 
 |AC-22|Control Summary Information|
 |---|---|

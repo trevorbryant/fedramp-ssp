@@ -31,9 +31,9 @@ The organization:
 
 |AC-1 What is the solution and how is it implemented?|
 |---|
-|Part a
-|Part b1
-|Part b2
+|Part a|
+|Part b1|
+|Part b2|
 
 ### AC-2 Account Management (L) (M)
 The organization:

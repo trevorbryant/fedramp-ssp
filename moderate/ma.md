@@ -191,8 +191,8 @@ The organization:
 </ol>
 <li>Develops and implements alternate security safeguards in the event an information system component cannot be sanitized, removed, or disconnected from the system.</li>
 <b>MA-5 (1) Additional FedRAMP Requirements and Guidance:</b><br>
-</ol>
 <b>Requirement:</b> Only MA-5 (1) (a) (1) is required by FedRAMP
+</ol>
 
 |MA-5 (1)|Control Summary Information|
 |---|---|

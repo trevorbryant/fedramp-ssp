@@ -136,7 +136,7 @@ The organization employs vulnerability scanning tools that include the capabilit
 
 |RA-5 (1) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### RA-5 (2) Control Enhancement (M) (H)
 The organization updates the information system vulnerabilities scanned [Selection (one or more): [FedRAMP Assignment: prior to a new scan]].

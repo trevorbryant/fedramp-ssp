@@ -150,7 +150,7 @@ The organization updates the information system vulnerabilities scanned [Selecti
 
 |RA-5 (2) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### RA-5 (3) Control Enhancement (M) (H)
 The organization employs vulnerability scanning procedures that can demonstrate the breadth and depth of coverage (i.e., information system components scanned and vulnerabilities checked).
@@ -164,7 +164,7 @@ The organization employs vulnerability scanning procedures that can demonstrate 
 
 |RA-5 (3) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### RA-5 (5) Control Enhancement (M) (H)
 The organization includes privileged access authorization to [FedRAMP Assignment: operating systems, databases, web applications] for selected [FedRAMP Assignment: all scans].
@@ -179,7 +179,7 @@ The organization includes privileged access authorization to [FedRAMP Assignment
 
 |RA-5 (5) What is the solution and how is it implemented?|
 |---|
-|
+||
 
 ### RA-5 (6) Control Enhancement (M) (H)
 The organization employs automated mechanisms to compare the results of vulnerability scans over time to determine trends in information system vulnerabilities.
@@ -192,7 +192,7 @@ The organization employs automated mechanisms to compare the results of vulnerab
 
 |RA-6 What is the solution and how is it implemented?|
 |---|
-|
+||
 
 
 ### RA-5 (8) Control Enhancement (L) (M) (H)
@@ -210,4 +210,4 @@ The organization reviews historic audit logs to determine if a vulnerability ide
 
 |RA-8 What is the solution and how is it implemented?|
 |---|
-|
+||

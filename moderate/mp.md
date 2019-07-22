@@ -1,6 +1,6 @@
 ---
-title: "Identification and Authentication (IA)"
-description: "Identification and Authentication (IA)"
+title: "Media Protection (MP)"
+description: "Media Protection (MP)"
 keywords: "FedRAMP, FISMA, moderate, ssp, 800-53"
 ---
 

@@ -9,3 +9,4 @@ The active and passive inconsistencies to the authoritative sources (the word do
   * Spacings and carriage returns
   * Typos
   * Table formatting
+  * Different font sizes

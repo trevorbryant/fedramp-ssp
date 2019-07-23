@@ -12,7 +12,7 @@ The organization:
 <li>An incident response policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</li>
 <li>Procedures to facilitate the implementation of the incident response policy and associated incident response controls; and</li>
 </ol>
-(u) Reviews and updates the current:
+<li>Reviews and updates the current:
 <ol type="1">
 <li>Incident response policy [FedRAMP Assignment: at least every three (3) years]; and</li>
 <li>Incident response procedures [FedRAMP Assignment: at least annually].</li>
@@ -57,7 +57,7 @@ The organization provides incident response training to information system users
 
 ### IR-3 Incident Response Testing (M)
 The organization tests the incident response capability for the information system [FedRAMP Assignment: at least annually] using [FedRAMP Assignment: see additional FedRAMP Requirements and Guidance] to determine the incident response effectiveness and documents the results.<br>
-<br>IR-3 Additional FedRAMP Requirements and Guidance:</b><br>
+<b>IR-3 Additional FedRAMP Requirements and Guidance:</b><br>
 <b>Requirements:</b> The service provider defines tests and/or exercises in accordance with NIST Special Publication 800-61 (as amended). For JAB authorization, the service provider provides test plans to the JAB/AO annually. Test plans are approved and accepted by the JAB/AO prior to the test commencing.
 
 |IR-3|Control Summary Information|

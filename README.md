@@ -10,3 +10,4 @@ The active and passive inconsistencies to the authoritative sources (the word do
   * Typos
   * Table formatting
   * Different font sizes
+  * Obvious different authors

@@ -96,6 +96,7 @@ The organization:
 <ol type="a">
 <li>Documents and monitors individual information system security training activities including basic security awareness training and specific information system security training; and</li>
 <li>Retains individual training records for [FedRAMP Assignment: at least one year].</li>
+</ol>
 
 |AT-4(b)|Control Summary Information|
 |---|---|

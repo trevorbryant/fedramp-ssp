@@ -466,8 +466,8 @@ The information systems that collectively provide name/address resolution servic
 |Implementation Status (check all that apply):|&#9744; Implemented<br/>&#9744; Partially implemented<br/>&#9744; Planned<br/>&#9744; Alternative implementation<br/>&#9744; Not applicable
 |Control Origination (check all that apply):|&#9744; Service Provider Corporate<br/>&#9744; Service Provider System Specific<br/>&#9744; Service Provider Hybrid (Corporate and System Specific)<br/>&#9744; Configured by Customer (Customer System Specific)<br/>&#9744; Provided by Customer (Customer System Specific)<br/>&#9744; Shared (Service Provider and Customer Responsibility)<br/>&#9744; Inherited from pre-existing FedRAMP Authorization for _insert text here_.
 
-SC-22 What is the solution and how is it implemented?
-|---|---|
+SC-22 What is the solution and how is it implemented?|
+|---|
 ||
 
 ### SC-23 Session Authenticity (M) (H)
@@ -479,8 +479,8 @@ The information system protects the authenticity of communications sessions.
 |Implementation Status (check all that apply):|&#9744; Implemented<br/>&#9744; Partially implemented<br/>&#9744; Planned<br/>&#9744; Alternative implementation<br/>&#9744; Not applicable
 |Control Origination (check all that apply):|&#9744; Service Provider Corporate<br/>&#9744; Service Provider System Specific<br/>&#9744; Service Provider Hybrid (Corporate and System Specific)<br/>&#9744; Configured by Customer (Customer System Specific)<br/>&#9744; Provided by Customer (Customer System Specific)<br/>&#9744; Shared (Service Provider and Customer Responsibility)<br/>&#9744; Inherited from pre-existing FedRAMP Authorization for _insert text here_.
 
-|SC-23 What is the solution and how is it implemented?
-|---|---|
+|SC-23 What is the solution and how is it implemented|
+|---|
 ||
 
 ### SC-28 Protection of Information at Rest (M) (H)
@@ -496,8 +496,8 @@ The information system protects the [FedRAMP Selection: confidentiality AND inte
 |Implementation Status (check all that apply):|&#9744; Implemented<br/>&#9744; Partially implemented<br/>&#9744; Planned<br/>&#9744; Alternative implementation<br/>&#9744; Not applicable
 |Control Origination (check all that apply):|&#9744; Service Provider Corporate<br/>&#9744; Service Provider System Specific<br/>&#9744; Service Provider Hybrid (Corporate and System Specific)<br/>&#9744; Configured by Customer (Customer System Specific)<br/>&#9744; Provided by Customer (Customer System Specific)<br/>&#9744; Shared (Service Provider and Customer Responsibility)<br/>&#9744; Inherited from pre-existing FedRAMP Authorization for _insert text here_.
 
-|SC-28 What is the solution and how is it implemented?
-|---|---|
+|SC-28 What is the solution and how is it implemented?|
+|---|
 ||
 
 ### SC-28 (1) Control Enhancement (M)
@@ -511,8 +511,8 @@ The information system implements cryptographic mechanisms to prevent unauthoriz
 |Implementation Status (check all that apply):|&#9744; Implemented<br/>&#9744; Partially implemented<br/>&#9744; Planned<br/>&#9744; Alternative implementation<br/>&#9744; Not applicable
 |Control Origination (check all that apply):|&#9744; Service Provider Corporate<br/>&#9744; Service Provider System Specific<br/>&#9744; Service Provider Hybrid (Corporate and System Specific)<br/>&#9744; Configured by Customer (Customer System Specific)<br/>&#9744; Provided by Customer (Customer System Specific)<br/>&#9744; Shared (Service Provider and Customer Responsibility)<br/>&#9744; Inherited from pre-existing FedRAMP Authorization for _insert text here_.
 
-|SC-28 (1) What is the solution and how is it implemented?
-|---|---|
+|SC-28 (1) What is the solution and how is it implemented?|
+|---|
 ||
 
 ### SC-39 Process Isolation (L) (M) (H)
@@ -525,5 +525,5 @@ The information system maintains a separate execution domain for each executing 
 |Control Origination (check all that apply):|&#9744; Service Provider Corporate<br/>&#9744; Service Provider System Specific<br/>&#9744; Service Provider Hybrid (Corporate and System Specific)<br/>&#9744; Configured by Customer (Customer System Specific)<br/>&#9744; Provided by Customer (Customer System Specific)<br/>&#9744; Shared (Service Provider and Customer Responsibility)<br/>&#9744; Inherited from pre-existing FedRAMP Authorization for _insert text here_.
 
 |SC-39 What is the solution and how is it implemented?|
-|---|---|
+|---|
 ||

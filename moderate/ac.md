@@ -425,7 +425,7 @@ Includes a description of the authorized uses of the system.<br>
 |---|---|
 |Responsible Role:
 |Parameter AC-8(a)-1:
-|Parameter AC-8(c)-1:
+|Parameter AC-8(&#99;)-1:
 |Implementation Status (check all that apply):|&#9744; Implemented<br/>&#9744; Partially implemented<br/>&#9744; Planned<br/>&#9744; Alternative implementation<br/>&#9744; Not applicable
 |Control Origination (check all that apply):|&#9744; Service Provider Corporate<br/>&#9744; Service Provider System Specific<br/>&#9744; Service Provider Hybrid (Corporate and System Specific)<br/>&#9744; Configured by Customer (Customer System Specific)<br/>&#9744; Provided by Customer (Customer System Specific)<br/>&#9744; Shared (Service Provider and Customer Responsibility)<br/>&#9744; Inherited from pre-existing FedRAMP Authorization for _insert text here_.
 

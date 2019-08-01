@@ -13,7 +13,7 @@ The organization:
 <li>Procedures to facilitate the implementation of the security awareness and training policy and associated security awareness and training controls; and</li>
 </ol>
 <li>Reviews and updates the current:</li>
-<ol type=1>
+<ol type="1">
 <li>Security awareness and training policy [FedRAMP Assignment: at least every 3 years]; and</li>
 <li>Security awareness and training procedures [FedRAMP Assignment: at least annually].
 </li>

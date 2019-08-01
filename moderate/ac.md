@@ -14,7 +14,7 @@ The organization:
 <li>Procedures to facilitate the implementation of the access control policy and associated access controls; and</li>
 </ol>
 <li>Reviews and updates the current:</li>
-<ol type=1>
+<ol type="1">
 <li>Access control policy [FedRAMP Assignment: at least every 3 years]; and</li>
 <li>Access control procedures [FedRAMP Assignment: at least annually].</li>
 </ol>

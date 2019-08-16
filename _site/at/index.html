@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+
+
+
+  <!-- Title, Twitter, and OpenGraph data
+================================================== -->
+
+  <meta name="twitter:site" content="@18F">
+  <meta name="twitter:creator" content="@18F">
+  <meta property="og:type" content="website" />
+
+  
+
+  
+
+  <!-- title, description, and image may change per-page, per-post -->
+  
+    <title>Awareness and Training (AT) - FedRAMP System Security Plan Moderate Template</title>
+    <meta property="og:title" content="Awareness and Training (AT) - FedRAMP System Security Plan Moderate Template" />
+  
+
+  
+
+  <!-- use large summary card for posts with images, normal summary otherwise -->
+  
+    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://18f.gsa.gov/assets/images/18F-Logo-L.png" />
+  
+
+  <!-- If any of the file paths after guides_style_18f_asset_root change, the old ones need to stay in place. See https://github.com/18F/pages-server/issues/55 for more information. -->
+  <link rel="shortcut icon" type="image/ico" href="/assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="/assets/favicons/18f-center-57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/18f-center-72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/18f-center-114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/18f-center-144.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/18f-center-192.png" />
+  <link rel="stylesheet" href="/assets/uswds/css/uswds.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <link rel="stylesheet" href="/assets/css/custom.css">
+  
+  
+
+  <script src="/assets/uswds/js/uswds.min.js"></script>
+
+</head>
+
+
+  <body>
+
+    <div class="container">
+      <header class="usa-header usa-header-extended" role="banner">
+  <div class="usa-banner">
+  <div class="usa-accordion">
+    <div class="usa-banner-header">
+      <div class="usa-grid usa-banner-inner">
+      <img src="/assets/uswds/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="gov-banner">
+        <span class="usa-banner-button-text">Here's how you know</span>
+      </button>
+      </div>
+    </div>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/assets/uswds/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/assets/uswds/img/icon-https.svg" alt="SSL">
+        <div class="usa-media_block-body">
+          <p>This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The <strong>https://</strong> means all transmitted data is encrypted  — in other words, any information or browsing history that you provide is transmitted securely.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <a class="usa-skipnav" href="#main">Skip to main content</a>
+  <div class="usa-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo" id="logo">
+      <em class="usa-logo-text">
+        <a accesskey="1" title="Home" aria-label="Home" href="/">FedRAMP System Security Plan Moderate Template</a>
+      </em>
+    </div>
+  </div>
+
+
+
+  <nav role="navigation" class="usa-nav">
+    <div class="usa-nav-inner">
+      <button class="usa-nav-close">
+        <img src="/assets/uswds/img/close.svg" alt="close">
+      </button>
+
+      
+      
+
+      <div class="usa-nav-secondary">
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          
+          
+          <li>
+            <a href="https://pages.18f.gov/guides/">Read more 18F guides</a>
+          </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+</header>
+<div class="usa-overlay"></div>
+
+      <div class="usa-grid">
+
+        <aside class="usa-width-one-third usa-layout-docs-sidenav">
+    <ul class="usa-sidenav-list">
+        
+        <li>
+          <a href="/" 
+             class="" 
+             title="Overview">Overview</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/fedramp_moderate" 
+             class="" 
+             title="System Security Plan">System Security Plan</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/ac" 
+             class="" 
+             title="Access Control (AC)">Access Control (AC)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/at" 
+             class="" 
+             title="Awareness and Training (AT)">Awareness and Training (AT)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/au" 
+             class="" 
+             title="Audit and Accountability (AU)">Audit and Accountability (AU)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/ca" 
+             class="" 
+             title="Security Assessment and Authorization (CA)">Security Assessment and Authorization (CA)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/cm" 
+             class="" 
+             title="Configuration Management (CM)">Configuration Management (CM)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/cp" 
+             class="" 
+             title="Contingency Plan (CP)">Contingency Plan (CP)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/ia" 
+             class="" 
+             title="Identification and Authentication (IA)">Identification and Authentication (IA)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/ir" 
+             class="" 
+             title="Incident Response (IR)">Incident Response (IR)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/ma" 
+             class="" 
+             title="Maintenance (MA)">Maintenance (MA)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/mp" 
+             class="" 
+             title="Media Protection (MP)">Media Protection (MP)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/pe" 
+             class="" 
+             title="Physical and Environmental Protection (PE)">Physical and Environmental Protection (PE)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/pl" 
+             class="" 
+             title="Planning (PL)">Planning (PL)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/ps" 
+             class="" 
+             title="Personnel Security (PS)">Personnel Security (PS)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/ra" 
+             class="" 
+             title="Risk Assessment (RA)">Risk Assessment (RA)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/sa" 
+             class="" 
+             title="System and Services Acquisition (SA)">System and Services Acquisition (SA)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/sc" 
+             class="" 
+             title="System and Communications Protection (SC)">System and Communications Protection (SC)</a>
+          
+          
+
+        </li>
+        <li>
+          <a href="/si" 
+             class="" 
+             title="System and Information Integrity (SI)">System and Information Integrity (SI)</a>
+          
+          
+
+        </li>
+    </ul>
+</aside>
+
+        <main id="main" class="usa-width-two-thirds usa-layout-docs-main_content" role="main">
+          <h1>Awareness and Training (AT)</h1>
+          <h2 id="awareness-and-training-at">Awareness and Training (AT)</h2>
+<h3 id="at-1-security-awareness-and-training-policy-and-procedures-l-m">AT-1 Security Awareness and Training Policy and Procedures (L) (M)</h3>
+<p>The organization:</p>
+<ol type="a">
+<li>Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]:</li>
+<ol type="1">
+<li>A security awareness and training policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</li>
+<li>Procedures to facilitate the implementation of the security awareness and training policy and associated security awareness and training controls; and</li>
+</ol>
+<li>Reviews and updates the current:</li>
+<ol type="1">
+<li>Security awareness and training policy [FedRAMP Assignment: at least every 3 years]; and</li>
+<li>Security awareness and training procedures [FedRAMP Assignment: at least annually].
+</li>
+</ol>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>AC-1</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter AT-1(a):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter AT-1(b)(1):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter AT-1(b)(2):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>AT-1 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a:</td>
+    </tr>
+    <tr>
+      <td>Part b1:</td>
+    </tr>
+    <tr>
+      <td>Part b2:</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="at-2-security-awareness-l-m-h">AT-2 Security Awareness (L) (M) (H)</h3>
+<p>The organization provides basic security awareness training to information system users (including managers, senior executives, and contractors):</p>
+<ol type="a">
+<li>As part of initial training for new users;</li>
+<li>When required by information system changes; and</li>
+<li>[FedRAMP Assignment: at least annually] thereafter.</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>AT-2</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter AT-2(c):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>AT-2 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a:</td>
+    </tr>
+    <tr>
+      <td>Part b1:</td>
+    </tr>
+    <tr>
+      <td>Part b2:</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="at-2-2-control-enhancement-m-h">AT-2 (2) Control Enhancement (M) (H)</h3>
+<p>The organization includes security awareness training on recognizing and reporting potential indicators of insider threat.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>AT-2 (2)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter AT-2(c):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>AT-2 (2) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a:</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="at-3-role-based-security-training-l-m-h">AT-3 Role-Based Security Training (L) (M) (H)</h3>
+<p>The organization provides role-based security training to personnel with assigned security roles and responsibilities:</p>
+<ol type="a">
+<li>Before authorizing access to the information system or performing assigned duties;</li>
+<li>When required by information system changes; and</li>
+<li>[FedRAMP Assignment: at least annually] thereafter.</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>AT-3</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter AT-3(c):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>AT-3 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a:</td>
+    </tr>
+    <tr>
+      <td>Part b:</td>
+    </tr>
+    <tr>
+      <td>Part c:</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="at-4-security-training-records-l-m">AT-4 Security Training Records (L) (M)</h3>
+<p>The organization:</p>
+<ol type="a">
+<li>Documents and monitors individual information system security training activities including basic security awareness training and specific information system security training; and</li>
+<li>Retains individual training records for [FedRAMP Assignment: at least one year].</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>AT-4(b)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter AT-4(b)(c):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>AT-4 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a:</td>
+    </tr>
+    <tr>
+      <td>Part b:</td>
+    </tr>
+  </tbody>
+</table>
+
+        </main>
+
+
+      </div><!-- /.wrap content -->
+
+      <footer class="usa-footer usa-footer-slim" role="contentinfo">
+  
+  <div class="usa-grid usa-footer-return-to-top">
+      <a href="#">Return to top</a>
+  </div>
+  <div class="usa-footer-primary-section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-third">
+        
+        
+        <img src="/assets/img/18f-logo.png" alt="18F logo">
+      </div>
+
+      <nav class="usa-footer-nav usa-width-one-third">
+        <ul class="usa-unstyled-list">
+          <li class="usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="https://github.com/18F/guides-template/">
+            18F Guides theme
+            </a>
+          </li>
+          
+          <li class="usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="https://github.com/trevorbryant/fedramp-ssp/edit/master/_pages/at.md">
+            Edit this page
+            </a>
+          </li>
+          <li class="usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="https://github.com/trevorbryant/fedramp-ssp/issues">
+            File an issue on GitHub
+            </a>
+          </li>
+          
+        </ul>
+      </nav>
+      <div class="usa-width-one-third">
+        <ul class="usa-unstyled-list">
+          <li class="usa-footer-primary-content">
+              Maintained by <a href="https://18f.gsa.gov">18F</a>
+          </li>
+          <li class="usa-footer-primary-content">
+              Hosted by <a href="https://federalist.fr.cloud.gov/">Federalist</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div> <!-- /.container -->
+
+    <!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+
+  // anonymize user IPs (chops off the last IP triplet)
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'forceSSL', true);
+  ga('send', 'pageview');
+</script>
+
+<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+<script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA"></script>
+
+    <!-- If any of the file paths after guides_style_18f_asset_root change, the old ones need to stay in place. See https://github.com/18F/pages-server/issues/55 for more information. -->
+<script src="/assets/js/vendor/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/accordion.js"></script>
+<script src="/assets/js/vendor/private-eye-1.1.0.js"></script>
+<script src="/assets/js/18f-guide.js"></script>
+
+
+  </body>
+</html>

@@ -20,8 +20,8 @@ sass:
 
 # Author/Organization info to be displayed in the templates
 author:
-  name: 18F
-  url: https://18f.gsa.gov
+  name: trevor
+  url: https://fedramp-ssp.github.io
 
 # Point the logo URL at a file in your repo or hosted elsewhere by your organization
 logourl: 
@@ -86,6 +86,9 @@ navigation:
   internal: true
 - text: System and Information Integrity (SI)
   url: si
+  internal: true
+- text: POAM Template
+  url: poam_template
   internal: true
 
 repos:

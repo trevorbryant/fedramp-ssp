@@ -2757,9 +2757,9 @@ title: Audit and Accountability (AU)
 <p>The organization:</p>
 <ol type="a">
 <li>Determines that the information system is capable of auditing the following events: [FedRAMP Assignment: [Successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events.  For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes];</li>
-Coordinates the security audit function with other organizational entities requiring audit-related information to enhance mutual support and to help guide the selection of auditable events<br />
-Provides a rationale for why the auditable events are deemed to be adequate to support after-the-fact investigations of security incidents; and<br />
-Determines that the following events are to be audited within the information system: [FedRAMP Assignment: organization-defined subset of the auditable events defined in AU-2 a. to be audited continually for each identified event].<br />
+<li>Coordinates the security audit function with other organizational entities requiring audit-related information to enhance mutual support and to help guide the selection of auditable events<br />
+Provides a rationale for why the auditable events are deemed to be adequate to support after-the-fact investigations of security incidents; and</li>
+<li>Determines that the following events are to be audited within the information system: [FedRAMP Assignment: organization-defined subset of the auditable events defined in AU-2 a. to be audited continually for each identified event].</li>
 <b>AU-2 Additional FedRAMP Requirements and Guidance:</b>
 Requirement: Coordination between service provider and consumer shall be documented and accepted by the JAB/AO.
 </ol>
@@ -11590,6 +11590,34 @@ title: Planning (PL)
 |Part a
 |Part b
 |Part c
+—
+title: POAM Template
+—</p>
+
+<h1 id="plan-of-action-and-milestones">Plan of Action and Milestones</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>CSP</th>
+      <th>System Name</th>
+      <th>Impact Level</th>
+      <th>POAM Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Text</td>
+      <td>Text</td>
+      <td>Low/Moderate/High</td>
+      <td>Date</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>|POAM ID|Controls|Weakness Name|Weakness Descriptio|Weakness Detector Source|Weakness Source Identifier|Asset Identifier|Point of Contac|Resources Required|Overall Remediation Plan|Original Detection Date|Scheduled Completion Date|Planned Milestones|Milestone Changes|Status Date|Vendor Dependence|Last Vendor Check-in Date|Vendor Dependent Product Name|Original Risk Rating|Adjusted Risk Rating|Risk Adjustment|False Positive|Operational Requirement|Deviation Rationale|Supporting Documents|Comments|Auto-Approve|
+|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|
+V-1Example|AC-1|Open port on Example Firewall|Unprovisioned port left open on example firewall|Nessus|	12345|172.246.15.3 (80/TCP) http://vuln.gov/queries 172.246.16.17 (80/tcp)|John Doe -  Example CSP||	Implement a technical solution to the problem.|5/5/2014|8/3/2014|(1) 2014/05/23: Milestone Description<br />  (2) 2014-06-12: Milestone  Description|(2) Update 2014-06-18 : That milestone was delayed due to a Vendor Dependency<br />  (3) New 2014-06-13 : This is the details of this new milestone|8/5/2014|	Yes|8/5/2014|Example Firewall|High|Moderate|Yes|No|Pending|Risk Adjustment: The example firewall scanned is just preliminary<br /> Operational Requirement: The port is needed for service example.|Remediation Evidence : filename.doc<br /> Deviation Request : DR-123-Example-1.doc|none|no|
 —
 title: Personnel Security (PS)
 —</p>

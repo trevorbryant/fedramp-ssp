@@ -123,6 +123,10 @@ The information system automatically disables inactive accounts after [FedRAMP A
 |Implementation Status (check all that apply):|&#9744; Implemented<br/>&#9744; Partially implemented<br/>&#9744; Planned<br/>&#9744; Alternative implementation<br/>&#9744; Not applicable
 |Control Origination (check all that apply):|&#9744; Service Provider Corporate<br/>&#9744; Service Provider System Specific<br/>&#9744; Service Provider Hybrid (Corporate and System Specific)<br/>&#9744; Configured by Customer (Customer System Specific)<br/>&#9744; Provided by Customer (Customer System Specific)<br/>&#9744; Shared (Service Provider and Customer Responsibility)<br/>&#9744; Inherited from pre-existing FedRAMP Authorization for _insert text here_.
 
+|AC-2 (3) What is the solution and how is it implemented?|
+|---|
+||
+
 ### AC-2 (4) Control Enhancement (M)
 The information system automatically audits account creation, modification, enabling, disabling, and removal actions, and notifies [Assignment: organization-defined personnel or roles].
 
@@ -157,8 +161,8 @@ The organization requires that users log out when [Assignment: organization-defi
 The organization:
 <ol type="a">
 <li>Establishes and administers privileged user accounts in accordance with a role-based access scheme that organizes allowed information system access and privileges into roles;</li>
-Monitors privileged role assignments; and<br>
-Takes [Assignment: organization-defined actions] when privileged role assignments are no longer appropriate.
+<li>Monitors privileged role assignments; and</li>
+<li>Takes [Assignment: organization-defined actions] when privileged role assignments are no longer appropriate.</li>
 </ol>
 
 |AC-2 (7)|Control Summary Information|
@@ -209,7 +213,7 @@ Required if shared/group accounts are deployed.
 The organization:
 <ol type="a">
 <li>Monitors information system accounts for [Assignment: organization-defined atypical use]; and</li>
-Reports atypical usage of information system accounts to [Assignment: organization-defined personnel or roles].<br>
+<li>Reports atypical usage of information system accounts to [Assignment: organization-defined personnel or roles].</li>
 <b>AC-2 (12) (a) and AC-2 (12) (b) Additional FedRAMP Requirements and Guidance:</b> Required for privileged accounts.
 </ol>
 
@@ -221,7 +225,7 @@ Reports atypical usage of information system accounts to [Assignment: organizati
 |Implementation Status (check all that apply):|&#9744; Implemented<br/>&#9744; Partially implemented<br/>&#9744; Planned<br/>&#9744; Alternative implementation<br/>&#9744; Not applicable
 |Control Origination (check all that apply):|&#9744; Service Provider Corporate<br/>&#9744; Service Provider System Specific<br/>&#9744; Service Provider Hybrid (Corporate and System Specific)<br/>&#9744; Configured by Customer (Customer System Specific)<br/>&#9744; Provided by Customer (Customer System Specific)<br/>&#9744; Shared (Service Provider and Customer Responsibility)<br/>&#9744; Inherited from pre-existing FedRAMP Authorization for _insert text here_.
 
-|AC-2 (10) What is the solution and how is it implemented?|
+|AC-2 (12) What is the solution and how is it implemented?|
 |---|
 |Part a
 |Part b
@@ -302,7 +306,7 @@ The organization employs the principle of least privilege, allowing only authori
 
 |AC-6 What is the solution and how is it implemented?|
 |---|
-|Part a
+||
 
 ### AC-6 (1) Control Enhancement (M)
 The organization explicitly authorizes access to [Assignment: organization-defined security functions (deployed in hardware, software, and firmware) and security-relevant information].
@@ -316,7 +320,7 @@ The organization explicitly authorizes access to [Assignment: organization-defin
 
 |AC-6 (1) What is the solution and how is it implemented?|
 |---|
-|Part a
+||
 
 ### AC-6 (2) Control Enhancement (M) (H)
 The organization requires that users of information system accounts, or roles, with access to [FedRAMP Assignment: all security functions], use non-privileged accounts or roles, when accessing non-security functions.<br>
@@ -378,7 +382,7 @@ The information system prevents non-privileged users from executing privileged f
 The organization:
 <ol type="a">
 <li>Enforces a limit of [FedRAMP Assignment: not more than three (3)] consecutive invalid logon attempts by a user during a [FedRAMP Assignment: fifteen (15) minutes]; and</li>
-Automatically [Selection: locks the account/node for a [FedRAMP Assignment: thirty (30) minutes]; delays next logon prompt according to [Assignment: organization-defined delay algorithm]] when the maximum number of unsuccessful attempts is exceeded.
+<li>Automatically [Selection: locks the account/node for a [FedRAMP Assignment: thirty (30) minutes]; delays next logon prompt according to [Assignment: organization-defined delay algorithm]] when the maximum number of unsuccessful attempts is exceeded.</li>
 </ol>
 
 |AC-7|Control Summary Information|
@@ -407,12 +411,14 @@ The information system:
 <li>Use of the information system indicates consent to monitoring and recording;</li>
 </ol>
 <li>Retains the notification message or banner on the screen until users acknowledge the usage conditions and take explicit actions to log on to or further access the information system; and</li>
-</ol>
-For publicly accessible systems:
 
-Displays system use information [Assignment: organization-defined conditions (FedRAMP Assignment: see additional Requirements and Guidance)], before granting further access;<br>
-Displays references, if any, to monitoring, recording, or auditing that are consistent with privacy accommodations for such systems that generally prohibit those activities; and<br>
-Includes a description of the authorized uses of the system.<br>
+<li>For publicly accessible systems:</li>
+<ol type="1">
+<li>Displays system use information [Assignment: organization-defined conditions (FedRAMP Assignment: see additional Requirements and Guidance)], before granting further access;</li>
+<li>Displays references, if any, to monitoring, recording, or auditing that are consistent with privacy accommodations for such systems that generally prohibit those activities; and</li>
+<li>Includes a description of the authorized uses of the system.</li>
+</ol>
+</ol>
 <b>AC-8 Additional FedRAMP Requirements and Guidance:</b><br>
 <b>Requirement:</b> The service provider shall determine elements of the cloud environment that require the System Use Notification control.  The elements of the cloud environment that require System Use Notification are approved and accepted by the JAB/AO.<br>
 <b>Requirement:</b> The service provider shall determine how System Use Notification is going to be verified and provide appropriate periodicity of the check.  The System Use Notification verification and periodicity are approved and accepted by the JAB/AO.<br>

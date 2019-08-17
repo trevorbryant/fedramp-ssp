@@ -931,11 +931,11 @@ The organization:
 The organization:
 <ol type="a">
 <li>Determines that the information system is capable of auditing the following events: [FedRAMP Assignment: [Successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events.  For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes];</li>
-<li>Coordinates the security audit function with other organizational entities requiring audit-related information to enhance mutual support and to help guide the selection of auditable events<br>
+<li>Coordinates the security audit function with other organizational entities requiring audit-related information to enhance mutual support and to help guide the selection of auditable events</li>
 <li>Provides a rationale for why the auditable events are deemed to be adequate to support after-the-fact investigations of security incidents; and</li>
 <li>Determines that the following events are to be audited within the information system: [FedRAMP Assignment: organization-defined subset of the auditable events defined in AU-2 a. to be audited continually for each identified event].</li>
-<b>AU-2 Additional FedRAMP Requirements and Guidance:</b>
-Requirement: Coordination between service provider and consumer shall be documented and accepted by the JAB/AO.
+<b>AU-2 Additional FedRAMP Requirements and Guidance:</b><br>
+<b>Requirement:</b> Coordination between service provider and consumer shall be documented and accepted by the JAB/AO.
 </ol>
 
 |AU-2|Control Summary Information|

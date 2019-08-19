@@ -15,6 +15,8 @@ Obvious different authors
 
 This web style guide is copied from [before-you-ship](https://github.com/18F/before-you-ship) and I couldn't figure out how to remove the official US Government statements inherited by the style guide. If there are concerns or issues regarding this project please submit an [issue](https://github.com/trevorbryant/fedramp-ssp/issues).
 
+The temporary project can be viewed [here](http://fedramp-ssp.netlify.com/).
+
 ## Public domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):

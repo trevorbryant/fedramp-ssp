@@ -4,7 +4,7 @@ navtitle: Overview
 permalink: /
 ---
 
-<center><img src="/assets/images/aidan.jpg" alt="Aidan Feldman's Face" width="319"/></center>
+<!-- <center><img src="/assets/images/aidan.jpg" alt="Aidan Feldman's Face" width="319"/></center> -->
 
 The purpose of this exercise is to take the FedRAMP System Security Plans and incorporate into the Markdown standards.
 

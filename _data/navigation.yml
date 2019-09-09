@@ -5,6 +5,9 @@ primary:
   - text: System Security Plan
     href: fedramp_moderate/
     links: fedramp_moderate
+  - text: Configuration Management Plan
+    href: cmplan/#top
+    links: cmplan
 
 overview:
   - text: Home
@@ -48,3 +51,29 @@ fedramp_moderate:
      href: fedramp_moderate/#system-and-communications-protection-sc
    - text: System and Information Integrity (SI)
      href: fedramp_moderate/#system-and-information-integrity-si
+
+cmplan:
+   - text: Configuration Management Plan
+     href: cmplan/#top
+   - text: Background
+     href: cmplan/#background
+   - text: Overview of System
+     href: cmplan/#overview-of-system
+   - text: Purpose of this Document
+     href: cmplan/#purpose-of-this-document
+   - text: Application Policies and Procedures
+     href: cmplan/#application-policies-and-procedures
+   - text: SecCM Roles and Responsibilities
+     href: cmplan/#seccm-roles-and-responsibilities
+   - text: SecCM Program Administration
+     href: cmplan/#seccm-program-administration
+   - text: Configuration Identification
+     href: cmplan/#configuration-identification
+   - text: Configuration Baselining
+     href: cmplan/#configuration-baselining
+   - text: Configuration Change Control
+     href: cmplan/#configuration-change-control
+   - text: SecCM Reporting
+     href: cmplan/#seccm-reporting
+   - text: Suggested SecCM Plan Appendices
+     href: cmplan/#suggested-seccm-plan-appendices

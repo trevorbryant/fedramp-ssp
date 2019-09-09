@@ -1,0 +1,7 @@
+type: extended
+logo:
+  src: https://github.com/opencontrol.png
+  alt: OpenControl
+  external: true
+primary:
+  links: primary

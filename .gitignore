@@ -1,0 +1,7 @@
+tmp/
+_site/
+_test_site/
+.sass-cache/
+.DS_store
+.*.swp
+.jekyll-metadata

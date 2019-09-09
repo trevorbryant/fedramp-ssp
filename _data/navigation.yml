@@ -1,0 +1,50 @@
+primary:
+  - text: Overview
+    href: overview/#top
+    links: overview
+  - text: System Security Plan
+    href: fedramp_moderate/
+    links: fedramp_moderate
+
+overview:
+  - text: Home
+    href: index/
+    links: index
+
+fedramp_moderate:
+   - text: System Security Plan
+     href: fedramp_moderate/#top
+   - text: Access Control (AC)
+     href: fedramp_moderate/#access-control-ac
+   - text: Awareness and Training (AT)
+     href: fedramp_moderate/#awareness-and-training-at
+   - text: Audit and Accountability (AU)
+     href: fedramp_moderate/#audit-and-accountability-au
+   - text: Security Assessment and Authorization (CA)
+     href: fedramp_moderate/#security-assessment-and-authorization-ca
+   - text: Configuration Management (CM)
+     href: fedramp_moderate/#configuration-management-cm
+   - text: Contingency Planning (CP)
+     href: fedramp_moderate/#contingency-planning-cp
+   - text: Identification and Authentication (IA)
+     href: fedramp_moderate/#identification-and-authentication-ia
+   - text: Incident Response (IR)
+     href: fedramp_moderate/#incident-response-ir
+   - text: Maintenance (MA)
+     href: fedramp_moderate/#maintenance-ma
+   - text: Media Protection (MP)
+     href: fedramp_moderate/#media-protection-mp
+   - text: Physical and Environmental Protection (PE)
+     href: fedramp_moderate/#physical-and-environmental-protection-pe
+   - text: Planning (PL)
+     href: fedramp_moderate/#planning-pl
+   - text: Personnel Security (PS)
+     href: fedramp_moderate/#personnel-security-ps
+   - text: Risk Assessment (RA)
+     href: fedramp_moderate/#risk-assessment-ra
+   - text: System and Services Acquisition (SA)
+     href: fedramp_moderate/#system-and-services-acquisition-sa
+   - text: System and Communications Protection (SC)
+     href: fedramp_moderate/#system-and-communications-protection-sc
+   - text: System and Information Integrity (SI)
+     href: fedramp_moderate/#system-and-information-integrity-si

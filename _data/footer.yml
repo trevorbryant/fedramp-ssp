@@ -1,0 +1,11 @@
+type: slim
+edit_page:
+  text: Edit this page
+logos:
+  - src: assets/img/oclogo.png
+    url: https://open-control.org
+    alt: OpenControl
+  - src: https://www.netlify.com/img/global/badges/netlify-dark.svg
+    url: https://www.netlify.com
+    alt: Deploys by Netlify
+    external: true

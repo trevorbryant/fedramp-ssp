@@ -1,5 +1,7 @@
 ---
-title: Access Control (AC)
+title: System Security Plan
+sidenav: fedramp_moderate
+sticky_sidenav: true
 ---
 
 ## Access Control (AC)
@@ -230,7 +232,7 @@ The organization:
 |Part a
 |Part b
 
-## AC-3 Access Enforcement (L) (M) (H)
+### AC-3 Access Enforcement (L) (M) (H)
 The information system enforces approved authorizations for logical access to information and system resources in accordance with applicable access control policies.
 
 |AC-3|Control Summary Information|
@@ -243,7 +245,7 @@ The information system enforces approved authorizations for logical access to in
 |---|
 |Part a
 
-## AC-4 Information Flow Enforcement (M) (H)
+### AC-4 Information Flow Enforcement (M) (H)
 The information system enforces approved authorizations for controlling the flow of information within the system and between interconnected systems based on [Assignment: organization-defined information flow control policies].
 
 |AC-4|Control Summary Information|
@@ -272,7 +274,7 @@ The information system separates information flows logically or physically using
 |---|
 ||
 
-## AC-5 Separation of Duties (M) (H)
+### AC-5 Separation of Duties (M) (H)
 The organization:
 <ol type="a">
 <li>Separates [Assignment: organization-defined duties of individuals];</li>
@@ -295,7 +297,7 @@ The organization:
 |Part b
 |Part c
 
-## AC-6 Least Privilege (M) (H)
+### AC-6 Least Privilege (M) (H)
 The organization employs the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) which are necessary to accomplish assigned tasks in accordance with organizational missions and business functions.
 
 |AC-6|Control Summary Information|
@@ -378,7 +380,7 @@ The information system prevents non-privileged users from executing privileged f
 |---|
 ||
 
-## AC-7 Unsuccessful Login Attempts (L) (M)
+### AC-7 Unsuccessful Login Attempts (L) (M)
 The organization:
 <ol type="a">
 <li>Enforces a limit of [FedRAMP Assignment: not more than three (3)] consecutive invalid logon attempts by a user during a [FedRAMP Assignment: fifteen (15) minutes]; and</li>
@@ -400,7 +402,7 @@ The organization:
 |Part a
 |Part b
 
-## AC-8 System Use Notification (L) (M) (H)
+### AC-8 System Use Notification (L) (M) (H)
 The information system:
 <ol type="a">
 <li>Displays to users [Assignment: organization-defined system use notification message or banner (FedRAMP Assignment: see additional Requirements and Guidance)] before granting access to the system that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance and states that:</li>
@@ -456,7 +458,7 @@ The information system:
 |Req 2
 |Req 3
 
-## AC-10 Concurrent Session Control (M) (H)
+### AC-10 Concurrent Session Control (M) (H)
 The information system limits the number of concurrent sessions for each [Assignment: organization-defined account and/or account type] to [FedRAMP Assignment: three (3) sessions for privileged access and two (2) sessions for non-privileged access].
 
 |AC-10|Control Summary Information|
@@ -471,7 +473,7 @@ The information system limits the number of concurrent sessions for each [Assign
 |---|
 ||
 
-## AC-11 Session Lock (M) (H)
+### AC-11 Session Lock (M) (H)
 The information system:
 <ol type="a">
 <li>Prevents further access to the system by initiating a session lock after [FedRAMP Assignment: fifteen (15) minutes] of inactivity or upon receiving a request from a user; and</li>
@@ -504,7 +506,7 @@ The information system conceals, via the session lock, information previously vi
 |---|
 ||
 
-## AC-12 Session Termination (M) (H)
+### AC-12 Session Termination (M) (H)
 The information system automatically terminates a user session after [Assignment: organization-defined conditions or trigger events requiring session disconnect].
 
 |AC-12|Control Summary Information|
@@ -518,7 +520,7 @@ The information system automatically terminates a user session after [Assignment
 |---|
 ||
 
-## AC-14 Permitted Actions without Identification or Authentication (L) (M) (H)
+### AC-14 Permitted Actions without Identification or Authentication (L) (M) (H)
 The organization:
 <ol type="a">
 <li>Identifies [Assignment: organization-defined user actions] that can be performed on the information system without identification or authentication consistent with organizational missions/business functions; and</li>
@@ -537,7 +539,7 @@ The organization:
 |Part a
 |Part b
 
-## AC-17 Remote Access (L) (M) (H)
+### AC-17 Remote Access (L) (M) (H)
 The organization:
 <ol type="a">
 <li>Establishes and documents usage restrictions, configuration/connection requirements, and implementation guidance for each type of remote access allowed; and</li>
@@ -631,7 +633,7 @@ The organization provides the capability to expeditiously disconnect or disable 
 |---|
 ||
 
-## AC-18 Wireless Access Restrictions (L) (M) (H)
+### AC-18 Wireless Access Restrictions (L) (M) (H)
 The organization:
 <ol type="a">
 <li> Establishes usage restrictions, configuration/connection requirements, and implementation guidance for wireless access; and</li>
@@ -664,7 +666,7 @@ The information system protects wireless access to the system using authenticati
 |---|
 ||
 
-## AC-19 Access Control for Portable and Mobile Systems (L) (M) (H)
+### AC-19 Access Control for Portable and Mobile Systems (L) (M) (H)
 The organization:
 <ol type="a">
 <li>Establishes usage restrictions, configuration requirements, connection requirements, and implementation guidance for organization-controlled mobile devices; and</li>
@@ -697,7 +699,7 @@ The organization employs [Selection: full-device encryption; container encryptio
 |---|
 ||
 
-## AC-20 Use of External Information Systems (L) (M) (H)
+### AC-20 Use of External Information Systems (L) (M) (H)
 The organization establishes terms and conditions, consistent with any trust relationships established with other organizations owning, operating, and/or maintaining external information systems, allowing authorized individuals to:
 <ol type="a">
 <li>Access the information system from external information systems; and</li>
@@ -747,7 +749,7 @@ The organization [Selection: restricts; prohibits] the use of organization-contr
 |---|
 ||
 
-## AC-21 Information Sharing (M) (H)
+### AC-21 Information Sharing (M) (H)
 The organization:
 <ol type="a">
 <li>Facilitates information sharing by enabling authorized users to determine whether access authorizations assigned to the sharing partner match the access restrictions on the information for [Assignment: organization-defined information sharing circumstances where user discretion is required]; and</li>
@@ -767,7 +769,7 @@ The organization:
 |Part a
 |Part b
 
-## AC-22 Publicly Accessible Content (L) (M) (H)
+### AC-22 Publicly Accessible Content (L) (M) (H)
 The organization:
 <ol type="a">
 <li>Designates individuals authorized to post information onto a publicly accessible information system;</li>
@@ -789,9 +791,6 @@ The organization:
 |Part b
 |Part c
 |Part d
----
-title: Awareness and Training (AT)
----
 
 ## Awareness and Training (AT)
 ### AT-1 Security Awareness and Training Policy and Procedures (L) (M)
@@ -899,9 +898,6 @@ The organization:
 |---
 |Part a:
 |Part b:
----
-title: Audit and Accountability (AU)
----
 
 ## Audit and Accountability (AU)
 ### AU-1 Audit and Accountability Policy and Procedures (L) (M)
@@ -1245,9 +1241,6 @@ The information system:
 |Part a|
 |Part b|
 |Part c|
----
-title: Security Assessment and Authorization (CA)
----
 
 ## Security Assessment and Authorization (CA)
 ### CA-1 Certification, Authorization, Security Assessment Policy and Procedures (L) (M)
@@ -1609,9 +1602,6 @@ The organization:
 |---|
 |Part a|
 |Part b|
----
-title: Configuration Management (CM)
----
 
 ## Configuration Management (CM)
 ### CM-1 Configuration Management Policies and Procedures (L) (M)
@@ -2117,11 +2107,8 @@ CM-11|Control Summary Information|
 |Part a|
 |Part b|
 |Part c|
----
-title: Contingency Planning (CP)
----
 
-##  Contingency Planning (CP)
+## Contingency Planning (CP)
 ### CP-1 Contingency Planning Policy and Procedures (L) (M)
 The organization:
 <ol type="a">
@@ -2532,9 +2519,6 @@ CP-10 (2)|Control Summary Information|
 |CP-10 (2) What is the solution and how is it implemented?|
 |---|
 ||
----
-title: Identification and Authentication (IA)
----
 
 ## Identification and Authentication (IA)
 ### IA-1 Identification and Authentication Policy and Procedures (L) (M)
@@ -2993,9 +2977,6 @@ The information system conforms to FICAM-issued profiles.
 |IA-8 (4) What is the solution and how is it implemented?|
 |---|
 ||
----
-title: Incident Response (IR)
----
 
 ## Incident Response (IR)
 ### IR-1 Incident Response Policy and Procedures (L) (M)
@@ -3337,9 +3318,6 @@ The organization employs [Assignment: organization-defined security safeguards] 
 |IR-9 (4) What is the solution and how is it implemented?|
 |---|
 ||
----
-title: Maintenance (MA)
----
 
 ## Maintenance (MA)
 ### MA-1 System Maintenance Policy and Procedures (L) (M)
@@ -3557,9 +3535,6 @@ The organization obtains maintenance support and/or spare parts for [Assignment:
 |---|
 |Part a
 |Part b
----
-title: Media Protection (MP)
----
 
 ## Media Protection (MP)
 ### MP-1 Media Protection Policy and Procedures (L) (M)
@@ -3754,9 +3729,6 @@ The organization prohibits the use of portable storage devices in organizational
 |MP-7 (1) What is the solution and how is it implemented?|
 |---|
 ||
----
-title: Physical and Environmental Protection (PE)
----
 
 ## Physical and Environmental Protection (PE)
 ### PE-1 Physical and Environmental Protection Policy and Procedures (L) (M)
@@ -4119,9 +4091,6 @@ The organization:
 |Part a
 |Part b
 |Part c
----
-title: Planning (PL)
----
 
 ## Planning (PL)
 ### PL-1 Security Planning Policy and Procedures (L) (M)
@@ -4267,12 +4236,9 @@ The organization:
 |Part a
 |Part b
 |Part c
----
-title: POAM Template
----
 
 # Plan of Action and Milestones
-																										
+
 |CSP|System Name|Impact Level|POAM Date|
 |--|--|--|--|																						
 |Text|Text|Low/Moderate/High|Date|																					
@@ -4280,9 +4246,6 @@ title: POAM Template
 |POAM ID|Controls|Weakness Name|Weakness Descriptio|Weakness Detector Source|Weakness Source Identifier|Asset Identifier|Point of Contac|Resources Required|Overall Remediation Plan|Original Detection Date|Scheduled Completion Date|Planned Milestones|Milestone Changes|Status Date|Vendor Dependence|Last Vendor Check-in Date|Vendor Dependent Product Name|Original Risk Rating|Adjusted Risk Rating|Risk Adjustment|False Positive|Operational Requirement|Deviation Rationale|Supporting Documents|Comments|Auto-Approve|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 V-1Example|AC-1|Open port on Example Firewall|Unprovisioned port left open on example firewall|Nessus|	12345|172.246.15.3 (80/TCP) http://vuln.gov/queries 172.246.16.17 (80/tcp)|John Doe -  Example CSP||	Implement a technical solution to the problem.|5/5/2014|8/3/2014|(1) 2014/05/23: Milestone Description<br>  (2) 2014-06-12: Milestone  Description|(2) Update 2014-06-18 : That milestone was delayed due to a Vendor Dependency<br>  (3) New 2014-06-13 : This is the details of this new milestone|8/5/2014|	Yes|8/5/2014|Example Firewall|High|Moderate|Yes|No|Pending|Risk Adjustment: The example firewall scanned is just preliminary<br> Operational Requirement: The port is needed for service example.|Remediation Evidence : filename.doc<br> Deviation Request : DR-123-Example-1.doc|none|no|
----
-title: Personnel Security (PS)
----
 
 ## Personnel Security (PS)
 ### PS-1 Personnel Security Policy and Procedures (L) (M)
@@ -4500,9 +4463,6 @@ The organization:
 |---|
 |Part a
 |Part b
----
-title: Risk Assessment (RA)
----
 
 ## Risk Assessment (RA)
 ### RA-1 Risk Assessment Policy and Procedures (L) (M)
@@ -4709,9 +4669,6 @@ The organization reviews historic audit logs to determine if a vulnerability ide
 |RA-8 What is the solution and how is it implemented?|
 |---|
 ||
----
-title: System and Services Acquisition (SA)
----
 
 ## System and Services Acquisition (SA)
 ### SA-1 System and Services Acquisition Policy and Procedures (L) (M)
@@ -5140,9 +5097,6 @@ The organization requires the developer of the information system, system compon
 |SA-11 (8) What is the solution and how is it implemented?|
 |---|
 ||
----
-title: System and Communications Protection (SC)
----
 
 ## System and Communications Protection (SC)
 ### SC-1 System and Communications Protection Policy and Procedures (L) (M)
@@ -5544,7 +5498,7 @@ The organization:
 |Part b
 |Part c
 
-#### SC-19 Voice Over Internet Protocol (M) (H)
+### SC-19 Voice Over Internet Protocol (M) (H)
 The organization:
 <ol type="a">
 <li>Establishes usage restrictions and implementation guidance for Voice over Internet Protocol (VoIP) technologies based on the potential to cause damage to the information system if used maliciously; and</li>
@@ -5667,9 +5621,6 @@ The information system maintains a separate execution domain for each executing 
 |SC-39 What is the solution and how is it implemented?|
 |---|
 ||
----
-title: System and Information Integrity (SI)
----
 
 ## System and Information Integrity (SI)
 ### SI-1 System and Information Integrity Policy and Procedures (L) (M)

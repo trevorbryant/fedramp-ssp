@@ -84,28 +84,32 @@ system-security-plan:
     status: 
       state: operational
       remarks: "System status explained here."
-    leveraged-authorizations: 
-      - AWS
-      - GCP
+    leveraged-authorizations:
+      AWS:
+        id: FEDRAMP-ID
+        name: "Leveraged Service Provider Owner"
+        properties:
+        annotations:
+        links:
+        party-id:
+        date-authorized: YYYY-MM-DD
+        remarks:
+      GCP:
+        id: FEDRAMP-ID
+        name: "Leveraged Service Provider Owner"
+        properties:
+        annotations:
+        links:
+        party-id:
+        date-authorized: YYYY-MM-DD
+        remarks:    
     authorization-boundary: 
       description: "Provide an explicit definition
 of the system’s Authorization Boundary"
       properties: 
       annotations: 
       links: 
-      diagrams: 
-        Network: 
-          description: 
-          properties: 
-          links: "https://cloud.gov/img/example-diagram-2.svg"
-          caption: 
-          remarks: 
-        Dataflow: 
-          description: 
-          properties: 
-          links: "https://cloud.gov/img/example-diagram-2.svg"
-          caption: 
-          remarks:           
+      diagrams:           
         AuthorizationBoundary: 
           description: 
           properties: 
@@ -114,7 +118,7 @@ of the system’s Authorization Boundary"
           remarks:           
       remarks: 
     network-architecture: 
-      description: 
+      description: Optional overview of Network Architecture
       properties: 
       annotations: 
       links: 
@@ -122,12 +126,12 @@ of the system’s Authorization Boundary"
         NetworkArchitecture: 
           description: 
           properties: 
-          links: 
+          links: "https://cloud.gov/img/example-diagram-2.svg"
           caption: 
           remarks: 
       remarks: 
     data-flow: 
-      description: 
+      description: Optional overview of Data Flow
       properties: 
       annotations: 
       links: 
@@ -135,7 +139,7 @@ of the system’s Authorization Boundary"
         DataFlow: 
           description: 
           properties: 
-          links: 
+          links: "https://cloud.gov/img/example-diagram-2.svg"
           caption: 
           remarks: 
       remarks: 
@@ -153,20 +157,40 @@ of the system’s Authorization Boundary"
     links: 
     users: 
       sysadmin: 
-        title: 
+        title: System Adminstrator
         short-name: 
-        description: 
-        properties: 
-        annotations: 
+        description: Add/remove users and hardware, install and configure software, OS updates, patches and hotfixes, perform backups.
+        properties: Internal
+        annotations: Privileged (P)
         links: 
         role-ids: 
-        authorized-privileges: 
-        remarks: 
+        authorized-privileges: Full administrative access (root)
+        remarks: Moderate
+      client-adminstrator: 
+        title: Client Administrator
+        short-name: 
+        description: Add/remote client users. Create, modify, and delete client applications.
+        properties: External
+        annotations: Non-Privileged (NP)
+        links: 
+        role-ids: 
+        authorized-privileges: Portal administration
+        remarks: N/A
+      program-director: 
+        title: Program Director
+        short-name: 
+        description: Reviews, approves and enforces policy.
+        properties: Internal
+        annotations: No Logical Access (NLA)
+        links: 
+        role-ids: 
+        authorized-privileges: Project administration
+        remarks: Limited            
     # the element below doesnt exist
     remarks: |
         "There are currently \<*number*\> internal personnel and \<*number*\> external personnel. Within one year, it is anticipated that there will be \<*number*\> internal personnel and \<*number*\> external personnel."
     components: 
-      apache: 
+      web-server: 
         name: 
         component-type: 
         description: 
@@ -177,22 +201,77 @@ of the system’s Authorization Boundary"
           state: operational
           remarks: 
         responsible-roles: 
-          SystemOwner: 
-            properties: 
-            annotations: 
-            links: 
-            party-ids: 
-            remarks: 
         remarks: 
-    services: 
-    ssp-interconnection: 
+    services:
+      service:
+        id:
+        name:
+        description:
+        properties:
+        annotations:
+        links:
+        ssp-protocol:
+        purpose:
+        remarks:
+        protocol:
+            title:
+            description:
+            type:
+            properties:
+            port-ranges:
+                start:
+                end:
+                transport:
+    ssp-interconnection:
+      id:
+      remote-system-name:
+      annotations:
+      links:
+      responsible-parties:
+      remarks:
     system-inventory: 
-      inventory-items: 
+      inventory-items:
+        inventory-item:
+          id:
+          assest-id:
+          description:
+          properties:
+          annotations:
+          links:
+          responsible-parties:
+          remarks:
+      implemented-components:
+        implemented-component:
+          use:
+          properties:
+          annotations:
+          links:
+          responsible-parties:
+          remarks:
       remarks: 
     remarks: 
   control-implementation: 
     description: 
     implemented-requirements: 
+      implemented-requirement:
+        id:
+        control-id:
+        description:
+        properties:
+        annotations:
+        links:
+        by-components:
+        responsible-roles:
+        set-params:
+        statements:
+          statement:
+            description:
+            properties:
+            links:
+            responsible-roles:
+            by-components:
+            remarks:
+        remarks: 
   back-matter: 
     citations: 
     resources: 
@@ -485,7 +564,15 @@ responsibilities.
 
 | AO ISSO Point of Contact |                                  |
 | ------------------------ | -------------------------------- |
-| **Name**                 | {{ page.system-security-plan.metadata.responsible-parties.information-system-security-officer.party-ids }}                         |
+| **Name**                 | {{ page.system-security-plan.metadata.responsible-parties.information-syste      AWS:
+        id: FEDRAMP-ID
+        name: Leveraged Service Provider Owner
+        properties:
+        annotations:
+        links:
+        party-id:
+        date-authorized: Date Granted
+        remarks:m-security-officer.party-ids }}                         |
 | **Title**                | {{ page.system-security-plan.metadata.responsible-parties.information-system-security-officer.properties }}                             |
 | **Organization**         | \<Company/Organization\>.        |
 | **Address**              | \<Address, City, State and Zip\> |
@@ -494,9 +581,7 @@ responsibilities.
 
 # 8. Information System Operational Status
 
-The system is currently in the life-cycle phase shown in Table 8.1,
-System Status, which follows. Only operational systems can be granted an
-Authority to Operate (ATO).
+The system is currently in the life-cycle phase shown in Table 8.1, System Status, which follows. Only operational systems can be granted an Authority to Operate (ATO).
 
 **Table 8‑1. System Status**
 
@@ -628,26 +713,9 @@ All personnel have their status categorized with a sensitivity level in accordan
 **Table 10‑1. Personnel Roles and Privileges**
 
 | Role                      | Internal or External | Privileged (P), Non-Privileged (NP), or No Logical Access (NLA) | Sensitivity Level | Authorized Privileges             | Functions Performed                                                                                               |
-| ------------------------- | -------------------- | --------------------------------------------------------------- | ----------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| UNIX System Administrator | Internal             | P                                                               | Moderate          | Full administrative access (root) | Add/remove users and hardware, install and configure software, OS updates, patches and hotfixes, perform backups. |
-| Client Administrator      | External             | NP                                                              | N/A               | Portal administration             | Add/remote client users. Create, modify, and delete client applications.                                          |
-| Program Director          | Internal             | NLA                                                             | Limited           | N/A                               | Reviews, approves and enforces policy.                                                                            |
-|                           | Choose an item.      | Choose an item.                                                 | Choose an item.   |                                   |                                                                                                                   |
-|                           | Choose an item.      | Choose an item.                                                 | Choose an item.   |                                   |                                                                                                                   |
-|                           | Choose an item.      | Choose an item.                                                 | Choose an item.   |                                   |                                                                                                                   |
-|                           | Choose an item.      | Choose an item.                                                 | Choose an item.   |                                   |                                                                                                                   |
-
-TODO make a table with forloop:
-
-#{% for user in page.system-security-plan.system-implementation.users %}
-#{{ users.user }}
-#{{ user.title }}
-#{{ user.description }}
-#{{ user.properties }}
-#{{ user.description }}
-#{{ user.authorized-privileges}}
-#{{ user.remarks }}
-#{% endfor %} s
+{% for user in page.system-security-plan.system-implementation.users %}
+| {{ user }} | {{ user.properties }} | {{ user.annotations }} | {{ user.remarks }} | {{ user.authorized-privileges }} | {{ user.description }} |
+{% endfor %}
 
 {{ page.system-security-plan.system-implementation.users.remarks }}
 
@@ -657,9 +725,11 @@ Assessors should be able to easily map hardware, software, and network inventori
 
 Figure 10.2, Network Diagram(s), provides a visual depiction of the system network components that constitute the {{ page.system-security-plan.system-characteristics.system-name-short }} system.
 
-[**Figure 10‑2. Network Diagram**]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.Network.links }})
+{{ page.system-security-plan.system-characteristics.network-architecture.description }}
 
-![Network Diagram]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.Network.links }})
+[**Figure 10‑2. Network Diagram**]({{ page.system-security-plan.system-characteristics.network-architecture.diagrams.NetworkArchitecture.links }})
+
+![Network Diagram]({{ page.system-security-plan.system-characteristics.network-architecture.diagrams.NetworkArchitecture.links }})
 
 # 11. System Environment 
 
@@ -684,28 +754,23 @@ Use the FedRAMP Inventory Workbook to list the principal network devices and com
 
 The data flow in and out of the system boundaries is represented in Figure 11.1, Data Flow Diagram, below.
 
-Figure 11‑1. Data Flow Diagram
+{{ page.system-security-plan.system-characteristics.data-flow.description }}
 
-[**Figure 11‑1. Data Flow Diagram**]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.Dataflow.links }})
+[**Figure 11‑1. Data Flow Diagram**]({{ page.system-security-plan.system-characteristics.data-flow.diagrams.DataFlow.links }})
 
-![Data Flow Diagram]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.Dataflow.links }})
+![Data Flow Diagram]({{ page.system-security-plan.system-characteristics.data-flow.diagrams.DataFlow.links }})
 
 ## 11.5. Ports, Protocols, and Services 
 
 Table 11.1, Ports, Protocols, and Services, lists the ports, protocols, and services enabled for the {{ page.system-security-plan.system-characteristics.system-name-short }}.
 
-TODO - make forloop
-
 **Table 11‑1. Ports, Protocols, and Services**
 
 | Ports (TCP/UDP)  | Protocols       | Services       | Purpose       | Used By       |
 | ---------------- | --------------- | -------------- | ------------- | ------------- |
-| *\<Port\>*       | *\<Protocols\>* | *\<Services\>* | *\<Purpose\>* | *\<Used By\>* |
-| *\<Port\>*       | *\<Protocols\>* | *\<Services\>* | *\<Purpose\>* | *\<Used By\>* |
-| *\<Port\>*       | *\<Protocols\>* | *\<Services\>* | *\<Purpose\>* | *\<Used By\>* |
-| *\<Port\>*       | *\<Protocols\>* | *\<Services\>* | *\<Purpose\>* | *\<Used By\>* |
-| *\<Enter Port\>* | *\<Protocols\>* | *\<Services\>* | *\<Purpose\>* | *\<Used By\>* |
-| *\<Port\>*       | *\<Protocols\>* | *\<Services\>* | *\<Purpose\>* | *\<Used By\>* |
+{% for user in page.system-security-plan.system-implementation.users %}
+| {{ user }} | {{ user.properties }} | {{ user.annotations }} | {{ user.remarks }} | {{ user.authorized-privileges }} | {{ user.description }} |
+{% endfor %}
 
 # 12. System Interconnections
 
@@ -819,6 +884,16 @@ includes any additional standards and guidance specific to
 
 **Table 13‑2. {{ page.system-security-plan.system-characteristics.system-name-short }} Standards and Guidance**
 
+| Identification Number | Title               | Date         | Link               |
+| --------------------- | ------------------- | ------------ | ------------------ |
+| \<Reference ID\>      | \<Reference Title\> | \<Ref Date\> | \<Reference Link\> |
+| \<Reference ID\>      | \<Reference Title\> | \<Ref Date\> | \<Reference Link\> |
+| \<Reference ID\>      | \<Reference Title\> | \<Ref Date\> | \<Reference Link\> |
+
+1.  FIPS Pub 199: FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION:
+    Standards for Security Categorization of Federal Information and
+    Information Systems, February 2004;
+    [<span class="underline">http://csrc.nist.gov/publications/fips/fips199/FIPS-PUB-199-final.pdf</span>](http://csrc.nist.gov/publications/fips/fips199/FIPS-PUB-199-final.pdf)
 | Identification Number | Title               | Date         | Link               |
 | --------------------- | ------------------- | ------------ | ------------------ |
 | \<Reference ID\>      | \<Reference Title\> | \<Ref Date\> | \<Reference Link\> |

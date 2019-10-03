@@ -8,6 +8,8 @@ primary:
   - text: Configuration Management Plan
     href: cmplan/#top
     links: cmplan
+  - text: FEDRAMP Tailored Template
+    href: fedramp-tailored 
 
 overview:
   - text: Home

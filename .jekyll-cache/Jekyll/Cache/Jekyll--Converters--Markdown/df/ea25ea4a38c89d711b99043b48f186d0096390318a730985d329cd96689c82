@@ -1,0 +1,19 @@
+I"4<!-- <center><img src="/assets/images/aidan.jpg" alt="Aidan Feldman's Face" width="319"/></center> -->
+
+<p>The goal of this exercise is to take the FedRAMP documentation and incorporate into the Markdown standards and format.</p>
+
+<p>Documented content can have bugs, too, and need the loving care of contributions.</p>
+
+<p>The active and passive inconsistencies to the authoritative sources (ie; the word docs) have been corrected:</p>
+
+<ul>
+  <li>Table lettering and numbering</li>
+  <li>Spacing, carriage returns, leading zeros</li>
+  <li>Typos</li>
+  <li>Table formatting</li>
+  <li>Different font sizes</li>
+  <li>Obvious different authors lead to inconsistent styles</li>
+</ul>
+
+<p>Note that this is <em>not</em> an official government site. An attempt to move Information Assurance in a cost-effective route.</p>
+:ET

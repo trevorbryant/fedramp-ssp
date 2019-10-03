@@ -1,0 +1,1270 @@
+I"�<h2 id="identification-and-authentication-ia">Identification and Authentication (IA)</h2>
+<h3 id="ia-1-identification-and-authentication-policy-and-procedures-l-m">IA-1 Identification and Authentication Policy and Procedures (L) (M)</h3>
+<p>The organization:</p>
+<ol type="a">
+<li>Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]:</li>
+<ol type="1">
+<li>An identification and authentication policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</li>
+<li>Procedures to facilitate the implementation of the identification and authentication policy and associated identification and authentication controls; and</li>
+</ol>
+<li>Reviews and updates the current:</li>
+<ol type="1">
+<li>Identification and authentication policy [FedRAMP Assignment: at least every three (3) years]; and</li>
+<li>Identification and authentication procedures [FedRAMP Assignment: at least annually].</li>
+</ol>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-1</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-1(a):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-1(a):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-1(b)(1):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-1 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a</td>
+    </tr>
+    <tr>
+      <td>Part b</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-2-user-identification-and-authentication-l-m-h">IA-2 User Identification and Authentication (L) (M) (H)</h3>
+<p>The information system uniquely identifies and authenticates organizational users (or processes acting on behalf of organizational users).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-2-1-control-enhancement-l-m-h">IA-2 (1) Control Enhancement (L) (M) (H)</h3>
+<p>The information system implements multifactor authentication for network access to privileged accounts.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (1)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (1) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-2-2-control-enhancement-m-h">IA-2 (2) Control Enhancement (M) (H)</h3>
+<p>The information system implements multifactor authentication for network access to non-privileged accounts.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (2)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (2) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-2-3-control-enhancement-m-h">IA-2 (3) Control Enhancement (M) (H)</h3>
+<p>The information system implements multifactor authentication for local access to privileged accounts.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (3)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (3) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-2-5-control-enhancement-m-h">IA-2 (5) Control Enhancement (M) (H)</h3>
+<p>The organization requires individuals to be authenticated with an individual authenticator when a group authenticator is employed.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (5)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (5) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-2-8-control-enhancement-m-h">IA-2 (8) Control Enhancement (M) (H)</h3>
+<p>The information system implements replay-resistant authentication mechanisms for network access to privileged accounts.</p>
+
+<h3 id="ia-2-5-control-enhancement-m-h-1">IA-2 (5) Control Enhancement (M) (H)</h3>
+<p>The organization requires individuals to be authenticated with an individual authenticator when a group authenticator is employed.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (8)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (8) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-2-11-control-enhancement-m-h">IA-2 (11) Control Enhancement (M) (H)</h3>
+<p>The information system implements multifactor authentication for remote access to privileged and non-privileged accounts such that one of the factors is provided by a device separate from the system gaining access and the device meets [FedRAMP Assignment: FIPS 140-2, NIAP* Certification, or NSA approval].
+*National Information Assurance Partnership (NIAP)<br />
+<b>Additional FedRAMP Requirements and Guidance:</b><br />
+<b>Guidance:</b> PIV = separate device. Please refer to NIST SP 800-157 Guidelines for Derived Personal Identity Verification (PIV) Credentials.  FIPS 140-2 means validated by the Cryptographic Module Validation Program (CMVP).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (11)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-2(11):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (11) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-2-12-control-enhancement-l-m-h">IA-2 (12) Control Enhancement (L) (M) (H)</h3>
+<p>The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials.
+<b>IA-2 (12) Additional FedRAMP Requirements and Guidance:</b><br />
+<b>Guidance:</b> Include Common Access Card (CAC), i.e., the DoD technical implementation of PIV/FIPS 201/HSPD-12.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (12)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-2 (12) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-3-device-identification-and-authentication-m-h">IA-3 Device Identification and Authentication (M) (H)</h3>
+<p>The information system uniquely identifies and authenticates [Assignment: organization-defined specific and/or types of devices] before establishing a [Selection (one or more): local; remote; network] connection.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-3</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-3-1:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-3-2:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-3 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-4-identifier-management-l-m">IA-4 Identifier Management (L) (M)</h3>
+<p>The organization manages information system identifiers for users and devices by:</p>
+<ol type="a">
+<li>Receiving authorization from [Assignment: organization-defined personnel or roles] to assign an individual, group, role, or device identifier;</li>
+<li>Selecting an identifier that identifies an individual, group, role, or device;</li>
+<li>Assigning the identifier to the intended individual, group, role, or device;</li>
+<li>Preventing reuse of identifiers for [FedRAMP Assignment: at least two (2) years]; and</li>
+<li>Disabling the identifier after [FedRAMP Assignment: ninety days for user identifiers (see additional requirements and guidance)]</li>
+<b>IA-4e Additional FedRAMP Requirements and Guidance:</b><br />
+<b>Requirement:</b> The service provider defines the time period of inactivity for device identifiers.
+<b>Guidance:</b> For DoD clouds, see DoD cloud website for specific DoD requirements that go above and beyond FedRAMP http://iase.disa.mil/cloud_security/Pages/index.aspx.
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-4</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-4(a):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-4(d):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-4(e):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-4 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a</td>
+    </tr>
+    <tr>
+      <td>Part b</td>
+    </tr>
+    <tr>
+      <td>Part c</td>
+    </tr>
+    <tr>
+      <td>Part d</td>
+    </tr>
+    <tr>
+      <td>Part e</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-4-4-control-enhancement-m-h">IA-4 (4) Control Enhancement (M) (H)</h3>
+<p>The organization manages individual identifiers by uniquely identifying each individual as [FedRAMP Assignment: contractors; foreign nationals].</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-4 (4)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-4 (4):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-4 (4) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-5-authenticator-management-l-m">IA-5 Authenticator Management (L) (M)</h3>
+<p>The organization manages information system authenticators by:</p>
+<ol type="a">
+<li>Verifying, as part of the initial authenticator distribution, the identity of the individual, group, role, or device receiving the authenticator;</li>
+<li>Establishing initial authenticator content for authenticators defined by the organization;</li>
+<li>Ensuring that authenticators have sufficient strength of mechanism for their intended use;</li>
+<li>Establishing and implementing administrative procedures for initial authenticator distribution, for lost/compromised or damaged authenticators, and for revoking authenticators;</li>
+<li>Changing default content of authenticators prior to information system installation;</li>
+<li>Establishing minimum and maximum lifetime restrictions and reuse conditions for authenticators;</li>
+<li>Changing/refreshing authenticators [Assignment: organization-defined time period by authenticator type].</li>
+<li>Protecting authenticator content from unauthorized disclosure and modification;</li>
+<li>Requiring individuals to take, and having devices implement, specific security safeguards to protect authenticators; and</li>
+<li>Changing authenticators for group/role accounts when membership to those accounts changes.</li>
+<b>IA-5 Additional FedRAMP Requirements and Guidance:</b><br />
+<b>Requirement:</b> Authenticators must be compliant with NIST SP 800-63-3 Digital Identity Guidelines IAL, AAL, FAL level 2. Link https://pages.nist.gov/800-63-3.
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-5(g):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a</td>
+    </tr>
+    <tr>
+      <td>Part b</td>
+    </tr>
+    <tr>
+      <td>Part c</td>
+    </tr>
+    <tr>
+      <td>Part d</td>
+    </tr>
+    <tr>
+      <td>Part e</td>
+    </tr>
+    <tr>
+      <td>Part f</td>
+    </tr>
+    <tr>
+      <td>Part g</td>
+    </tr>
+    <tr>
+      <td>Part h</td>
+    </tr>
+    <tr>
+      <td>Part i</td>
+    </tr>
+    <tr>
+      <td>Part j</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-5-1-control-enhancement-l-m">IA-5 (1) Control Enhancement (L) (M)</h3>
+<p>The information system, for password-based authentication:</p>
+<ol type="a">
+<li>Enforces minimum password complexity of [Assignment: organization-defined requirements for case sensitivity, number of characters, mix of upper-case letters, lower-case letters, numbers, and special characters, including minimum requirements for each type];</li>
+<li>Enforces at least the following number of changed characters when new passwords are created: [FedRAMP Assignment: at least one (1)];</li>
+<li>Stores and transmits only cryptographically-protected passwords;</li>
+<li>Enforces password minimum and maximum lifetime restrictions of [Assignment: organization- defined numbers for lifetime minimum, lifetime maximum];</li>
+<li>Prohibits password reuse for [FedRAMP Assignment: twenty-four (24)] generations; and</li>
+<li>Allows the use of a temporary password for system logons with an immediate change to a permanent password.</li>
+<b>IA-5 (1) a and d Additional FedRAMP Requirements and Guidance:</b><br />
+<b>Guidance:</b> If password policies are compliant with NIST SP 800-63B Memorized Secret (Section 5.1.1) Guidance, the control may be considered compliant.
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (1)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-5(1)(a):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-5(1)(b):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-5(1)(d):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-5(1)(e):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (1) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a</td>
+    </tr>
+    <tr>
+      <td>Part b</td>
+    </tr>
+    <tr>
+      <td>Part c</td>
+    </tr>
+    <tr>
+      <td>Part d</td>
+    </tr>
+    <tr>
+      <td>Part e</td>
+    </tr>
+    <tr>
+      <td>Part f</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-5-2-control-enhancement-m-h">IA-5 (2) Control Enhancement (M) (H)</h3>
+<p>The information system, for PKI-based authentication:</p>
+<ol type="a">
+<li>Validates certifications by constructing and verifying a certification path to an accepted trust anchor including checking certificate status information;</li>
+<li>Enforces authorized access to the corresponding private key;</li>
+<li>Maps the authenticated identity to the account of the individual or group; and</li>
+<li>Implements a local cache of revocation data to support path discovery and validation in case of inability to access revocation information via the network.</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (2)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (2) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a</td>
+    </tr>
+    <tr>
+      <td>Part b</td>
+    </tr>
+    <tr>
+      <td>Part c</td>
+    </tr>
+    <tr>
+      <td>Part d</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-5-3-control-enhancement-m-h">IA-5 (3) Control Enhancement (M) (H)</h3>
+<p>The organization requires that the registration process to receive [FedRAMP Assignment: All hardware/biometric (multifactor authenticators] be conducted [FedRAMP Selection: in person] before [Assignment: organization-defined registration authority] with authorization by [Assignment: organization-defined personnel or roles].</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (3)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-5(3)-1:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-5(3)-2:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-5(3)-3:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-5(3)-4:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (3) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-5-4-control-enhancement-m">IA-5 (4) Control Enhancement (M)</h3>
+<p>The organization employs automated tools to determine if password authenticators are sufficiently strong to satisfy [Assignment: organization-defined requirements].
+<b>IA-5 (4) Additional FedRAMP Requirements and Guidance:</b><br />
+<b>Guidance:</b> If automated mechanisms which enforce password authenticator strength at creation are not used, automated mechanisms must be used to audit strength of created password authenticators.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (4)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-5(4):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (4) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-5-6-control-enhancement-m-h">IA-5 (6) Control Enhancement (M) (H)</h3>
+<p>The organization protects authenticators commensurate with the security category of the information to which use of the authenticator permits access.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (6)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (6) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-5-7-control-enhancement-m-h">IA-5 (7) Control Enhancement (M) (H)</h3>
+<p>The organization ensures that unencrypted static authenticators are not embedded in applications or access scripts or stored on function keys.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (7)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (7) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-5-11-control-enhancement-l-m-h">IA-5 (11) Control Enhancement (L) (M) (H)</h3>
+<p>The information system, for hardware token-based authentication, employs mechanisms that satisfy [Assignment: organization-defined token quality requirements].</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (11)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-5(11):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-5 (11) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-6-authenticator-feedback-l-m-h">IA-6 Authenticator Feedback (L) (M) (H)</h3>
+<p>The information system obscures feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-6</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-6 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-7-cryptographic-module-authentication-l-m-h">IA-7 Cryptographic Module Authentication (L) (M) (H)</h3>
+<p>The information system implements mechanisms for authentication to a cryptographic module that meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance for such authentication.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-7</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-7 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-8-identification-and-authentication-non-organizational-users-l-m-h">IA-8 Identification and Authentication (Non-Organizational Users) (L) (M) (H)</h3>
+<p>The information system uniquely identifies and authenticates non-organizational users (or processes acting on behalf of non-organizational users).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-8</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-8 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-8-1-control-enhancement-l-m-h">IA-8 (1) Control Enhancement (L) (M) (H)</h3>
+<p>The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials from other federal agencies.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-8 (1)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-8 (1) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-8-2-control-enhancement-l-m-h">IA-8 (2) Control Enhancement (L) (M) (H)</h3>
+<p>The information system accepts only FICAM-approved third-party credentials.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-8 (2)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-8 (2) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-8-3-control-enhancement-l-m-h">IA-8 (3) Control Enhancement (L) (M) (H)</h3>
+<p>The organization employs only FICAM-approved information system components in [Assignment: organization-defined information systems] to accept third-party credentials.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-8 (3)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter IA-8(3):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-8 (3) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ia-8-4-control-enhancement-l-m-h">IA-8 (4) Control Enhancement (L) (M) (H)</h3>
+<p>The information system conforms to FICAM-issued profiles.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-8 (4)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>IA-8 (4) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+:ET

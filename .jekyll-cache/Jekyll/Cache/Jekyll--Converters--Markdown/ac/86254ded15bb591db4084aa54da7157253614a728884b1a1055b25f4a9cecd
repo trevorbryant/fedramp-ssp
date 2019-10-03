@@ -1,0 +1,90 @@
+I"><h2 id="sample-outline-for-a-security-configuration-management-plan">SAMPLE OUTLINE FOR A SECURITY CONFIGURATION MANAGEMENT PLAN</h2>
+<p><em>The following is an outline for developing a SecCM Plan for an organization and/or an
+information system. Organizations are encouraged to adapt the outline to make it suitable for their operational environment.</em></p>
+
+<h2 id="introduction">INTRODUCTION</h2>
+<h3 id="background">BACKGROUND</h3>
+<p><em>[Overview of SecCM and its purpose]</em></p>
+
+<h3 id="overview-of-system">OVERVIEW OF SYSTEM</h3>
+<p><em>[System description; may reference relevant section of System Security Plan]</em></p>
+
+<h4 id="system-mission">System Mission</h4>
+<h4 id="data-flow-description">Data Flow Description</h4>
+<h4 id="system-architecture">System Architecture</h4>
+<h4 id="system-administration-and-management-activities">System Administration and Management Activities</h4>
+<h3 id="purpose-of-this-document">PURPOSE OF THIS DOCUMENT</h3>
+<p><em>[Use of this document]</em></p>
+
+<h3 id="scope">SCOPE</h3>
+<p><em>[Applicability of this plan]</em></p>
+
+<h3 id="applicable-policies-and-procedures">APPLICABLE POLICIES AND PROCEDURES</h3>
+<p><em>[List of applicable federal and organizational policies, standards, and procedures]</em></p>
+
+<h2 id="seccm-program">SecCM PROGRAM</h2>
+<h3 id="seccm-roles-and-responsibilities">SecCM ROLES AND RESPONSIBILITIES</h3>
+<p><em>[Description of roles/responsibilities for SecCM]</em></p>
+
+<h3 id="seccm-program-administration">SecCM PROGRAM ADMINISTRATION</h3>
+<p><em>[Policies, Procedures, CCB]</em></p>
+
+<h4 id="seccm-policies-and-procedures">SecCM Policies and Procedures</h4>
+<p><em>(included herein or by reference)</em></p>
+
+<h4 id="configuration-control-board-functions">Configuration Control Board Functions</h4>
+<h4 id="establishment-of-change-control-board-at-the-organization-level">Establishment of Change Control Board at the Organization Level</h4>
+<h4 id="establishment-of-change-control-board-at-the-system-level">Establishment of Change Control Board at the System Level</h4>
+<h4 id="schedules-and-resource-requirements">Schedules and Resource Requirements</h4>
+<h4 id="seccm-tools">SecCM TOOLS</h4>
+<p><em>[Tools and Archival locations for CCB]</em></p>
+
+<h4 id="scm-tools">SCM Tools</h4>
+<h4 id="scm-library">SCM Library</h4>
+<h4 id="seccm-retention-archiving-storage-and-disposal">SecCM RETENTION, ARCHIVING, STORAGE AND DISPOSAL</h4>
+<p><em>[Requirements for managing historical information on CIs, changes, etc.]</em></p>
+
+<h2 id="seccm-activities">SecCM ACTIVITIES</h2>
+<h3 id="configuration-identification">CONFIGURATION IDENTIFICATION</h3>
+<h4 id="types-of-configuration-items-ci">Types of Configuration Items (CI)</h4>
+<p><em>[Description of categories of CIs, such as HW, Documentation, SW and scripts, Web pages]</em></p>
+
+<h4 id="identification-criteria">Identification Criteria</h4>
+<p><em>[How to determine which Information System Components will be included with which CIs]</em></p>
+
+<h4 id="configuration-item-labeling">Configuration Item Labeling</h4>
+<p><em>[Naming convention for CIs]</em></p>
+
+<h3 id="configuration-baselining">CONFIGURATION BASELINING</h3>
+<p><em>[Defining the information to be included in baseline for each CI]</em></p>
+
+<h4 id="identification-of-applicable-common-secure-configurations">Identification of Applicable Common Secure Configurations</h4>
+<h4 id="information-system-component-ci-baselines">Information System Component CI Baselines</h4>
+<h4 id="non-component-object-ci-baselines">Non-Component Object CI Baselines</h4>
+<h3 id="configuration-change-control">CONFIGURATION CHANGE CONTROL</h3>
+<p><em>[Requirements related to Configuration Change Control]</em></p>
+
+<h4 id="handling-of-scheduled-unscheduled-and-unauthorized-changes">Handling of Scheduled, Unscheduled, and Unauthorized Changes</h4>
+<h4 id="security-impact-analysis">Security Impact Analysis</h4>
+<h4 id="testing">Testing</h4>
+<h4 id="submission-of-findings-to-the-change-control-board">Submission of Findings to the Change Control Board</h4>
+<h4 id="change-control-board-evaluation-and-approval-process">Change Control Board Evaluation and Approval Process</h4>
+<h4 id="recording-requirements">Recording Requirements</h4>
+<h3 id="seccm-monitoring">SecCM MONITORING</h3>
+<p><em>[Requirements related to monitoring baseline configurations and adherence to SecCM policies]</em></p>
+
+<h4 id="organization-level-tools">Organization Level Tools</h4>
+<h4 id="system-level-tools">System Level Tools</h4>
+<h4 id="monitoring-requirements-and-frequencies">Monitoring Requirements and Frequencies</h4>
+<h3 id="seccm-reporting">SecCM REPORTING</h3>
+<p><em>[Requirements related to reporting SecCM monitoring results and statistics to appropriate organizational staff]</em></p>
+
+<h4 id="report-recipients">Report Recipients</h4>
+<h4 id="reviewing-reports">Reviewing Reports</h4>
+
+<h3 id="suggested-seccm-plan-appendices">Suggested SecCM Plan APPENDICES:</h3>
+<h4 id="ccb-charter">CCB Charter</h4>
+<h4 id="change-request-form-template">Change Request Form Template</h4>
+<h4 id="security-impact-analysis-report-format">Security Impact Analysis Report Format</h4>
+<h4 id="references">References</h4>
+:ET

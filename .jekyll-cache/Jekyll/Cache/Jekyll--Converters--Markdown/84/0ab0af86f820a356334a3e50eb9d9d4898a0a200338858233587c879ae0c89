@@ -1,0 +1,342 @@
+I"C1<h2 id="planning-pl">Planning (PL)</h2>
+<h3 id="pl-1-security-planning-policy-and-procedures-l-m">PL-1 Security Planning Policy and Procedures (L) (M)</h3>
+<p>The organization:</p>
+<ol type="a">
+<li>Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]:</li>
+<ol type="1">
+<li>A security planning policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</li>
+<li>Procedures to facilitate the implementation of the security planning policy and associated security planning controls; and</li>
+</ol>
+<li>Reviews and updates the current:</li>
+<ol type="1">
+<li>Security planning policy [FedRAMP Assignment: at least every three (3) years]; and</li>
+<li>Security planning procedures [FedRAMP Assignment: at least annually].</li>
+</ol>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>PL-1</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter PL-1(a):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter PL-1(b)(1):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter PL-1(b)(2):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>PL-1 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a</td>
+    </tr>
+    <tr>
+      <td>Part b</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="pl-2-system-security-plan-l-m-h">PL-2 System Security Plan (L) (M) (H)</h3>
+<p>The organization:</p>
+<ol type="a">
+<li>Develops a security plan for the information system that:</li>
+<ol type="1">
+<li>Is consistent with the organization’s enterprise architecture;</li>
+<li>Explicitly defines the authorization boundary for the system;</li>
+<li>Describes the operational context of the information system in terms of missions and business processes;</li>
+<li>Provides the security categorization of the information system including supporting rationale;</li>
+<li>Describes the operational environment for the information system and relationships with or connections to other information;</li>
+<li>Provides an overview of the security requirements for the system;</li>
+<li>Identifies any relevant overlays, if applicable;</li>
+<li>Describes the security controls in place or planned for meeting those requirements including a rationale for the tailoring decisions; and</li>
+<li>Is reviewed and approved by the authorizing official or designated representative prior to plan implementation;</li>
+</ol>
+<li>Distributes copies of the security plan and communicates subsequent changes to the plan to [Assignment: organization-defined personnel or roles];</li>
+<li>Reviews the security plan for the information system [FedRAMP Assignment: at least annually];</li>
+<li>Updates the plan to address changes to the information system/environment of operation or problems identified during plan implementation or security control assessments; and</li>
+<li>Protects the security plan from unauthorized disclosure and modification.</li>
+</ol>
+<p>&lt;/ol&gt;</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>PL-2</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter PL-2(b):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter PL-2(c):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>PL-2 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a</td>
+    </tr>
+    <tr>
+      <td>Part b</td>
+    </tr>
+    <tr>
+      <td>Part c</td>
+    </tr>
+    <tr>
+      <td>Part d</td>
+    </tr>
+    <tr>
+      <td>Part e</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="pl-2-3-control-enhancement-m-h">PL-2 (3) Control Enhancement (M) (H)</h3>
+<p>The organization plans and coordinates security-related activities affecting the information system with [Assignment: organization-defined individuals or groups] before conducting such activities in order to reduce the impact on other organizational entities.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>PL-2 (3)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter PL-2(3):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>PL-2 (3) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="pl-4-rules-of-behavior-l-m">PL-4 Rules of Behavior (L) (M)</h3>
+<p>The organization:</p>
+<ol type="a">
+<li>Establishes and makes readily available to individuals requiring access to the information system, the rules that describe their responsibilities and expected behavior with regard to information and information system usage;</li>
+<li>Receives a signed acknowledgment from such individuals, indicating that they have read, understand, and agree to abide by the rules of behavior, before authorizing access to information and the information system;</li>
+<li>Reviews and updates the rules of behavior [FedRAMP Assignment: at least every three (3) years]; and</li>
+<li>Requires individuals who have signed a previous version of the rules of behavior to read and resign when the rules of behavior are revised/updated.</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>PL-4</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Parameter PL-4(c):</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>PL-4 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a</td>
+    </tr>
+    <tr>
+      <td>Part b</td>
+    </tr>
+    <tr>
+      <td>Part c</td>
+    </tr>
+    <tr>
+      <td>Part d</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="pl-4-1-control-enhancement-m-h">PL-4 (1) Control Enhancement (M) (H)</h3>
+<p>The organization includes in the rules of behavior, explicit restrictions on the use of social media/networking sites and posting organizational information on public websites.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>PL-4 (1)</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>PL-4 (1) What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="pl-8-information-security-architecture-m-h">PL-8 Information Security Architecture (M) (H)</h3>
+<p>The organization:</p>
+<ol type="a">
+<li>Develops an information security architecture for the information system that:</li>
+<ol type="1">
+<li>Describes the overall philosophy, requirements, and approach to be taken with regard to protecting the confidentiality, integrity, and availability of organizational information;</li>
+<li>Describes how the information security architecture is integrated into and supports the enterprise architecture; and</li>
+<li>Describes any information security assumptions about, and dependencies on, external services;</li>
+</ol>
+<li>Reviews and updates the information security architecture [FedRAMP Assignment: at least annually or when a significant change occurs] to reflect updates in the enterprise architecture; and</li>
+<b>PL-8 (b) Additional FedRAMP Requirements and Guidance:</b><br />
+<b>Guidance:</b> Significant change is defined in NIST Special Publication 800-37 Revision 1, Appendix F, on Page F-8.
+<li>Ensures that planned information security architecture changes are reflected in the security plan, the security Concept of Operations (CONOPS), and organizational procurements/acquisitions.</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>PL-8</th>
+      <th>Control Summary Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Responsible Role:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Implementation Status (check all that apply):</td>
+      <td>☐ Implemented<br />☐ Partially implemented<br />☐ Planned<br />☐ Alternative implementation<br />☐ Not applicable</td>
+    </tr>
+    <tr>
+      <td>Control Origination (check all that apply):</td>
+      <td>☐ Service Provider Corporate<br />☐ Service Provider System Specific<br />☐ Service Provider Hybrid (Corporate and System Specific)<br />☐ Configured by Customer (Customer System Specific)<br />☐ Provided by Customer (Customer System Specific)<br />☐ Shared (Service Provider and Customer Responsibility)<br />☐ Inherited from pre-existing FedRAMP Authorization for <em>insert text here</em>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>PL-8 What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Part a</td>
+    </tr>
+    <tr>
+      <td>Part b</td>
+    </tr>
+    <tr>
+      <td>Part c</td>
+    </tr>
+  </tbody>
+</table>
+:ET

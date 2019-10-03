@@ -1,0 +1,1315 @@
+I"�<h1 id="fedramp-tailored-li-saas">FedRAMP Tailored LI-SaaS</h1>
+
+<h1 id="table-of-contents">Table of Contents</h1>
+
+<ul>
+  <li><a href="#1-information-system-name">1. Information System Name</a></li>
+  <li><a href="#2-information-system-categorization">2. Information System Categorization</a>
+    <ul>
+      <li><a href="#21-information-types">2.1. Information Types</a></li>
+      <li><a href="#22-security-objectives-categorization-fips-199">2.2. Security Objectives Categorization (FIPS 199)</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-information-system-owner">3. Information System Owner</a></li>
+  <li><a href="#4-independent-assessor">4. Independent Assessor</a></li>
+  <li><a href="#5-authorizing-official">5. Authorizing Official</a></li>
+  <li><a href="#6-other-designated-contacts">6. Other Designated Contacts</a></li>
+  <li><a href="#7-assignment-of-security-responsibility">7. Assignment of Security Responsibility</a></li>
+  <li><a href="#8-information-system-operational-status">8. Information System Operational Status</a></li>
+  <li><a href="#9-information-system-type">9. Information System Type</a>
+    <ul>
+      <li><a href="#91-cloud-service-models">9.1. Cloud Service Models</a></li>
+      <li><a href="#92-cloud-deployment-models">9.2. Cloud Deployment Models</a></li>
+      <li><a href="#93-leveraged-authorizations">9.3. Leveraged Authorizations</a></li>
+    </ul>
+  </li>
+  <li><a href="#10-general-system-description">10. General System Description</a>
+    <ul>
+      <li><a href="#101-system-function-or-purpose">10.1. System Function or Purpose</a></li>
+      <li><a href="#102-information-system-components-and-boundaries">10.2. Information System Components and Boundaries</a></li>
+      <li><a href="#103-types-of-users">10.3. Types of Users</a></li>
+      <li><a href="#104-network-architecture">10.4. Network Architecture</a></li>
+    </ul>
+  </li>
+  <li><a href="#11-system-environment">11. System Environment</a>
+    <ul>
+      <li><a href="#111-hardware-inventory">11.1. Hardware Inventory</a></li>
+      <li><a href="#112-software-inventory">11.2. Software Inventory</a></li>
+      <li><a href="#113-network-inventory">11.3. Network Inventory</a></li>
+      <li><a href="#114-data-flow">11.4. Data Flow</a></li>
+      <li><a href="#115-ports-protocols-and-services">11.5. Ports, Protocols, and Services</a></li>
+    </ul>
+  </li>
+  <li><a href="#12-system-interconnections">12. System Interconnections</a></li>
+  <li><a href="#13-fedramp-applicable-laws-and-regulations">13. FedRAMP Applicable Laws and Regulations</a>
+    <ul>
+      <li><a href="#131-fedramp-tailored-li-saas-guidance">13.1. FedRAMP Tailored LI-SaaS Guidance</a></li>
+      <li><a href="#132-information-system-name-applicable-standards-and-guidance">13.2. APPLICABLE STANDARDS AND GUIDANCE</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="1-information-system-name">1. Information System Name</h1>
+
+<p>This FedRAMP <em>Tailored</em> Low Impact Software as a Service (LI-SaaS)
+Framework provides an overview of the security requirements for the</p>
+<ul>
+  <li>Multi-Tenant CKAN Platform* (**) and
+describes the controls in place or planned for implementation to provide
+a level of security appropriate for the information to be transmitted,
+processed, or stored by the system. Information security is vital to our
+critical infrastructure and its effective performance and protection is
+a key component of our national security program. Proper management of
+information technology (IT) systems is essential to ensure the required
+risk impact level of confidentiality, integrity, and availability of the
+data transmitted, processed, or stored by the ** system is in 
+place and operating as intended.</li>
+</ul>
+
+<p>The security safeguards implemented for the ** system meet
+the policy and control requirements set
+forth in this FedRAMP <em>Tailored</em> LI-SaaS Framework. All systems are
+subject to monitoring, consistent with applicable laws, regulations,
+agency policies, procedures, and practices.</p>
+
+<p>Table 1‑1. Information System Identifier, Name, and Abbreviation</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Unique Identifier</th>
+      <th>Information System Name</th>
+      <th>Information System Abbreviation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;<em>FedRAMP Application Number</em>&gt;</td>
+      <td>Multi-Tenant CKAN Platform</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="2-information-system-categorization">2. Information System Categorization</h1>
+
+<p>The overall ** sensitivity categorization is
+recorded in Table 2.1, Security Categorization, which follows. The
+completed FedRAMP FIPS 199 document is included in this document as
+Attachment 3 – FedRAMP FIPS Security Categorization.</p>
+
+<p>Table 2‑1. System Security Categorization</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>System Sensitivity Level:</strong></td>
+      <td>Low Impact</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="21-information-types">2.1. Information Types</h2>
+
+<p>This section describes how the information types used by
+** are categorized for confidentiality,
+integrity, and availability of sensitivity levels.</p>
+
+<p>The following tables identify the information types that are input,
+stored, processed, and/or output from <em>*. The selection of the 
+information types is based on
+guidance provided by the Office of Management and Budget (OMB) Federal
+Enterprise Architecture (EA) Program Management Office (PMO) Business
+Reference Model 2.0, National Institute of Standards and Technology
+(NIST) Federal Information Processing Standard (FIPS) Publication 199,
+*Standards for Security Categorization of Federal Information and
+Information Systems</em>, and NIST Special Publication 800-60 (NIST SP
+800-60) , <em>Guide for Mapping Types of Information and Information
+Systems to Security Categories</em>.</p>
+
+<p>FIPS 199[1] allows for a full range of information types. In order to
+meet specific, niche needs of systems, Agencies can specify the types of
+information being placed in the cloud environment. For FedRAMP
+<em>Tailored</em> LI-SaaS, Agencies can specify the type(s) of information that
+will reside in FedRAMP <em>Tailored</em> LI-SaaS applications/systems.</p>
+
+<p>To be considered a FedRAMP <em>Tailored</em> LI-SaaS cloud application/service,
+the answer to all of the following questions must be “yes:”</p>
+
+<ol>
+  <li>
+    <p>Does the service operate in a cloud environment?</p>
+  </li>
+  <li>
+    <p>Is the cloud service fully operational?</p>
+  </li>
+  <li>
+    <p>Is the cloud service a Software as a Service (SaaS), as defined by
+NIST SP 800-145, The NIST Definition of Cloud Computing?</p>
+  </li>
+  <li>
+    <p>Does the cloud service contain no personally identifiable
+information (PII), except as needed to provide a login capability
+(username, password and email address)?</p>
+  </li>
+  <li>
+    <p>Is the cloud service low-security-impact, as defined by FIPS PUB
+199, Standards for Security Categorization of Federal Information
+and Information Systems?</p>
+  </li>
+  <li>
+    <p>Is the cloud service hosted within a FedRAMP-authorized Platform as
+a Service (PaaS) or Infrastructure as a Service (IaaS), or is the
+CSP providing the underlying cloud infrastructure?</p>
+  </li>
+</ol>
+
+<p><em>Instruction: Record your information types in the tables that follow.
+Add more rows as needed to add more information types. Use NIST SP
+800-60 Guide for Mapping Types of Information and Systems to Security
+Categories, Volumes I &amp; II, Revision 1 for guidance.</em></p>
+
+<p><em>Delete this and all other instruction from your final version of this
+document.</em></p>
+
+<p>Example:</p>
+
+<p>Table 2‑2. Information Type</p>
+
+<table>
+<thead>
+<tr class="header">
+<th><p>Information Type</p>
+<p>(Use only information types from NIST SP 800-60, Volumes I and II as amended)</p></th>
+<th>NIST 800-60 identifier for Associated Information Type</th>
+<th>Confidentiality</th>
+<th>Integrity</th>
+<th>Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>System Development</td>
+<td>C.3.5.1</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+</tr>
+</tbody>
+</table>
+
+<p>Table 2‑3. Sensitivity Categorization of Information Types for the
+** System</p>
+
+<table>
+<thead>
+<tr class="header">
+<th><p>Information Type</p>
+<p>(Use only information types from NIST SP 800-60, Volumes I and II as amended)</p></th>
+<th>NIST 800-60 identifier for Associated Information Type</th>
+<th>Confidentiality</th>
+<th>Integrity</th>
+<th>Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>&lt;Information Type&gt;</em></td>
+<td><em>&lt;NIST Identifier&gt;</em></td>
+<td><em>Low</em></td>
+<td><em>Low</em></td>
+<td><em>Low</em></td>
+</tr>
+<tr class="even">
+<td><em>&lt;Information Type&gt;</em></td>
+<td><em>&lt;NIST Identifier&gt;</em></td>
+<td><em>Low</em></td>
+<td><em>Low</em></td>
+<td><em>Low</em></td>
+</tr>
+<tr class="odd">
+<td><em>&lt;Information Type&gt;</em></td>
+<td><em>&lt;NIST Identifier&gt;</em></td>
+<td><em>Low</em></td>
+<td><em>Low</em></td>
+<td><em>Low</em></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="22-security-objectives-categorization-fips-199">2.2. Security Objectives Categorization (FIPS 199)</h2>
+
+<p>Based on the information provided in Table 2.3, Sensitivity
+Categorization of Information Types for the ** default to the high-water mark for the Information
+Types as identified in Table 2.4, Security Impact Level, below.</p>
+
+<p>If the security impact level for confidentiality, integrity, and
+availability for any of the identified data types is moderate or high,
+the information system is not a FedRAMP <em>Tailored</em> LI-SaaS system. The
+Cloud Service Provider (CSP) must meet the standard FedRAMP Low,
+Moderate, or High impact baseline security requirements, as applicable,
+and complete the requirement documentation.</p>
+
+<p>Table 2‑4. Security Impact Level</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Security Objective</th>
+      <th>Low, Moderate or High</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Confidentiality</strong></td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td><strong>Integrity</strong></td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td>Low</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Through careful review and analysis, the baseline security
+categorization for the ** system has
+been determined and is listed in Table 2.5, Baseline Security
+Configuration, which follows.</p>
+
+<p>Table 2‑5. Baseline Security Configuration</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>** Security Categorization</td>
+      <td>Low</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Using this categorization, in conjunction with the risk assessment and
+any unique security requirements, the security controls for this system
+have been established as detailed in this FedRAMP <em>Tailored</em> LI-SaaS
+Framework.</p>
+
+<h1 id="3-information-system-owner">3. Information System Owner</h1>
+
+<p>The following individual is identified as the system owner or functional
+proponent/advocate for this system.</p>
+
+<p>Table 3‑1. Information System Owner</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Information System Owner Information</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td>&lt;Name&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td>&lt;Title&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Company / Organization</strong></td>
+      <td>&lt;Company/Organization&gt;.</td>
+    </tr>
+    <tr>
+      <td><strong>Address</strong></td>
+      <td>&lt;Address, City, State and Zip&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Phone Number</strong></td>
+      <td>&lt;555-555-5555&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Email Address</strong></td>
+      <td>&lt;email address&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="4-independent-assessor">4. Independent Assessor</h1>
+
+<p>The following individual is identified as the Independent Assessor for
+this system.</p>
+
+<p>Table 4‑1. Independent Assessor</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Independent Assessor Information</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td>&lt;Name&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td>&lt;Title&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Company / Organization</strong></td>
+      <td>&lt;Company/Organization&gt;.</td>
+    </tr>
+    <tr>
+      <td><strong>Address</strong></td>
+      <td>&lt;Address, City, State and Zip&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Phone Number</strong></td>
+      <td>&lt;555-555-5555&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Email Address</strong></td>
+      <td>&lt;email address&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="5-authorizing-official">5. Authorizing Official</h1>
+
+<p>The Authorizing Official (AO) or Designated Approving Authority (DAA)
+for the ** system is the &lt;<em>Insert AO
+information&gt;.</em></p>
+
+<h1 id="6-other-designated-contacts">6. Other Designated Contacts</h1>
+
+<p><em>Instruction: AOs should use the following section to identify points of
+contact that understand the technical implementations of the identified
+cloud system. AOs should edit, add, or modify the contacts in this
+section as they see fit.</em></p>
+
+<p><em>Delete this and all other instructions from your final version of this
+document.</em></p>
+
+<p>The individual(s) identified below possess an in-depth knowledge of this
+system and/or its functions and operation.</p>
+
+<p>Table 6‑1. Information System AO Management Point of Contact</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Information System AO Management Point of Contact</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td>&lt;Name&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td>&lt;Title&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Company / Organization</strong></td>
+      <td>&lt;Company/Organization&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Address</strong></td>
+      <td>&lt;Address, City, State and Zip&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Phone Number</strong></td>
+      <td>&lt;555-555-5555&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Email Address</strong></td>
+      <td>&lt;email address&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 6‑2. Information System AO Technical Point of Contact</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Information System AO Technical Point of Contact</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td>&lt;Name&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td>&lt;Title&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Company / Organization</strong></td>
+      <td>&lt;Company/Organization&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Address</strong></td>
+      <td>&lt;Address, City, State and Zip&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Phone Number</strong></td>
+      <td>&lt;555-555-5555&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Email Address</strong></td>
+      <td>&lt;email address&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Instruction: Add more tables as needed.</em></p>
+
+<p><em>Delete this and all other instructions from your final version of this
+document.</em></p>
+
+<h1 id="7-assignment-of-security-responsibility">7. Assignment of Security Responsibility</h1>
+
+<p>The ** Information System Security Officer
+(ISSO), or their equivalent, identified below, have been appointed in
+writing and are deemed to have significant cyber and operational role
+responsibilities.</p>
+
+<p>Table 7‑1. Internal ISSO (or Equivalent) Point of Contact</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Internal ISSO (or Equivalent) Point of Contact</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td>&lt;Name&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td>&lt;Title&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Company / Organization</strong></td>
+      <td>&lt;Company/Organization&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Address</strong></td>
+      <td>&lt;Address, City, State and Zip&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Phone Number</strong></td>
+      <td>&lt;555-555-5555&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Email Address</strong></td>
+      <td>&lt;email address&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table 7‑2. AO ISSO Point of Contact</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>AO ISSO Point of Contact</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td>&lt;Name&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td>ISSO</td>
+    </tr>
+    <tr>
+      <td><strong>Organization</strong></td>
+      <td>&lt;Company/Organization&gt;.</td>
+    </tr>
+    <tr>
+      <td><strong>Address</strong></td>
+      <td>&lt;Address, City, State and Zip&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Phone Number</strong></td>
+      <td>&lt;555-555-5555&gt;</td>
+    </tr>
+    <tr>
+      <td><strong>Email Address</strong></td>
+      <td>&lt;email address&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="8-information-system-operational-status">8. Information System Operational Status</h1>
+
+<p>The system is currently in the life-cycle phase shown in Table 8.1,
+System Status, which follows. Only operational systems can be granted an
+Authority to Operate (ATO).</p>
+
+<p><em>Instruction: Select as many status indicators as apply. If more than
+one status is selected, list which components of the system are covered
+under each status indicator.</em></p>
+
+<p><em>Delete this and all other instructions from your final version of this
+document.</em></p>
+
+<p>Table 8‑1. System Status</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>System Status</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>☐</td>
+      <td>Operational</td>
+      <td>The system is operating and in production.</td>
+    </tr>
+    <tr>
+      <td>☐</td>
+      <td>Under Development</td>
+      <td>The system is being designed, developed, or implemented.</td>
+    </tr>
+    <tr>
+      <td>☐</td>
+      <td>Major Modification</td>
+      <td>The system is undergoing a major change, development, or transition.</td>
+    </tr>
+    <tr>
+      <td>☐</td>
+      <td>Other</td>
+      <td>Explain: Click here to enter text.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="9-information-system-type">9. Information System Type</h1>
+
+<p>The ** system makes use of unique managed
+service provider architecture layer(s).</p>
+
+<h2 id="91-cloud-service-models">9.1. Cloud Service Models</h2>
+
+<p>Information systems, particularly those based on cloud architecture
+models, are made up of different service layers. Below are some
+questions that can help system owners determine if their system is a
+cloud followed by specific questions to help system owners determine the
+type of cloud.</p>
+
+<p>Table 9‑1. Determining a Cloud System</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question (Yes/No)</th>
+      <th>Conclusion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Does the system use virtual machines (VM)?</td>
+      <td>A no response means that system is most likely not a cloud.</td>
+    </tr>
+    <tr>
+      <td>Does the system have the ability to expand its capacity to meet customer demand?</td>
+      <td>A no response means that the system is most likely not a cloud.</td>
+    </tr>
+    <tr>
+      <td>Does the system allow the customer to build anything other than servers?</td>
+      <td>A no response means that the system is an Infrastructure as a Service (IaaS). A yes response means that the system is either a Platform as a Service (PaaS) or a SaaS.</td>
+    </tr>
+    <tr>
+      <td>Does the system offer the ability to create databases?</td>
+      <td>A yes response means that the system is a PaaS.</td>
+    </tr>
+    <tr>
+      <td>Does the system offer various developer toolkits and Application Programming Interfaces (APIs)?</td>
+      <td>A yes response means that the system is a PaaS.</td>
+    </tr>
+    <tr>
+      <td>Does the system offer only applications that are available by obtaining a login?</td>
+      <td>A yes response means that system is a SaaS. A no response means that the system is either a PaaS or an IaaS.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The layers of the ** defined in this
+FedRAMP <em>Tailored</em> LI-SaaS Framework are indicated in Table 9.2, Service
+Layers Represented in this FedRAMP <em>Tailored</em> LI-SaaS Framework, which
+follows.</p>
+
+<p>Table 9‑2. Service Layers Represented in this FedRAMP Tailored LI-SaaS Framework</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Service Provider Architecture Layers</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>☐</td>
+      <td>Software as a Service (SaaS)</td>
+      <td>Major Application</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="92-cloud-deployment-models">9.2. Cloud Deployment Models</h2>
+
+<p>Information systems are made up of different deployment models. The
+deployment models of the <em>&lt;Information System Abbreviation&gt;</em> that are
+defined in this FedRAMP Tailored LI-SaaS Framework, and that are not
+leveraged by any other FedRAMP Authorizations, are indicated in Table
+9.3, Cloud Deployment Model Represented in this FedRAMP <em>Tailored</em>
+LI-SaaS Framework, which follows.</p>
+
+<p><em>Instruction: Check deployment model that applies.</em></p>
+
+<p><em>Delete this and all other instructions from your final version of this
+document.</em></p>
+
+<p>Table 9‑3. Cloud Deployment Model Represented in this FedRAMP Tailored
+LI-SaaS Framework</p>
+
+<table>
+<thead>
+<tr class="header">
+<th><strong>Service Provider Cloud Deployment Model</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>☐</td>
+<td>Public</td>
+<td>Cloud services and infrastructure supporting multiple organizations and agency clients.</td>
+</tr>
+<tr class="even">
+<td>☐</td>
+<td>Private</td>
+<td>Cloud services and infrastructure dedicated to a specific organization/agency and no other clients.</td>
+</tr>
+<tr class="odd">
+<td>☐</td>
+<td>Government Only Community</td>
+<td>Cloud services and infrastructure shared by several organizations/agencies with same policy and compliance considerations.</td>
+</tr>
+<tr class="even">
+<td>☐</td>
+<td>Hybrid</td>
+<td><p>Explain: (e.g., cloud services and infrastructure that provides private cloud for secured applications and data where required and public cloud for other applications and data).</p>
+<p>Click here to enter text.</p></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="93-leveraged-authorizations">9.3. Leveraged Authorizations</h2>
+
+<p>The <em>&lt;Information System Abbreviation&gt;</em> leverages a pre-existing
+FedRAMP Authorized IaaS and/or PaaS. FedRAMP Authorizations leveraged by
+this <em>&lt;Information System Abbreviation&gt;</em> are listed in Table 9.4,
+Leveraged Authorizations, which follows.</p>
+
+<p>Table 9‑4. Leveraged Authorizations</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Leveraged Information System Name</th>
+      <th>Leveraged Service Provider Owner</th>
+      <th>Date Granted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>&lt;Leveraged information system name 1&gt;</em></td>
+      <td><em>&lt;Service provider owner 1&gt;</em></td>
+      <td><em>&lt;Date&gt;</em></td>
+    </tr>
+    <tr>
+      <td><em>&lt;Leveraged information system name 2&gt;</em></td>
+      <td><em>&lt;Service provider owner 2&gt;</em></td>
+      <td><em>&lt;Date&gt;</em></td>
+    </tr>
+    <tr>
+      <td><em>&lt;Leveraged information system name 3&gt;</em></td>
+      <td><em>&lt;Service provider owner 3&gt;</em></td>
+      <td><em>&lt;Date&gt;</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="10-general-system-description">10. General System Description</h1>
+
+<p>This section includes a general description of the &lt;<em>Information System
+Abbreviation&gt;</em> system.</p>
+
+<h2 id="101-system-function-or-purpose">10.1. System Function or Purpose</h2>
+
+<p><em>Instruction: In the space that follows, describe the purpose and
+functions of this system.</em></p>
+
+<p><em>Delete this and all other instructions from your final version of this
+document.</em></p>
+
+<h2 id="102-information-system-components-and-boundaries">10.2. Information System Components and Boundaries</h2>
+
+<p><em>Instruction: In the space that follows, provide an explicit definition
+of the system’s Authorization Boundary. Provide a diagram that portrays
+this Authorization Boundary and all its connections and components,
+including the means for monitoring and controlling communications at the
+external boundary and at key internal boundaries within the system.
+Address all components and managed interfaces of the information system
+authorized for operation (e.g., routers, firewalls).</em></p>
+
+<p><em>The diagram must include a predominant border drawn around all system
+components and services included in the authorization boundary. The
+diagram must be easy to read and understand.</em></p>
+
+<p><em>Formal names of components as they are known at the service provider
+organization in functional specifications, configuration guides, other
+documents, and live configurations shall be named on the diagram and
+described. Components identified in the Boundary diagram should be
+consistent with the Network diagram and the inventory(ies). Provide a
+key to symbols used. Ensure consistency between the boundary and network
+diagrams and respective descriptions (Section 10.4), and the appropriate
+Security Controls [AC-20, CA-3(1)].</em></p>
+
+<p><em>Additional FedRAMP Requirements and Guidance:</em></p>
+
+<p><em>Guidance: See the FedRAMP Documents page under Key Cloud Service
+Provider (CSP) Documents&gt; FedRAMP Authorization Boundary Guidance</em></p>
+
+<p><a href="https://www.fedramp.gov/documents/">https://www.fedramp.gov/documents/</a></p>
+
+<p><em>Delete this and all other instructions from your final version of this
+document.</em></p>
+
+<p>A detailed and explicit definition of the system authorization boundary
+diagram is represented in Figure 10.1, Authorization Boundary Diagram,
+below.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Figure 10‑1. Authorization Boundary Diagram</p>
+
+<h2 id="103-types-of-users">10.3. Types of Users</h2>
+
+<p>All personnel have their status categorized with a sensitivity level in
+accordance with PS-2. Personnel (employees or contractors) of service
+providers are considered Internal Users. All other users are considered
+External Users. User privileges (authorization permission after
+authentication takes place) are described in Table 10.1, Personnel Roles
+and Privileges, which follows.</p>
+
+<p><em>Instruction: For an External User, write “Not Applicable” in the
+Sensitivity Level Column. This table must include all roles including
+systems administrators and database administrators as role types. Also
+include web server administrators, network administrators, and firewall
+administrators if these individuals have the ability to configure a
+device or host that could impact the CSP service offering.</em></p>
+
+<p><em>This table must also include whether these roles are fulfilled by
+foreign nationals or systems outside the United States.</em></p>
+
+<p><em>Delete this and all other instructions from your final version of this
+document.</em></p>
+
+<p>Table 10‑1. Personnel Roles and Privileges</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>Internal or External</th>
+      <th>Privileged (P), Non-Privileged (NP), or No Logical Access (NLA)</th>
+      <th>Sensitivity Level</th>
+      <th>Authorized Privileges</th>
+      <th>Functions Performed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UNIX System Administrator</td>
+      <td>Internal</td>
+      <td>P</td>
+      <td>Moderate</td>
+      <td>Full administrative access (root)</td>
+      <td>Add/remove users and hardware, install and configure software, OS updates, patches and hotfixes, perform backups.</td>
+    </tr>
+    <tr>
+      <td>Client Administrator</td>
+      <td>External</td>
+      <td>NP</td>
+      <td>N/A</td>
+      <td>Portal administration</td>
+      <td>Add/remote client users. Create, modify, and delete client applications.</td>
+    </tr>
+    <tr>
+      <td>Program Director</td>
+      <td>Internal</td>
+      <td>NLA</td>
+      <td>Limited</td>
+      <td>N/A</td>
+      <td>Reviews, approves and enforces policy.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Choose an item.</td>
+      <td>Choose an item.</td>
+      <td>Choose an item.</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Choose an item.</td>
+      <td>Choose an item.</td>
+      <td>Choose an item.</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Choose an item.</td>
+      <td>Choose an item.</td>
+      <td>Choose an item.</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Choose an item.</td>
+      <td>Choose an item.</td>
+      <td>Choose an item.</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>There are currently &lt;<em>number</em>&gt; internal personnel and &lt;<em>number</em>&gt;
+external personnel. Within one year, it is anticipated that there will
+be &lt;<em>number</em>&gt; internal personnel and &lt;<em>number</em>&gt; external personnel.</p>
+
+<h2 id="104-network-architecture">10.4. Network Architecture</h2>
+
+<p><em>Instruction: Insert a network architectural diagram in the space that
+follows. Ensure that the following items, as applicable, are labeled on
+the diagram: hostnames, DNS servers, DHCP servers, authentication and
+access control servers, directory servers, firewalls, routers, switches,
+database servers, major applications, storage, Internet connectivity
+providers, telecom circuit numbers, network interfaces and numbers,
+Virtual Local Area Networks (VLANs). Major security components should be
+represented. If necessary, include multiple network diagrams.</em></p>
+
+<p><em>Delete this and all other instructions from your final version of this
+document.</em></p>
+
+<p>Assessors should be able to easily map hardware, software, and network
+inventories back to this diagram.</p>
+
+<p>The logical network topology is shown in Figure 10.2, Network Diagram,
+mapping the data flow between components.</p>
+
+<p>Figure 10.2, Network Diagram(s), provides a visual depiction of the
+system network components that constitute the <em>&lt;Information System
+Abbreviation&gt;</em> system.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Figure 10‑2. Network Diagram</p>
+
+<h1 id="11-system-environment">11. System Environment</h1>
+
+<p><em>Instruction: In the space that follows, provide a general description
+of the technical system environment. Include information about all
+system environments that are used, e.g., production environment, test
+environment, staging or QA environments. Include alternate, backup, and
+operational facilities.</em></p>
+
+<p><em>The FedRAMP Inventory Workbook Template can be found on the FedRAMP
+website: <a href="https://www.fedramp.gov/templates/">https://www.fedramp.gov/templates/</a></em></p>
+
+<p><em>Delete this and all other instructions from your final version of this
+document.</em></p>
+
+<p>The FedRAMP Inventory Workbook is included in this document in
+ATTACHMENT 2 – FedRAMP Inventory Workbook.</p>
+
+<h2 id="111-hardware-inventory">11.1. Hardware Inventory</h2>
+
+<p>Use the FedRAMP Inventory Workbook to list the principal hardware
+components for &lt;<em>Information System Abbreviation</em>&gt;.</p>
+
+<p>Note: A complete and detailed list of the system hardware and software
+inventory is required per NIST SP 800-53, Rev 4 CM-8.</p>
+
+<h2 id="112-software-inventory">11.2. Software Inventory</h2>
+
+<p>Use the FedRAMP Inventory Workbook to list the principal software
+components for &lt;<em>Information System Abbreviation</em>&gt;.</p>
+
+<h2 id="113-network-inventory">11.3. Network Inventory</h2>
+
+<p>Use the FedRAMP Inventory Workbook to list the principal network devices
+and components for &lt;<em>Information System Abbreviation</em>&gt;.</p>
+
+<h2 id="114-data-flow">11.4. Data Flow</h2>
+
+<p><em>Instruction: In the space that follows, describe the flow of data in
+and out of system boundaries and insert a data flow diagram. Describe
+protections implemented at all entry and exit points in the data flow as
+well as internal controls between customer and project users. Include
+data flows for privileged and non-privileged
+authentication/authorization to the system for internal and external
+users. If necessary, include multiple data flow diagrams.</em></p>
+
+<p><em>Delete this and all other instructions from your final version of this
+document.</em></p>
+
+<p>The data flow in and out of the system boundaries is represented in
+Figure 11.1, Data Flow Diagram, below.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Figure 11‑1. Data Flow Diagram</p>
+
+<h2 id="115-ports-protocols-and-services">11.5. Ports, Protocols, and Services</h2>
+
+<p>Table 11.1, Ports, Protocols, and Services, lists the ports, protocols,
+and services enabled for the &lt;<em>Information System Abbreviation&gt;.</em></p>
+
+<p><em>Instruction: In the column labeled “Used By,” please indicate the
+components of the information system that make use of the ports,
+protocols, and services. In the column labeled “Purpose,” indicate the
+purpose for the service (e.g., system logging, HTTP redirector, load
+balancing). This table should be consistent with CM-6 and CM-7. You must
+fill out this table as applicable for this application/service and as
+applicable for the leveraged system. Add more rows as needed.</em></p>
+
+<p><em>Delete this and all other instructions from your final version of this
+document.</em></p>
+
+<p>Table 11‑1. Ports, Protocols, and Services</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ports (TCP/UDP)</th>
+      <th>Protocols</th>
+      <th>Services</th>
+      <th>Purpose</th>
+      <th>Used By</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>&lt;Port&gt;</em></td>
+      <td><em>&lt;Protocols&gt;</em></td>
+      <td><em>&lt;Services&gt;</em></td>
+      <td><em>&lt;Purpose&gt;</em></td>
+      <td><em>&lt;Used By&gt;</em></td>
+    </tr>
+    <tr>
+      <td><em>&lt;Port&gt;</em></td>
+      <td><em>&lt;Protocols&gt;</em></td>
+      <td><em>&lt;Services&gt;</em></td>
+      <td><em>&lt;Purpose&gt;</em></td>
+      <td><em>&lt;Used By&gt;</em></td>
+    </tr>
+    <tr>
+      <td><em>&lt;Port&gt;</em></td>
+      <td><em>&lt;Protocols&gt;</em></td>
+      <td><em>&lt;Services&gt;</em></td>
+      <td><em>&lt;Purpose&gt;</em></td>
+      <td><em>&lt;Used By&gt;</em></td>
+    </tr>
+    <tr>
+      <td><em>&lt;Port&gt;</em></td>
+      <td><em>&lt;Protocols&gt;</em></td>
+      <td><em>&lt;Services&gt;</em></td>
+      <td><em>&lt;Purpose&gt;</em></td>
+      <td><em>&lt;Used By&gt;</em></td>
+    </tr>
+    <tr>
+      <td><em>&lt;Enter Port&gt;</em></td>
+      <td><em>&lt;Protocols&gt;</em></td>
+      <td><em>&lt;Services&gt;</em></td>
+      <td><em>&lt;Purpose&gt;</em></td>
+      <td><em>&lt;Used By&gt;</em></td>
+    </tr>
+    <tr>
+      <td><em>&lt;Port&gt;</em></td>
+      <td><em>&lt;Protocols&gt;</em></td>
+      <td><em>&lt;Services&gt;</em></td>
+      <td><em>&lt;Purpose&gt;</em></td>
+      <td><em>&lt;Used By&gt;</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="12-system-interconnections">12. System Interconnections</h1>
+
+<p><em>Instruction: List all interconnected systems. Provide the IP address
+and interface identifier (eth0, eth1, eth2) for the CSP system that
+provides the connection. Name the external organization and the IP
+address of the external system. Provide a point of contact and phone
+number for the external organization. For Connection Security, indicate
+how the connection is being secured. For Data Direction, indicate which
+direction the packets are flowing. For Information Being Transmitted,
+describe what type of data is being transmitted. If a dedicated telecom
+line is used, indicate the circuit number. Add additional rows as
+needed.</em></p>
+
+<p><em>Additional FedRAMP Requirements and Guidance:</em></p>
+
+<p><em>Guidance: See the FedRAMP Documents page under Key Cloud Service
+Provider (CSP) Documents&gt; FedRAMP Authorization Boundary Guidance</em></p>
+
+<p><a href="https://www.fedramp.gov/documents/"><em>https://www.fedramp.gov/documents/</em></a></p>
+
+<p><em>Delete this and all other instructions from your final version of this
+document.</em></p>
+
+<p>Table 12.1, System Interconnections, is consistent with the CA-3
+Authorized Connections attestation information.</p>
+
+<p>Table 12‑1. System Interconnections</p>
+
+<table>
+<thead>
+<tr class="header">
+<th>SP IP Address and Interface</th>
+<th>External Organization Name and IP Address of System</th>
+<th>External Point of Contact and Phone Number</th>
+<th>Connection Security (IPSec VPN, SSL, Certificates, Secure File Transfer etc.)</th>
+<th><p>Data Direction</p>
+<p>(incoming, outgoing, or both)</p></th>
+<th>Information Being Transmitted</th>
+<th>Port or Circuit Numbers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>&lt;SP IP Address / Interface&gt;</em></td>
+<td><em>&lt;External Org/IP&gt;</em></td>
+<td><p><em>&lt;External Org POC&gt;</em></p>
+<p><em>&lt;Phone 555-555-5555&gt;</em></p></td>
+<td><em>&lt;Connection Security&gt;</em></td>
+<td><em>Choose an item.</em></td>
+<td><em>&lt;Information Transmitted&gt;</em></td>
+<td><em>&lt;Port/Circuit Numbers&gt;</em></td>
+</tr>
+<tr class="even">
+<td><em>&lt;SP IP Address / Interface&gt;</em></td>
+<td><em>&lt;External Org/IP&gt;</em></td>
+<td><p><em>&lt;External Org POC&gt;</em></p>
+<p><em>&lt;Phone 555-555-5555&gt;</em></p></td>
+<td><em>&lt;Connection Security&gt;</em></td>
+<td><em>Choose an item.</em></td>
+<td><em>&lt;Information Transmitted&gt;</em></td>
+<td><em>&lt;Port/Circuit Numbers&gt;</em></td>
+</tr>
+<tr class="odd">
+<td><em>&lt;SP IP Address / Interface&gt;</em></td>
+<td><em>&lt;External Org/IP&gt;</em></td>
+<td><p><em>&lt;External Org POC&gt;</em></p>
+<p><em>&lt;Phone 555-555-5555&gt;</em></p></td>
+<td><em>&lt;Connection Security&gt;</em></td>
+<td><em>Choose an item.</em></td>
+<td><em>&lt;Information Transmitted&gt;</em></td>
+<td><em>&lt;Port/Circuit Numbers&gt;</em></td>
+</tr>
+<tr class="even">
+<td><em>&lt;SP IP Address / Interface&gt;</em></td>
+<td><em>&lt;External Org/IP&gt;</em></td>
+<td><p><em>&lt;External Org POC&gt;</em></p>
+<p><em>&lt;Phone 555-555-5555&gt;</em></p></td>
+<td><em>&lt;Connection Security&gt;</em></td>
+<td><em>Choose an item.</em></td>
+<td><em>&lt;Information Transmitted&gt;</em></td>
+<td><em>&lt;Port/Circuit Numbers&gt;</em></td>
+</tr>
+<tr class="odd">
+<td><em>&lt;SP IP Address / Interface&gt;</em></td>
+<td><em>&lt;External Org/IP&gt;</em></td>
+<td><p><em>&lt;External Org POC&gt;</em></p>
+<p><em>&lt;Phone 555-555-5555&gt;</em></p></td>
+<td><em>&lt;Connection Security&gt;</em></td>
+<td><em>Choose an item.</em></td>
+<td><em>&lt;Information Transmitted&gt;</em></td>
+<td><em>&lt;Port/Circuit Numbers&gt;</em></td>
+</tr>
+<tr class="even">
+<td><em>&lt;SP IP Address / Interface&gt;</em></td>
+<td><em>&lt;External Org/IP&gt;</em></td>
+<td><p><em>&lt;External Org POC&gt;</em></p>
+<p><em>&lt;Phone 555-555-5555&gt;</em></p></td>
+<td><em>&lt;Connection Security&gt;</em></td>
+<td><em>Choose an item.</em></td>
+<td><em>&lt;Information Transmitted&gt;</em></td>
+<td><em>&lt;Port/Circuit Numbers&gt;</em></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="13-fedramp-applicable-laws-and-regulations">13. FedRAMP Applicable Laws and Regulations</h1>
+
+<p>The FedRAMP Laws and Regulations Template can be found on this page:
+<a href="https://www.fedramp.gov/templates/">https://www.fedramp.gov/templates/</a>.</p>
+
+<h2 id="131-fedramp-tailored-li-saas-guidance">13.1. FedRAMP Tailored LI-SaaS Guidance</h2>
+
+<p>Table 13.1, FedRAMP <em>Tailored</em> LI-SaaS Applicable Guidance, includes
+additional documentation specific to FedRAMP <em>Tailored</em> LI-SaaS
+information systems.</p>
+
+<p>Table 13‑1. FedRAMP Tailored LI-SaaS Applicable Guidance</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FedRAMP <em>Tailored</em> Security Requirements for Low Impact Software as a Service (LI-SaaS) Cloud Systems</td>
+      <td>1/30/2017</td>
+    </tr>
+    <tr>
+      <td>NIST SP 800-171 rev 1, Protecting Controlled Unclassified Information in Nonfederal Information Systems and Organizations</td>
+      <td>12/2016</td>
+    </tr>
+    <tr>
+      <td>NIST Framework for Improving Critical Infrastructure Cybersecurity, v1.0</td>
+      <td>2/12/2014</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>.</p>
+
+<h2 id="132-information-system-name-applicable-standards-and-guidance">13.2. &lt;<em>Information System Name</em>&gt; APPLICABLE STANDARDS AND GUIDANCE</h2>
+
+<p>Table 13.2, &lt;<em>Information System Name&gt;</em> Standards and Guidance,
+includes any additional standards and guidance specific to
+&lt;<em>Information System Name</em>&gt;.</p>
+
+<p>Table 13‑2. &lt;Information System Name&gt; Standards and Guidance</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Identification Number</th>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;Reference ID&gt;</td>
+      <td>&lt;Reference Title&gt;</td>
+      <td>&lt;Ref Date&gt;</td>
+      <td>&lt;Reference Link&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;Reference ID&gt;</td>
+      <td>&lt;Reference Title&gt;</td>
+      <td>&lt;Ref Date&gt;</td>
+      <td>&lt;Reference Link&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;Reference ID&gt;</td>
+      <td>&lt;Reference Title&gt;</td>
+      <td>&lt;Ref Date&gt;</td>
+      <td>&lt;Reference Link&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>FIPS Pub 199: FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION:
+Standards for Security Categorization of Federal Information and
+Information Systems, February 2004;
+<a href="http://csrc.nist.gov/publications/fips/fips199/FIPS-PUB-199-final.pdf"><span class="underline">http://csrc.nist.gov/publications/fips/fips199/FIPS-PUB-199-final.pdf</span></a></li>
+</ol>
+:ET

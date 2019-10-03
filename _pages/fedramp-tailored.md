@@ -9,19 +9,55 @@ system-security-plan:
     published: 
     last-modified: 
     version: 
-    oscal-version: 
+    oscal-version: 1.0
     document-ids: 
     properties: 
     links: 
     roles: 
     parties: 
     responsible-parties: 
-      ISSO: 
-        party-ids: 
-        properties: 
+      information-system-owner: 
+        party-ids: John Doe
+        properties: System Owner
+        annotations: 
+        links: 
+        remarks:
+      independent-assessor: 
+        party-ids: Company X
+        properties: Third Party Assessor
+        annotations: 
+        links: 
+        remarks:
+      authorizing-offical: 
+        party-ids: Jane Doe
+        properties: AO
+        annotations: 
+        links: 
+        remarks:
+      authorizing-offical-management-poc: 
+        party-ids: Jane Doe
+        properties: Management POC
+        annotations: 
+        links: 
+        remarks:           
+      authorizing-offical-technical-poc: 
+        party-ids: Jane Doe
+        properties: Technical POC
+        annotations: 
+        links: 
+        remarks:
+      information-system-security-officer: 
+        party-ids: Jane Doe
+        properties: ISSO
         annotations: 
         links: 
         remarks: 
+      information-system-security-manager: 
+        party-ids: Jane Doe
+        properties: ISSM
+        annotations: 
+        links: 
+        remarks:                 
     remarks: 
   import-profile: 
     href: 
@@ -30,12 +66,12 @@ system-security-plan:
     system-ids:
     system-name: SHORTNAME-FULLSYSTEMNAME
     system-name-short: SHORTNAME
-    description: 
+    description: "System purpose or function"
     properties: 
     annotations: 
     links: 
     date-authorized: 
-    security-sensitivity-level: low
+    security-sensitivity-level: Low
     system-information: 
       properties: 
       annotations: 
@@ -47,22 +83,35 @@ system-security-plan:
       security-objective-availability: fips-199-low
     status: 
       state: operational
-      remarks: 
+      remarks: "System status explained here."
     leveraged-authorizations: 
       - AWS
       - GCP
     authorization-boundary: 
-      description: 
+      description: "Provide an explicit definition
+of the system’s Authorization Boundary"
       properties: 
       annotations: 
       links: 
       diagrams: 
-        NetworkFlow: 
+        Network: 
           description: 
           properties: 
-          links: 
+          links: "https://cloud.gov/img/example-diagram-2.svg"
           caption: 
           remarks: 
+        Dataflow: 
+          description: 
+          properties: 
+          links: "https://cloud.gov/img/example-diagram-2.svg"
+          caption: 
+          remarks:           
+        AuthorizationBoundary: 
+          description: 
+          properties: 
+          links: "https://cloud.gov/img/example-diagram-1.svg"
+          caption: 
+          remarks:           
       remarks: 
     network-architecture: 
       description: 
@@ -113,6 +162,9 @@ system-security-plan:
         role-ids: 
         authorized-privileges: 
         remarks: 
+    # the element below doesnt exist
+    remarks: |
+        "There are currently \<*number*\> internal personnel and \<*number*\> external personnel. Within one year, it is anticipated that there will be \<*number*\> internal personnel and \<*number*\> external personnel."
     components: 
       apache: 
         name: 
@@ -201,7 +253,7 @@ forth in this FedRAMP *Tailored* LI-SaaS Framework. All systems are
 subject to monitoring, consistent with applicable laws, regulations,
 agency policies, procedures, and practices.
 
-Table 1‑1. Information System Identifier, Name, and Abbreviation
+**Table 1‑1. Information System Identifier, Name, and Abbreviation**
 
 | Unique Identifier                | Information System Name             | Information System Abbreviation       |
 | -------------------------------- | ------------------------------------| ------------------------------------- |
@@ -209,26 +261,23 @@ Table 1‑1. Information System Identifier, Name, and Abbreviation
 
 # 2. Information System Categorization
 
-The overall *{{ page.system-security-plan.system-characteristics.system-name-short }}* sensitivity categorization is
-recorded in Table 2.1, Security Categorization, which follows. The
-completed FedRAMP FIPS 199 document is included in this document as
+The overall {{ page.system-security-plan.system-characteristics.system-name-short }}sensitivity categorization is recorded in Table 2.1, Security Categorization, which follows. The completed FedRAMP FIPS 199 document is included in this document as
 Attachment 3 – FedRAMP FIPS Security Categorization.
 
-Table 2‑1. System Security Categorization
+**Table 2‑1. System Security Categorization**
 
-|                               |            |
+|  **System Sensitivity Level:**                             |            |
 | ----------------------------- | ---------- |
-| **System Sensitivity Level:** | Low Impact |
+| {{ page.system-security-plan.system-characteristics.system-name }} | {{ page.system-security-plan.system-characteristics.security-sensitivity-level }} Impact |
 
 ## 2.1. Information Types
 
 This section describes how the information types used by
-*{{ page.system-security-plan.system-characteristics.system-name-short }}* are categorized for confidentiality,
-integrity, and availability of sensitivity levels.
+{{ page.system-security-plan.system-characteristics.system-name-short }} are categorized for confidentiality, integrity, and availability of sensitivity levels.
 
 The following tables identify the information types that are input,
-stored, processed, and/or output from *{{ page.system-security-plan.system-characteristics.system-name-short }}*. The selection of the 
-information types is based on
+stored, processed, and/or output from {{ page.system-security-plan.system-characteristics.system-name-short }}.
+The selection of the information types is based on
 guidance provided by the Office of Management and Budget (OMB) Federal
 Enterprise Architecture (EA) Program Management Office (PMO) Business
 Reference Model 2.0, National Institute of Standards and Technology
@@ -266,42 +315,8 @@ the answer to all of the following questions must be “yes:”
     a Service (PaaS) or Infrastructure as a Service (IaaS), or is the
     CSP providing the underlying cloud infrastructure?
 
-*Instruction: Record your information types in the tables that follow.
-Add more rows as needed to add more information types. Use NIST SP
-800-60 Guide for Mapping Types of Information and Systems to Security
-Categories, Volumes I & II, Revision 1 for guidance.*
-
-*Delete this and all other instruction from your final version of this
-document.*
-
-Example:
-
-Table 2‑2. Information Type
-
-<table>
-<thead>
-<tr class="header">
-<th><p>Information Type</p>
-<p>(Use only information types from NIST SP 800-60, Volumes I and II as amended)</p></th>
-<th>NIST 800-60 identifier for Associated Information Type</th>
-<th>Confidentiality</th>
-<th>Integrity</th>
-<th>Availability</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>System Development</td>
-<td>C.3.5.1</td>
-<td>Low</td>
-<td>Low</td>
-<td>Low</td>
-</tr>
-</tbody>
-</table>
-
-Table 2‑3. Sensitivity Categorization of Information Types for the
-*{{ page.system-security-plan.system-characteristics.system-name-short }}* System
+**Table 2‑3. Sensitivity Categorization of Information Types for the**
+{{ page.system-security-plan.system-characteristics.system-name }}
 
 <table>
 <thead>
@@ -342,7 +357,7 @@ Table 2‑3. Sensitivity Categorization of Information Types for the
 ## 2.2. Security Objectives Categorization (FIPS 199)
 
 Based on the information provided in Table 2.3, Sensitivity
-Categorization of Information Types for the *{{ page.system-security-plan.system-characteristics.system-name-short }}* default to the high-water mark for the Information
+Categorization of Information Types for the {{ page.system-security-plan.system-characteristics.system-name-short }} default to the high-water mark for the Information
 Types as identified in Table 2.4, Security Impact Level, below.
 
 If the security impact level for confidentiality, integrity, and
@@ -352,24 +367,24 @@ Cloud Service Provider (CSP) must meet the standard FedRAMP Low,
 Moderate, or High impact baseline security requirements, as applicable,
 and complete the requirement documentation.
 
-Table 2‑4. Security Impact Level
+**Table 2‑4. Security Impact Level**
 
 | Security Objective  | Low, Moderate or High |
 | ------------------- | --------------------- |
-| **Confidentiality** | Low                   |
-| **Integrity**       | Low                   |
-| **Availability**    | Low                   |
+| **Confidentiality** | {{ page.system-security-plan.system-characteristics.    security-impact-level.security-objective-confidentiality }}             |
+| **Integrity**       | {{ page.system-security-plan.system-characteristics.    security-impact-level.security-objective-integrity }}                   |
+| **Availability**    | {{ page.system-security-plan.system-characteristics.    security-impact-level.security-objective-availability }}                |
 
 Through careful review and analysis, the baseline security
-categorization for the *{{ page.system-security-plan.system-characteristics.system-name-short }}* system has
+categorization for the {{ page.system-security-plan.system-characteristics.system-name-short }} system has
 been determined and is listed in Table 2.5, Baseline Security
 Configuration, which follows.
 
-Table 2‑5. Baseline Security Configuration
+**Table 2‑5. Baseline Security Configuration**
 
-|                                    |     |
-| -----------------------------------| --- |
-| *{{ page.system-security-plan.system-characteristics.system-name-short }}* Security Categorization | Low |
+|  **Baseline Security Configuration:**                             |            |
+| ----------------------------- | ---------- |
+| {{ page.system-security-plan.system-characteristics.system-name }} | {{ page.system-security-plan.system-characteristics.security-sensitivity-level }} Impact |
 
 Using this categorization, in conjunction with the risk assessment and
 any unique security requirements, the security controls for this system
@@ -381,12 +396,12 @@ Framework.
 The following individual is identified as the system owner or functional
 proponent/advocate for this system.
 
-Table 3‑1. Information System Owner
+**Table 3‑1. Information System Owner**
 
 | Information System Owner Information |                                  |
 | ------------------------------------ | -------------------------------- |
-| **Name**                             | \<Name\>                         |
-| **Title**                            | \<Title\>                        |
+| **Name**                             | {{ page.system-security-plan.metadata.responsible-parties.information-system-owner.party-ids }}                         |
+| **Title**                            | {{ page.system-security-plan.metadata.responsible-parties.information-system-owner.properties }}                        |
 | **Company / Organization**           | \<Company/Organization\>.        |
 | **Address**                          | \<Address, City, State and Zip\> |
 | **Phone Number**                     | \<555-555-5555\>                 |
@@ -397,12 +412,12 @@ Table 3‑1. Information System Owner
 The following individual is identified as the Independent Assessor for
 this system.
 
-Table 4‑1. Independent Assessor
+**Table 4‑1. Independent Assessor**
 
 | Independent Assessor Information |                                  |
 | -------------------------------- | -------------------------------- |
-| **Name**                         | \<Name\>                         |
-| **Title**                        | \<Title\>                        |
+| **Name**                         | {{ page.system-security-plan.metadata.responsible-parties.independent-assessor.party-ids }}                         |
+| **Title**                        | {{ page.system-security-plan.metadata.responsible-parties.independent-assessor.properties }}                        |
 | **Company / Organization**       | \<Company/Organization\>.        |
 | **Address**                      | \<Address, City, State and Zip\> |
 | **Phone Number**                 | \<555-555-5555\>                 |
@@ -411,73 +426,67 @@ Table 4‑1. Independent Assessor
 # 5. Authorizing Official
 
 The Authorizing Official (AO) or Designated Approving Authority (DAA)
-for the *{{ page.system-security-plan.system-characteristics.system-name-short }}* system is the \<*Insert AO
-information\>.*
+for the {{ page.system-security-plan.system-characteristics.system-name-short }} system is:
+
+| Authorizing Official             |                                  |
+| -------------------------------- | -------------------------------- |
+| **Name**                         | {{ page.system-security-plan.metadata.responsible-parties.authorizing-offical.party-ids }}                         |
+| **Title**                        | {{ page.system-security-plan.metadata.responsible-parties.authorizing-offical.properties }}                        |
+| **Company / Organization**       | \<Company/Organization\>.        |
+| **Address**                      | \<Address, City, State and Zip\> |
+| **Phone Number**                 | \<555-555-5555\>                 |
+| **Email Address**                | \<email address\>                |
 
 # 6. Other Designated Contacts
-
-*Instruction: AOs should use the following section to identify points of
-contact that understand the technical implementations of the identified
-cloud system. AOs should edit, add, or modify the contacts in this
-section as they see fit.*
-
-*Delete this and all other instructions from your final version of this
-document.*
 
 The individual(s) identified below possess an in-depth knowledge of this
 system and/or its functions and operation.
 
-Table 6‑1. Information System AO Management Point of Contact
+**Table 6‑1. Information System AO Management Point of Contact**
 
 | Information System AO Management Point of Contact |                                  |
 | ------------------------------------------------- | -------------------------------- |
-| **Name**                                          | \<Name\>                         |
-| **Title**                                         | \<Title\>                        |
+| **Name**                                          | {{ page.system-security-plan.metadata.responsible-parties.authorizing-offical-management-poc.party-ids }}                        |
+| **Title**                                         | {{ page.system-security-plan.metadata.responsible-parties.authorizing-offical-management-poc.properties }}                        |
 | **Company / Organization**                        | \<Company/Organization\>         |
 | **Address**                                       | \<Address, City, State and Zip\> |
 | **Phone Number**                                  | \<555-555-5555\>                 |
 | **Email Address**                                 | \<email address\>                |
 
-Table 6‑2. Information System AO Technical Point of Contact
+**Table 6‑2. Information System AO Technical Point of Contact**
 
 | Information System AO Technical Point of Contact |                                  |
 | ------------------------------------------------ | -------------------------------- |
-| **Name**                                         | \<Name\>                         |
-| **Title**                                        | \<Title\>                        |
+| **Name**                                         | {{ page.system-security-plan.metadata.responsible-parties.authorizing-offical-management-poc.party-ids }}                            |
+| **Title**                                        | {{ page.system-security-plan.metadata.responsible-parties.authorizing-offical-management-poc.properties }}                        |
 | **Company / Organization**                       | \<Company/Organization\>         |
 | **Address**                                      | \<Address, City, State and Zip\> |
 | **Phone Number**                                 | \<555-555-5555\>                 |
 | **Email Address**                                | \<email address\>                |
 
-*Instruction: Add more tables as needed.*
-
-*Delete this and all other instructions from your final version of this
-document.*
 
 # 7. Assignment of Security Responsibility
 
-The *{{ page.system-security-plan.system-characteristics.system-name-short }}* Information System Security Officer
-(ISSO), or their equivalent, identified below, have been appointed in
-writing and are deemed to have significant cyber and operational role
+The {{ page.system-security-plan.system-characteristics.system-name-short }} Information System Security Officer (ISSO), or their equivalent, identified below, have been appointed in writing and are deemed to have significant cyber and operational role
 responsibilities.
 
-Table 7‑1. Internal ISSO (or Equivalent) Point of Contact
+**Table 7‑1. Internal ISSO (or Equivalent) Point of Contact**
 
 | Internal ISSO (or Equivalent) Point of Contact |                                  |
 | ---------------------------------------------- | -------------------------------- |
-| **Name**                                       | \<Name\>                         |
-| **Title**                                      | \<Title\>                        |
+| **Name**                                       | {{ page.system-security-plan.metadata.responsible-parties.information-system-security-manager.party-ids }}                        |
+| **Title**                                      | {{ page.system-security-plan.metadata.responsible-parties.information-system-security-manager.properties }}                             |
 | **Company / Organization**                     | \<Company/Organization\>         |
 | **Address**                                    | \<Address, City, State and Zip\> |
 | **Phone Number**                               | \<555-555-5555\>                 |
 | **Email Address**                              | \<email address\>                |
 
-Table 7‑2. AO ISSO Point of Contact
+**Table 7‑2. AO ISSO Point of Contact**
 
 | AO ISSO Point of Contact |                                  |
 | ------------------------ | -------------------------------- |
-| **Name**                 | \<Name\>                         |
-| **Title**                | ISSO                             |
+| **Name**                 | {{ page.system-security-plan.metadata.responsible-parties.information-system-security-officer.party-ids }}                         |
+| **Title**                | {{ page.system-security-plan.metadata.responsible-parties.information-system-security-officer.properties }}                             |
 | **Organization**         | \<Company/Organization\>.        |
 | **Address**              | \<Address, City, State and Zip\> |
 | **Phone Number**         | \<555-555-5555\>                 |
@@ -489,36 +498,30 @@ The system is currently in the life-cycle phase shown in Table 8.1,
 System Status, which follows. Only operational systems can be granted an
 Authority to Operate (ATO).
 
-*Instruction: Select as many status indicators as apply. If more than
-one status is selected, list which components of the system are covered
-under each status indicator.*
-
-*Delete this and all other instructions from your final version of this
-document.*
-
-Table 8‑1. System Status
+**Table 8‑1. System Status**
 
 | System Status |                    |                                                                      |
 | ------------- | ------------------ | -------------------------------------------------------------------- |
-| ☐             | Operational        | The system is operating and in production.                           |
-| ☐             | Under Development  | The system is being designed, developed, or implemented.             |
-| ☐             | Major Modification | The system is undergoing a major change, development, or transition. |
-| ☐             | Other              | Explain: Click here to enter text.                                   |
+|             | Operational        | The system is operating and in production.                           |
+|             | Under Development  | The system is being designed, developed, or implemented.             |
+|             | Major Modification | The system is undergoing a major change, development, or transition. |
+|             | Other              | Explain                                   |
+
+{{ page.system-security-plan.system-characteristics.system-name }} is {{ page.system-security-plan.system-characteristics.status.state | capitalize }}
+
+>{{ page.system-security-plan.system-characteristics.status.remarks }}
+
 
 # 9. Information System Type
 
-The *{{ page.system-security-plan.system-characteristics.system-name-short }}* system makes use of unique managed
-service provider architecture layer(s).
+The {{ page.system-security-plan.system-characteristics.system-name-short }} system makes use of unique managed service provider architecture layer(s).
 
 ## 9.1. Cloud Service Models
 
-Information systems, particularly those based on cloud architecture
-models, are made up of different service layers. Below are some
-questions that can help system owners determine if their system is a
-cloud followed by specific questions to help system owners determine the
+Information systems, particularly those based on cloud architecture models, are made up of different service layers. Below are some questions that can help system owners determine if their system is a cloud followed by specific questions to help system owners determine the
 type of cloud.
 
-Table 9‑1. Determining a Cloud System
+**Table 9‑1. Determining a Cloud System**
 
 | Question (Yes/No)                                                                               | Conclusion                                                                                                                                                             |
 | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -529,33 +532,24 @@ Table 9‑1. Determining a Cloud System
 | Does the system offer various developer toolkits and Application Programming Interfaces (APIs)? | A yes response means that the system is a PaaS.                                                                                                                        |
 | Does the system offer only applications that are available by obtaining a login?                | A yes response means that system is a SaaS. A no response means that the system is either a PaaS or an IaaS.                                                           |
 
-The layers of the *{{ page.system-security-plan.system-characteristics.system-name-short }}* defined in this
-FedRAMP *Tailored* LI-SaaS Framework are indicated in Table 9.2, Service
+The layers of the {{ page.system-security-plan.system-characteristics.system-name-short }} defined in this FedRAMP *Tailored* LI-SaaS Framework are indicated in Table 9.2, Service
 Layers Represented in this FedRAMP *Tailored* LI-SaaS Framework, which
 follows.
 
-Table 9‑2. Service Layers Represented in this FedRAMP Tailored LI-SaaS Framework
+**Table 9‑2. Service Layers Represented in this FedRAMP Tailored LI-SaaS Framework**
 
 | Service Provider Architecture Layers |                              |                   |
 | ------------------------------------ | ---------------------------- | ----------------- |
-| ☐                                    | Software as a Service (SaaS) | Major Application |
+| - [ x ]                                 | Software as a Service (SaaS) | Major Application |
 
 ## 9.2. Cloud Deployment Models
 
 Information systems are made up of different deployment models. The
-deployment models of the *\<Information System Abbreviation\>* that are
-defined in this FedRAMP Tailored LI-SaaS Framework, and that are not
-leveraged by any other FedRAMP Authorizations, are indicated in Table
-9.3, Cloud Deployment Model Represented in this FedRAMP *Tailored*
-LI-SaaS Framework, which follows.
+deployment models of the {{ page.system-security-plan.system-characteristics.system-name-short }} that are
+defined in this FedRAMP Tailored LI-SaaS Framework, and that are not leveraged by any other FedRAMP Authorizations, are indicated in Table
+9.3, Cloud Deployment Model Represented in this FedRAMP *Tailored* LI-SaaS Framework, which follows.
 
-*Instruction: Check deployment model that applies.*
-
-*Delete this and all other instructions from your final version of this
-document.*
-
-Table 9‑3. Cloud Deployment Model Represented in this FedRAMP Tailored
-LI-SaaS Framework
+**Table 9‑3. Cloud Deployment Model Represented in this FedRAMP Tailored LI-SaaS Framework**
 
 <table>
 <thead>
@@ -592,9 +586,9 @@ LI-SaaS Framework
 
 ## 9.3. Leveraged Authorizations
 
-The *\<Information System Abbreviation\>* leverages a pre-existing
+The {{ page.system-security-plan.system-characteristics.system-name-short }} leverages a pre-existing
 FedRAMP Authorized IaaS and/or PaaS. FedRAMP Authorizations leveraged by
-this *\<Information System Abbreviation\>* are listed in Table 9.4,
+this {{ page.system-security-plan.system-characteristics.system-name-short }} are listed in Table 9.4,
 Leveraged Authorizations, which follows.
 
 Table 9‑4. Leveraged Authorizations
@@ -605,85 +599,33 @@ Table 9‑4. Leveraged Authorizations
 | *\<Leveraged information system name 2\>* | *\<Service provider owner 2\>*   | *\<Date\>*   |
 | *\<Leveraged information system name 3\>* | *\<Service provider owner 3\>*   | *\<Date\>*   |
 
+{{ page.system-security-plan.system-characteristics.system-name-short }} leverages
+{{ page.system-security-plan.system-characteristics.leveraged-authorizations | newline_to_br }}
+
 # 10. General System Description
 
-This section includes a general description of the \<*Information System
-Abbreviation\>* system.
+This section includes a general description of the {{ page.system-security-plan.system-characteristics.system-name }}.
 
 ## 10.1. System Function or Purpose
 
-*Instruction: In the space that follows, describe the purpose and
-functions of this system.*
-
-*Delete this and all other instructions from your final version of this
-document.*
+{{ page.system-security-plan.system-characteristics.description }}
 
 ## 10.2. Information System Components and Boundaries
 
-*Instruction: In the space that follows, provide an explicit definition
-of the system’s Authorization Boundary. Provide a diagram that portrays
-this Authorization Boundary and all its connections and components,
-including the means for monitoring and controlling communications at the
-external boundary and at key internal boundaries within the system.
-Address all components and managed interfaces of the information system
-authorized for operation (e.g., routers, firewalls).*
+{{ page.system-security-plan.system-characteristics.authorization-boundary.description }}
 
-*The diagram must include a predominant border drawn around all system
-components and services included in the authorization boundary. The
-diagram must be easy to read and understand.*
-
-*Formal names of components as they are known at the service provider
-organization in functional specifications, configuration guides, other
-documents, and live configurations shall be named on the diagram and
-described. Components identified in the Boundary diagram should be
-consistent with the Network diagram and the inventory(ies). Provide a
-key to symbols used. Ensure consistency between the boundary and network
-diagrams and respective descriptions (Section 10.4), and the appropriate
-Security Controls \[AC-20, CA-3(1)\].*
-
-*Additional FedRAMP Requirements and Guidance:*
-
-*Guidance: See the FedRAMP Documents page under Key Cloud Service
-Provider (CSP) Documents\> FedRAMP Authorization Boundary Guidance*
-
-<https://www.fedramp.gov/documents/>
-
-*Delete this and all other instructions from your final version of this
-document.*
-
-A detailed and explicit definition of the system authorization boundary
-diagram is represented in Figure 10.1, Authorization Boundary Diagram,
+A detailed and explicit definition of the system authorization boundary diagram is represented in Figure 10.1, Authorization Boundary Diagram,
 below.
 
-|  |
-|  |
-|  |
+[**Figure 10‑1. Authorization Boundary Diagram**]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.AuthorizationBoundary.links }})
 
-Figure 10‑1. Authorization Boundary Diagram
+![Authorization Boundary Diagram]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.AuthorizationBoundary.links }})
 
 ## 10.3. Types of Users
 
-All personnel have their status categorized with a sensitivity level in
-accordance with PS-2. Personnel (employees or contractors) of service
-providers are considered Internal Users. All other users are considered
-External Users. User privileges (authorization permission after
-authentication takes place) are described in Table 10.1, Personnel Roles
-and Privileges, which follows.
+All personnel have their status categorized with a sensitivity level in accordance with PS-2. Personnel (employees or contractors) of service providers are considered Internal Users. All other users are considered External Users. User privileges (authorization permission after authentication takes place) are described in Table 10.1, Personnel Roles and Privileges, which follows.
 
-*Instruction: For an External User, write “Not Applicable” in the
-Sensitivity Level Column. This table must include all roles including
-systems administrators and database administrators as role types. Also
-include web server administrators, network administrators, and firewall
-administrators if these individuals have the ability to configure a
-device or host that could impact the CSP service offering.*
-
-*This table must also include whether these roles are fulfilled by
-foreign nationals or systems outside the United States.*
-
-*Delete this and all other instructions from your final version of this
-document.*
-
-Table 10‑1. Personnel Roles and Privileges
+**Table 10‑1. Personnel Roles and Privileges**
 
 | Role                      | Internal or External | Privileged (P), Non-Privileged (NP), or No Logical Access (NLA) | Sensitivity Level | Authorized Privileges             | Functions Performed                                                                                               |
 | ------------------------- | -------------------- | --------------------------------------------------------------- | ----------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -695,114 +637,66 @@ Table 10‑1. Personnel Roles and Privileges
 |                           | Choose an item.      | Choose an item.                                                 | Choose an item.   |                                   |                                                                                                                   |
 |                           | Choose an item.      | Choose an item.                                                 | Choose an item.   |                                   |                                                                                                                   |
 
-There are currently \<*number*\> internal personnel and \<*number*\>
-external personnel. Within one year, it is anticipated that there will
-be \<*number*\> internal personnel and \<*number*\> external personnel.
+TODO make a table with forloop:
+
+#{% for user in page.system-security-plan.system-implementation.users %}
+#{{ users.user }}
+#{{ user.title }}
+#{{ user.description }}
+#{{ user.properties }}
+#{{ user.description }}
+#{{ user.authorized-privileges}}
+#{{ user.remarks }}
+#{% endfor %} s
+
+{{ page.system-security-plan.system-implementation.users.remarks }}
 
 ## 10.4. Network Architecture
 
-*Instruction: Insert a network architectural diagram in the space that
-follows. Ensure that the following items, as applicable, are labeled on
-the diagram: hostnames, DNS servers, DHCP servers, authentication and
-access control servers, directory servers, firewalls, routers, switches,
-database servers, major applications, storage, Internet connectivity
-providers, telecom circuit numbers, network interfaces and numbers,
-Virtual Local Area Networks (VLANs). Major security components should be
-represented. If necessary, include multiple network diagrams.*
+Assessors should be able to easily map hardware, software, and network inventories back to this diagram. The logical network topology is shown in Figure 10.2, Network Diagram, mapping the data flow between components. 
 
-*Delete this and all other instructions from your final version of this
-document.*
+Figure 10.2, Network Diagram(s), provides a visual depiction of the system network components that constitute the {{ page.system-security-plan.system-characteristics.system-name-short }} system.
 
-Assessors should be able to easily map hardware, software, and network
-inventories back to this diagram.
+[**Figure 10‑2. Network Diagram**]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.Network.links }})
 
-The logical network topology is shown in Figure 10.2, Network Diagram,
-mapping the data flow between components.
-
-Figure 10.2, Network Diagram(s), provides a visual depiction of the
-system network components that constitute the *\<Information System
-Abbreviation\>* system.
-
-|  |
-|  |
-|  |
-
-Figure 10‑2. Network Diagram
+![Network Diagram]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.Network.links }})
 
 # 11. System Environment 
-
-*Instruction: In the space that follows, provide a general description
-of the technical system environment. Include information about all
-system environments that are used, e.g., production environment, test
-environment, staging or QA environments. Include alternate, backup, and
-operational facilities.*
-
-*The FedRAMP Inventory Workbook Template can be found on the FedRAMP
-website: <https://www.fedramp.gov/templates/>*
-
-*Delete this and all other instructions from your final version of this
-document.*
 
 The FedRAMP Inventory Workbook is included in this document in
 ATTACHMENT 2 – FedRAMP Inventory Workbook.
 
 ## 11.1. Hardware Inventory
 
-Use the FedRAMP Inventory Workbook to list the principal hardware
-components for \<*Information System Abbreviation*\>.
+Use the FedRAMP Inventory Workbook to list the principal hardware components for {{ page.system-security-plan.system-characteristics.system-name }}.
 
-Note: A complete and detailed list of the system hardware and software
-inventory is required per NIST SP 800-53, Rev 4 CM-8.
+Note: A complete and detailed list of the system hardware and software inventory is required per NIST SP 800-53, Rev 4 CM-8.
 
 ## 11.2. Software Inventory
 
-Use the FedRAMP Inventory Workbook to list the principal software
-components for \<*Information System Abbreviation*\>.
+Use the FedRAMP Inventory Workbook to list the principal software components for {{ page.system-security-plan.system-characteristics.system-name }}.
 
 ## 11.3. Network Inventory 
 
-Use the FedRAMP Inventory Workbook to list the principal network devices
-and components for \<*Information System Abbreviation*\>.
+Use the FedRAMP Inventory Workbook to list the principal network devices and components for {{ page.system-security-plan.system-characteristics.system-name }}.
 
 ## 11.4. Data Flow 
 
-*Instruction: In the space that follows, describe the flow of data in
-and out of system boundaries and insert a data flow diagram. Describe
-protections implemented at all entry and exit points in the data flow as
-well as internal controls between customer and project users. Include
-data flows for privileged and non-privileged
-authentication/authorization to the system for internal and external
-users. If necessary, include multiple data flow diagrams.*
-
-*Delete this and all other instructions from your final version of this
-document.*
-
-The data flow in and out of the system boundaries is represented in
-Figure 11.1, Data Flow Diagram, below.
-
-|  |
-|  |
-|  |
+The data flow in and out of the system boundaries is represented in Figure 11.1, Data Flow Diagram, below.
 
 Figure 11‑1. Data Flow Diagram
 
+[**Figure 11‑1. Data Flow Diagram**]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.Dataflow.links }})
+
+![Data Flow Diagram]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.Dataflow.links }})
+
 ## 11.5. Ports, Protocols, and Services 
 
-Table 11.1, Ports, Protocols, and Services, lists the ports, protocols,
-and services enabled for the \<*Information System Abbreviation\>.*
+Table 11.1, Ports, Protocols, and Services, lists the ports, protocols, and services enabled for the {{ page.system-security-plan.system-characteristics.system-name-short }}.
 
-*Instruction: In the column labeled “Used By,” please indicate the
-components of the information system that make use of the ports,
-protocols, and services. In the column labeled “Purpose,” indicate the
-purpose for the service (e.g., system logging, HTTP redirector, load
-balancing). This table should be consistent with CM-6 and CM-7. You must
-fill out this table as applicable for this application/service and as
-applicable for the leveraged system. Add more rows as needed.*
+TODO - make forloop
 
-*Delete this and all other instructions from your final version of this
-document.*
-
-Table 11‑1. Ports, Protocols, and Services
+**Table 11‑1. Ports, Protocols, and Services**
 
 | Ports (TCP/UDP)  | Protocols       | Services       | Purpose       | Used By       |
 | ---------------- | --------------- | -------------- | ------------- | ------------- |
@@ -815,31 +709,11 @@ Table 11‑1. Ports, Protocols, and Services
 
 # 12. System Interconnections
 
-*Instruction: List all interconnected systems. Provide the IP address
-and interface identifier (eth0, eth1, eth2) for the CSP system that
-provides the connection. Name the external organization and the IP
-address of the external system. Provide a point of contact and phone
-number for the external organization. For Connection Security, indicate
-how the connection is being secured. For Data Direction, indicate which
-direction the packets are flowing. For Information Being Transmitted,
-describe what type of data is being transmitted. If a dedicated telecom
-line is used, indicate the circuit number. Add additional rows as
-needed.*
+Table 12.1, System Interconnections, is consistent with the CA-3 Authorized Connections attestation information.
 
-*Additional FedRAMP Requirements and Guidance:*
+TODO - make forloop
 
-*Guidance: See the FedRAMP Documents page under Key Cloud Service
-Provider (CSP) Documents\> FedRAMP Authorization Boundary Guidance*
-
-[*https://www.fedramp.gov/documents/*](https://www.fedramp.gov/documents/)
-
-*Delete this and all other instructions from your final version of this
-document.*
-
-Table 12.1, System Interconnections, is consistent with the CA-3
-Authorized Connections attestation information.
-
-Table 12‑1. System Interconnections
+**Table 12‑1. System Interconnections**
 
 <table>
 <thead>
@@ -925,9 +799,7 @@ The FedRAMP Laws and Regulations Template can be found on this page:
 
 ## 13.1. FedRAMP Tailored LI-SaaS Guidance
 
-Table 13.1, FedRAMP *Tailored* LI-SaaS Applicable Guidance, includes
-additional documentation specific to FedRAMP *Tailored* LI-SaaS
-information systems.
+Table 13.1, FedRAMP *Tailored* LI-SaaS Applicable Guidance, includes additional documentation specific to FedRAMP *Tailored* LI-SaaS information systems.
 
 Table 13‑1. FedRAMP Tailored LI-SaaS Applicable Guidance
 
@@ -939,13 +811,13 @@ Table 13‑1. FedRAMP Tailored LI-SaaS Applicable Guidance
 
 .
 
-## 13.2. \<*Information System Name*\> APPLICABLE STANDARDS AND GUIDANCE 
+## 13.2. APPLICABLE STANDARDS AND GUIDANCE 
 
-Table 13.2, \<*Information System Name\>* Standards and Guidance,
+Table 13.2, {{ page.system-security-plan.system-characteristics.system-name-short }} Standards and Guidance,
 includes any additional standards and guidance specific to
-\<*Information System Name*\>.
+{{ page.system-security-plan.system-characteristics.system-name-short }}.
 
-Table 13‑2. \<Information System Name\> Standards and Guidance
+**Table 13‑2. {{ page.system-security-plan.system-characteristics.system-name-short }} Standards and Guidance**
 
 | Identification Number | Title               | Date         | Link               |
 | --------------------- | ------------------- | ------------ | ------------------ |

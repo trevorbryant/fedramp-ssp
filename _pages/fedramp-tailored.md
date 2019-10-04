@@ -5,16 +5,24 @@ layout: home
 system-security-plan: 
   id: UUID
   metadata: 
-    title: 
-    published: 
-    last-modified: 
-    version: 
-    oscal-version: 1.0
-    document-ids: 
+    title:
+    # need a versions concept to address multiple iterations/versions for publications required disclosure
+    #versions:
+    #  version:
+    #    published: 
+    #    last-modified: 
+    #    version: 
+    #    oscal-version: 1.0
+    #    uri: over links for uniqueid href and integrity
+    published: ^
+    last-modified: ^
+    version: ^
+    oscal-version: ^
+    document-ids: # seems redundant with overarching `id`
     properties: 
     links: 
-    roles: 
-    parties: 
+    roles:  # seems redundant with responsible-parties
+    parties: # seems redundant with responsible-parties
     responsible-parties: 
       information-system-owner: 
         party-ids: John Doe
@@ -61,112 +69,141 @@ system-security-plan:
     remarks: 
   import-profile: 
     href: 
+    # seems like a `checksum:` would be helpful to automate wget/curl/alike
     remarks: 
   system-characteristics: 
-    system-ids:
+    system-ids: #would be nice if FEDRAMP could coin these upfront to start using prior to even review/authorization.
     system-name: SHORTNAME-FULLSYSTEMNAME
     system-name-short: SHORTNAME
     description: "System purpose or function"
-    properties: 
-    annotations: 
-    links: 
-    date-authorized: 
+    properties: common-but-not-used
+    annotations: common-but-not-used
+    links: common-but-not-used
+    date-authorized: YYYY-MM-DD
     security-sensitivity-level: Low
     system-information: 
-      properties: 
-      annotations: 
-      links: 
-      information-types: 
+      properties: common-but-not-used
+      annotations: common-but-not-used
+      links: common-but-not-used
+      information-types: common-but-not-used
+      #system-information-impact-method: fips-199
     security-impact-level: 
-      security-objective-confidentiality: fips-199-low
-      security-objective-integrity: fips-199-low
-      security-objective-availability: fips-199-low
+      security-objective-confidentiality: fips-199-low # Low
+      security-objective-integrity: fips-199-low # Low
+      security-objective-availability: fips-199-low # Low
+      # doesn't break out the 3x3 matrix required for evaluation of FIPS-199 -> L,L,L | L, M, L | M, L, L is a moderate system ^ only allows average of 3 per criteria.
     status: 
       state: operational
       remarks: "System status explained here."
-    leveraged-authorizations: 
-      - AWS
-      - GCP
+    leveraged-authorizations:
+      AWS:
+        id: FEDRAMP-ID
+        name: "Leveraged Service Provider Owner"
+        properties: common-but-not-used
+        annotations: common-but-not-used
+        links: common-but-not-used
+        party-id: 
+        #^ seems redundant with overall `id`
+        date-authorized: YYYY-MM-DD
+        remarks:
+      GCP:
+        id: FEDRAMP-ID
+        name: "Leveraged Service Provider Owner"
+        properties: 
+        annotations:
+        links:
+        party-id:
+        date-authorized: YYYY-MM-DD
+        remarks:    
     authorization-boundary: 
       description: "Provide an explicit definition
 of the system’s Authorization Boundary"
-      properties: 
-      annotations: 
-      links: 
-      diagrams: 
-        Network: 
-          description: 
-          properties: 
-          links: "https://cloud.gov/img/example-diagram-2.svg"
-          caption: 
-          remarks: 
-        Dataflow: 
-          description: 
-          properties: 
-          links: "https://cloud.gov/img/example-diagram-2.svg"
-          caption: 
-          remarks:           
+      properties: common-but-not-used
+      annotations: common-but-not-used
+      links: common-but-not-used
+      diagrams:           
         AuthorizationBoundary: 
           description: 
           properties: 
           links: "https://cloud.gov/img/example-diagram-1.svg"
           caption: 
           remarks:           
-      remarks: 
+      remarks: common-but-not-used
     network-architecture: 
-      description: 
-      properties: 
-      annotations: 
-      links: 
+      description: Optional overview of Network Architecture
+      properties: common-but-not-used
+      annotations: common-but-not-used
+      links: common-but-not-used
       diagrams: 
         NetworkArchitecture: 
           description: 
           properties: 
-          links: 
+          links: "https://cloud.gov/img/example-diagram-2.svg"
           caption: 
           remarks: 
-      remarks: 
+      remarks: common-but-not-used
     data-flow: 
-      description: 
-      properties: 
-      annotations: 
-      links: 
+      description: Optional overview of Data Flow
+      properties: common-but-not-used
+      annotations: common-but-not-used
+      links: common-but-not-used
       diagrams: 
         DataFlow: 
           description: 
           properties: 
-          links: 
+          links: "https://cloud.gov/img/example-diagram-2.svg"
           caption: 
           remarks: 
-      remarks: 
-    responsible-parties: 
-      ISSO: 
-        party-ids: 
-        properties: 
-        annotations: 
-        links: 
-        remarks: 
+      remarks: common-but-not-used
+    responsible-parties:
+    #reponsible-parties should have all been declared, seems over engineered for a fringe use-case - seems more approrpriate to treat the relationship under a common #ref schema model like others included within a `#ref/schema/common` model (e.g. everything labeled `common-but-not-used`).
+      responsible-party: 
+        party-ids: common-but-not-used
+        properties: common-but-not-used
+        annotations: common-but-not-used
+        links: common-but-not-used
+        remarks: common-but-not-used
     remarks: 
   system-implementation: 
-    properties: 
-    annotations: 
-    links: 
+    properties: common-but-not-used
+    annotations: common-but-not-used
+    links: common-but-not-used
     users: 
       sysadmin: 
-        title: 
+        title: System Adminstrator
         short-name: 
-        description: 
-        properties: 
-        annotations: 
+        description: Add/remove users and hardware, install and configure software, OS updates, patches and hotfixes, perform backups.
+        properties: Internal
+        annotations: Privileged (P)
         links: 
         role-ids: 
-        authorized-privileges: 
-        remarks: 
-    # the element below doesnt exist
+        authorized-privileges: Full administrative access (root)
+        remarks: Moderate
+      client-adminstrator: 
+        title: Client Administrator
+        short-name: 
+        description: Add/remote client users. Create, modify, and delete client applications.
+        properties: External
+        annotations: Non-Privileged (NP)
+        links: 
+        role-ids: 
+        authorized-privileges: Portal administration
+        remarks: N/A
+      program-director: 
+        title: Program Director
+        short-name: 
+        description: Reviews, approves and enforces policy.
+        properties: Internal
+        annotations: No Logical Access (NLA)
+        links: 
+        role-ids: 
+        authorized-privileges: Project administration
+        remarks: Limited            
+    # the element below doesnt exist in schema - which might be an error but most other fields have a catch-all `remarks` which is a very helpful field.
     remarks: |
         "There are currently \<*number*\> internal personnel and \<*number*\> external personnel. Within one year, it is anticipated that there will be \<*number*\> internal personnel and \<*number*\> external personnel."
     components: 
-      apache: 
+      web-server: 
         name: 
         component-type: 
         description: 
@@ -177,22 +214,84 @@ of the system’s Authorization Boundary"
           state: operational
           remarks: 
         responsible-roles: 
-          SystemOwner: 
-            properties: 
-            annotations: 
-            links: 
-            party-ids: 
-            remarks: 
         remarks: 
-    services: 
-    ssp-interconnection: 
+    # services seems overly redundant with components, and the other fields for control-implementation don't seem appropriate to manage at the SSP level/layer. Component at this level should allow for declaring ports/protocols/interconnections and `href` to its control-implementation. Services and Interconnections seem to overly complicate the schema. 
+    # There is no obv rational to prepend `ssp-*` to anything this seems to overlycomplicate its use/mapping).    
+    services:
+      service:
+        id: common-but-not-used
+        name: ServiceName
+        description: common-but-not-used
+        properties: common-but-not-used
+        annotations: common-but-not-used
+        links: common-but-not-used
+        ssp-protocol: #? how is this different from the protocol array below
+        purpose: Purpose
+        remarks: common-but-not-used
+        protocol:
+          title: common-but-not-used
+          description: common-but-not-used
+          type: common-but-not-used
+          properties: common-but-not-used
+          port-ranges:
+            start: 80
+            end: 443
+            transport: TLS 1.2
+      ssp-interconnection: # suggest to rename to `interconnection`
+        id: common-but-not-used
+        remote-system-name:
+        annotations: common-but-not-used
+        links: common-but-not-used
+        responsible-parties: # seems more appropriate to associated this to `leveraged-authorizations` make sure the elements missing from the table are optional there as a nested properity.
+        remarks: common-but-not-used
     system-inventory: 
-      inventory-items: 
+      # missing `software-items` for 11.2 Software Inventory
+      # missing `network-items` for 11.3 Network Inventory
+      # missing `hardware-items` for 11.1 Hardware Inventory
+      inventory-items:
+        inventory-item:
+          id: common-but-not-used
+          assest-id: common-but-not-used
+          description: common-but-not-used
+          properties: common-but-not-used
+          annotations: common-but-not-used
+          links: common-but-not-used
+          responsible-parties: common-but-not-used
+          remarks: common-but-not-used
+      # If the system is inventorying and using components in the SSP, it should be assumed they're implemented or planned for this next section of the schema should be up for consideration of removing.    
+      implemented-components:
+        implemented-component:
+          use:
+          properties: common-but-not-used
+          annotations: common-but-not-used
+          links: common-but-not-used
+          responsible-parties: common-but-not-used
+          remarks: common-but-not-used
       remarks: 
     remarks: 
+  # If the system is inventorying and using components in the SSP, it should be assumed they're implemented or planned for this next section of the schema should be up for consideration of removing/moving into the pure `components` field.    
   control-implementation: 
     description: 
     implemented-requirements: 
+      implemented-requirement:
+        id: common-but-not-used
+        control-id:
+        description: common-but-not-used
+        properties: common-but-not-used
+        annotations: common-but-not-used
+        links: common-but-not-used
+        by-components:
+        responsible-roles: common-but-not-used
+        set-params:
+        statements:
+          statement:
+            description:
+            properties:
+            links:
+            responsible-roles:
+            by-components:
+            remarks:
+        remarks: common-but-not-used
   back-matter: 
     citations: 
     resources: 
@@ -494,20 +593,18 @@ responsibilities.
 
 # 8. Information System Operational Status
 
-The system is currently in the life-cycle phase shown in Table 8.1,
-System Status, which follows. Only operational systems can be granted an
-Authority to Operate (ATO).
+The system is currently in the life-cycle phase shown in Table 8.1, System Status, which follows. Only operational systems can be granted an Authority to Operate (ATO).
 
 **Table 8‑1. System Status**
 
-| System Status |                    |                                                                      |
-| ------------- | ------------------ | -------------------------------------------------------------------- |
-|             | Operational        | The system is operating and in production.                           |
-|             | Under Development  | The system is being designed, developed, or implemented.             |
-|             | Major Modification | The system is undergoing a major change, development, or transition. |
-|             | Other              | Explain                                   |
+| System Status |                      |
+| ------------- | -------------------- |
+| Operational     | The system is operating and in production.                   |
+| Under Development  | The system is being designed, developed, or implemented. |
+| Major Modification | The system is undergoing a major change, development, or transition. |
+| Other              | Explaination required                                   |
 
-{{ page.system-security-plan.system-characteristics.system-name }} is {{ page.system-security-plan.system-characteristics.status.state | capitalize }}
+{{ page.system-security-plan.system-characteristics.system-name }} is **{{ page.system-security-plan.system-characteristics.status.state | capitalize }}**
 
 >{{ page.system-security-plan.system-characteristics.status.remarks }}
 
@@ -540,7 +637,7 @@ follows.
 
 | Service Provider Architecture Layers |                              |                   |
 | ------------------------------------ | ---------------------------- | ----------------- |
-| - [ x ]                                 | Software as a Service (SaaS) | Major Application |
+| - [ X ]                                 | Software as a Service (SaaS) | Major Application |
 
 ## 9.2. Cloud Deployment Models
 
@@ -561,25 +658,25 @@ defined in this FedRAMP Tailored LI-SaaS Framework, and that are not leveraged b
 </thead>
 <tbody>
 <tr class="odd">
-<td>☐</td>
+<td></td>
 <td>Public</td>
 <td>Cloud services and infrastructure supporting multiple organizations and agency clients.</td>
 </tr>
 <tr class="even">
-<td>☐</td>
+<td></td>
 <td>Private</td>
 <td>Cloud services and infrastructure dedicated to a specific organization/agency and no other clients.</td>
 </tr>
 <tr class="odd">
-<td>☐</td>
+<td></td>
 <td>Government Only Community</td>
 <td>Cloud services and infrastructure shared by several organizations/agencies with same policy and compliance considerations.</td>
 </tr>
 <tr class="even">
-<td>☐</td>
+<td></td>
 <td>Hybrid</td>
 <td><p>Explain: (e.g., cloud services and infrastructure that provides private cloud for secured applications and data where required and public cloud for other applications and data).</p>
-<p>Click here to enter text.</p></td>
+<p>Explain</p></td>
 </tr>
 </tbody>
 </table>
@@ -595,9 +692,14 @@ Table 9‑4. Leveraged Authorizations
 
 | Leveraged Information System Name         | Leveraged Service Provider Owner | Date Granted |
 | ----------------------------------------- | -------------------------------- | ------------ |
-| *\<Leveraged information system name 1\>* | *\<Service provider owner 1\>*   | *\<Date\>*   |
-| *\<Leveraged information system name 2\>* | *\<Service provider owner 2\>*   | *\<Date\>*   |
-| *\<Leveraged information system name 3\>* | *\<Service provider owner 3\>*   | *\<Date\>*   |
+{% for leveraged-authorization in page.system-security-plan.system-characteristics.leveraged-authoriizations %}
+| {{ leveraged-authorization }} | {{ leveraged-authorization.name }} | {{ leveraged-authorization.date-authorized }}   |
+{% endfor %}
+
+
+{% for user in page.system-security-plan.system-implementation.users %}
+| {{ user }} | {{ user.properties }} | {{ user.annotations }} | {{ user.remarks }} | {{ user.authorized-privileges }} | {{ user.description }} |
+{% endfor %}
 
 {{ page.system-security-plan.system-characteristics.system-name-short }} leverages
 {{ page.system-security-plan.system-characteristics.leveraged-authorizations | newline_to_br }}
@@ -627,27 +729,10 @@ All personnel have their status categorized with a sensitivity level in accordan
 
 **Table 10‑1. Personnel Roles and Privileges**
 
-| Role                      | Internal or External | Privileged (P), Non-Privileged (NP), or No Logical Access (NLA) | Sensitivity Level | Authorized Privileges             | Functions Performed                                                                                               |
-| ------------------------- | -------------------- | --------------------------------------------------------------- | ----------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| UNIX System Administrator | Internal             | P                                                               | Moderate          | Full administrative access (root) | Add/remove users and hardware, install and configure software, OS updates, patches and hotfixes, perform backups. |
-| Client Administrator      | External             | NP                                                              | N/A               | Portal administration             | Add/remote client users. Create, modify, and delete client applications.                                          |
-| Program Director          | Internal             | NLA                                                             | Limited           | N/A                               | Reviews, approves and enforces policy.                                                                            |
-|                           | Choose an item.      | Choose an item.                                                 | Choose an item.   |                                   |                                                                                                                   |
-|                           | Choose an item.      | Choose an item.                                                 | Choose an item.   |                                   |                                                                                                                   |
-|                           | Choose an item.      | Choose an item.                                                 | Choose an item.   |                                   |                                                                                                                   |
-|                           | Choose an item.      | Choose an item.                                                 | Choose an item.   |                                   |                                                                                                                   |
-
-TODO make a table with forloop:
-
-#{% for user in page.system-security-plan.system-implementation.users %}
-#{{ users.user }}
-#{{ user.title }}
-#{{ user.description }}
-#{{ user.properties }}
-#{{ user.description }}
-#{{ user.authorized-privileges}}
-#{{ user.remarks }}
-#{% endfor %} s
+| Role | Internal or External | P, NP, NLA | Sensitivity Level | Authorized Privileges | Functions Performed |
+{% for user in page.system-security-plan.system-implementation.users %}
+| {{ user }} | {{ user.properties }} | {{ user.annotations }} | {{ user.remarks }} | {{ user.authorized-privileges }} | {{ user.description }} |
+{% endfor %}
 
 {{ page.system-security-plan.system-implementation.users.remarks }}
 
@@ -657,9 +742,11 @@ Assessors should be able to easily map hardware, software, and network inventori
 
 Figure 10.2, Network Diagram(s), provides a visual depiction of the system network components that constitute the {{ page.system-security-plan.system-characteristics.system-name-short }} system.
 
-[**Figure 10‑2. Network Diagram**]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.Network.links }})
+{{ page.system-security-plan.system-characteristics.network-architecture.description }}
 
-![Network Diagram]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.Network.links }})
+[**Figure 10‑2. Network Diagram**]({{ page.system-security-plan.system-characteristics.network-architecture.diagrams.NetworkArchitecture.links }})
+
+![Network Diagram]({{ page.system-security-plan.system-characteristics.network-architecture.diagrams.NetworkArchitecture.links }})
 
 # 11. System Environment 
 
@@ -684,28 +771,23 @@ Use the FedRAMP Inventory Workbook to list the principal network devices and com
 
 The data flow in and out of the system boundaries is represented in Figure 11.1, Data Flow Diagram, below.
 
-Figure 11‑1. Data Flow Diagram
+{{ page.system-security-plan.system-characteristics.data-flow.description }}
 
-[**Figure 11‑1. Data Flow Diagram**]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.Dataflow.links }})
+[**Figure 11‑1. Data Flow Diagram**]({{ page.system-security-plan.system-characteristics.data-flow.diagrams.DataFlow.links }})
 
-![Data Flow Diagram]({{ page.system-security-plan.system-characteristics.authorization-boundary.diagrams.Dataflow.links }})
+![Data Flow Diagram]({{ page.system-security-plan.system-characteristics.data-flow.diagrams.DataFlow.links }})
 
 ## 11.5. Ports, Protocols, and Services 
 
 Table 11.1, Ports, Protocols, and Services, lists the ports, protocols, and services enabled for the {{ page.system-security-plan.system-characteristics.system-name-short }}.
 
-TODO - make forloop
-
 **Table 11‑1. Ports, Protocols, and Services**
 
 | Ports (TCP/UDP)  | Protocols       | Services       | Purpose       | Used By       |
 | ---------------- | --------------- | -------------- | ------------- | ------------- |
-| *\<Port\>*       | *\<Protocols\>* | *\<Services\>* | *\<Purpose\>* | *\<Used By\>* |
-| *\<Port\>*       | *\<Protocols\>* | *\<Services\>* | *\<Purpose\>* | *\<Used By\>* |
-| *\<Port\>*       | *\<Protocols\>* | *\<Services\>* | *\<Purpose\>* | *\<Used By\>* |
-| *\<Port\>*       | *\<Protocols\>* | *\<Services\>* | *\<Purpose\>* | *\<Used By\>* |
-| *\<Enter Port\>* | *\<Protocols\>* | *\<Services\>* | *\<Purpose\>* | *\<Used By\>* |
-| *\<Port\>*       | *\<Protocols\>* | *\<Services\>* | *\<Purpose\>* | *\<Used By\>* |
+{% for service in page.system-security-plan.system-implementation.services %}
+| {{ service.protocol.port-ranges.start }} - {{ service.protocol.port-ranges.end }} | {{ service.protocol.port-ranges.protocol }} | {{ service.name }} | {{ service.purpose }} | {{ service }} |
+{% endfor %}
 
 # 12. System Interconnections
 
@@ -715,6 +797,13 @@ TODO - make forloop
 
 **Table 12‑1. System Interconnections**
 
+| IP Address and Interface  | External Organization Name and IP Address of System      | External Point of Contact and Phone Number | Connection Security (IPSec VPN, SSL, Certificates, Secure File Transfer etc.) | Data Direction (incoming, outgoing, or both) | Information Being Transmitted | Port or Circuit Numbers |
+{% for interconnection in page.system-security-plan.system-implementation.services.ssp-interconnection %}
+| {{ interconnection.protocol.port-ranges.start }} - {{ interconnection.protocol.port-ranges.end }} | {{ interconnection.protocol.port-ranges.transport }} | {{ interconnection.name }} | {{ interconnection.purpose }} | {{ interconnection }} |
+{% endfor %}
+
+
+EXAMPLE of **Table 12‑1. System Interconnections**
 <table>
 <thead>
 <tr class="header">
@@ -730,56 +819,6 @@ TODO - make forloop
 </thead>
 <tbody>
 <tr class="odd">
-<td><em>&lt;SP IP Address / Interface&gt;</em></td>
-<td><em>&lt;External Org/IP&gt;</em></td>
-<td><p><em>&lt;External Org POC&gt;</em></p>
-<p><em>&lt;Phone 555-555-5555&gt;</em></p></td>
-<td><em>&lt;Connection Security&gt;</em></td>
-<td><em>Choose an item.</em></td>
-<td><em>&lt;Information Transmitted&gt;</em></td>
-<td><em>&lt;Port/Circuit Numbers&gt;</em></td>
-</tr>
-<tr class="even">
-<td><em>&lt;SP IP Address / Interface&gt;</em></td>
-<td><em>&lt;External Org/IP&gt;</em></td>
-<td><p><em>&lt;External Org POC&gt;</em></p>
-<p><em>&lt;Phone 555-555-5555&gt;</em></p></td>
-<td><em>&lt;Connection Security&gt;</em></td>
-<td><em>Choose an item.</em></td>
-<td><em>&lt;Information Transmitted&gt;</em></td>
-<td><em>&lt;Port/Circuit Numbers&gt;</em></td>
-</tr>
-<tr class="odd">
-<td><em>&lt;SP IP Address / Interface&gt;</em></td>
-<td><em>&lt;External Org/IP&gt;</em></td>
-<td><p><em>&lt;External Org POC&gt;</em></p>
-<p><em>&lt;Phone 555-555-5555&gt;</em></p></td>
-<td><em>&lt;Connection Security&gt;</em></td>
-<td><em>Choose an item.</em></td>
-<td><em>&lt;Information Transmitted&gt;</em></td>
-<td><em>&lt;Port/Circuit Numbers&gt;</em></td>
-</tr>
-<tr class="even">
-<td><em>&lt;SP IP Address / Interface&gt;</em></td>
-<td><em>&lt;External Org/IP&gt;</em></td>
-<td><p><em>&lt;External Org POC&gt;</em></p>
-<p><em>&lt;Phone 555-555-5555&gt;</em></p></td>
-<td><em>&lt;Connection Security&gt;</em></td>
-<td><em>Choose an item.</em></td>
-<td><em>&lt;Information Transmitted&gt;</em></td>
-<td><em>&lt;Port/Circuit Numbers&gt;</em></td>
-</tr>
-<tr class="odd">
-<td><em>&lt;SP IP Address / Interface&gt;</em></td>
-<td><em>&lt;External Org/IP&gt;</em></td>
-<td><p><em>&lt;External Org POC&gt;</em></p>
-<p><em>&lt;Phone 555-555-5555&gt;</em></p></td>
-<td><em>&lt;Connection Security&gt;</em></td>
-<td><em>Choose an item.</em></td>
-<td><em>&lt;Information Transmitted&gt;</em></td>
-<td><em>&lt;Port/Circuit Numbers&gt;</em></td>
-</tr>
-<tr class="even">
 <td><em>&lt;SP IP Address / Interface&gt;</em></td>
 <td><em>&lt;External Org/IP&gt;</em></td>
 <td><p><em>&lt;External Org POC&gt;</em></p>
@@ -819,6 +858,16 @@ includes any additional standards and guidance specific to
 
 **Table 13‑2. {{ page.system-security-plan.system-characteristics.system-name-short }} Standards and Guidance**
 
+| Identification Number | Title               | Date         | Link               |
+| --------------------- | ------------------- | ------------ | ------------------ |
+| \<Reference ID\>      | \<Reference Title\> | \<Ref Date\> | \<Reference Link\> |
+| \<Reference ID\>      | \<Reference Title\> | \<Ref Date\> | \<Reference Link\> |
+| \<Reference ID\>      | \<Reference Title\> | \<Ref Date\> | \<Reference Link\> |
+
+1.  FIPS Pub 199: FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION:
+    Standards for Security Categorization of Federal Information and
+    Information Systems, February 2004;
+    [<span class="underline">http://csrc.nist.gov/publications/fips/fips199/FIPS-PUB-199-final.pdf</span>](http://csrc.nist.gov/publications/fips/fips199/FIPS-PUB-199-final.pdf)
 | Identification Number | Title               | Date         | Link               |
 | --------------------- | ------------------- | ------------ | ------------------ |
 | \<Reference ID\>      | \<Reference Title\> | \<Ref Date\> | \<Reference Link\> |

@@ -222,13 +222,13 @@ of the system’s Authorization Boundary"
                 start:
                 end:
                 transport:
-    ssp-interconnection:
-      id:
-      remote-system-name:
-      annotations:
-      links:
-      responsible-parties:
-      remarks:
+      ssp-interconnection:
+        id:
+        remote-system-name:
+        annotations:
+        links:
+        responsible-parties:
+        remarks:
     system-inventory: 
       inventory-items:
         inventory-item:
@@ -564,15 +564,7 @@ responsibilities.
 
 | AO ISSO Point of Contact |                                  |
 | ------------------------ | -------------------------------- |
-| **Name**                 | {{ page.system-security-plan.metadata.responsible-parties.information-syste      AWS:
-        id: FEDRAMP-ID
-        name: Leveraged Service Provider Owner
-        properties:
-        annotations:
-        links:
-        party-id:
-        date-authorized: Date Granted
-        remarks:m-security-officer.party-ids }}                         |
+| **Name**                 | {{ page.system-security-plan.metadata.responsible-parties.information-system-security-officer.party-ids }}                         |
 | **Title**                | {{ page.system-security-plan.metadata.responsible-parties.information-system-security-officer.properties }}                             |
 | **Organization**         | \<Company/Organization\>.        |
 | **Address**              | \<Address, City, State and Zip\> |
@@ -585,12 +577,12 @@ The system is currently in the life-cycle phase shown in Table 8.1, System Statu
 
 **Table 8‑1. System Status**
 
-| System Status |                    |                                                                      |
-| ------------- | ------------------ | -------------------------------------------------------------------- |
-|             | Operational        | The system is operating and in production.                           |
-|             | Under Development  | The system is being designed, developed, or implemented.             |
-|             | Major Modification | The system is undergoing a major change, development, or transition. |
-|             | Other              | Explain                                   |
+| System Status |                      |
+| ------------- | -------------------- |
+| Operational     | The system is operating and in production.                   |
+| Under Development  | The system is being designed, developed, or implemented. |
+| Major Modification | The system is undergoing a major change, development, or transition. |
+| Other              | Explaination required                                   |
 
 {{ page.system-security-plan.system-characteristics.system-name }} is {{ page.system-security-plan.system-characteristics.status.state | capitalize }}
 
@@ -625,7 +617,7 @@ follows.
 
 | Service Provider Architecture Layers |                              |                   |
 | ------------------------------------ | ---------------------------- | ----------------- |
-| - [ x ]                                 | Software as a Service (SaaS) | Major Application |
+| - [ X ]                                 | Software as a Service (SaaS) | Major Application |
 
 ## 9.2. Cloud Deployment Models
 
@@ -646,25 +638,25 @@ defined in this FedRAMP Tailored LI-SaaS Framework, and that are not leveraged b
 </thead>
 <tbody>
 <tr class="odd">
-<td>☐</td>
+<td></td>
 <td>Public</td>
 <td>Cloud services and infrastructure supporting multiple organizations and agency clients.</td>
 </tr>
 <tr class="even">
-<td>☐</td>
+<td></td>
 <td>Private</td>
 <td>Cloud services and infrastructure dedicated to a specific organization/agency and no other clients.</td>
 </tr>
 <tr class="odd">
-<td>☐</td>
+<td></td>
 <td>Government Only Community</td>
 <td>Cloud services and infrastructure shared by several organizations/agencies with same policy and compliance considerations.</td>
 </tr>
 <tr class="even">
-<td>☐</td>
+<td></td>
 <td>Hybrid</td>
 <td><p>Explain: (e.g., cloud services and infrastructure that provides private cloud for secured applications and data where required and public cloud for other applications and data).</p>
-<p>Click here to enter text.</p></td>
+<p>Explain</p></td>
 </tr>
 </tbody>
 </table>
@@ -768,7 +760,7 @@ Table 11.1, Ports, Protocols, and Services, lists the ports, protocols, and serv
 
 | Ports (TCP/UDP)  | Protocols       | Services       | Purpose       | Used By       |
 | ---------------- | --------------- | -------------- | ------------- | ------------- |
-{% for user in page.system-security-plan.system-implementation.users %}
+{% for service in page.system-security-plan.system-implementation. %}
 | {{ user }} | {{ user.properties }} | {{ user.annotations }} | {{ user.remarks }} | {{ user.authorized-privileges }} | {{ user.description }} |
 {% endfor %}
 

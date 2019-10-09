@@ -17,7 +17,7 @@ defaults:
       layout: page
 
 github:
-  organization: trevorbryant
+  organization: opencontrol
   repository: fedramp-ssp
   default_branch: master
 

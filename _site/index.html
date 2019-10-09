@@ -456,8 +456,9 @@
       
       <div class="usa-footer-contact-links usa-width-one-half align-right">
         
-
-<small><a href="https://github.com/18F/uswds-jekyll/edit/master/_pages/overview.md" class="usa-sidenav-edit" target="_blank">Edit this page</a></small>
+  {% capture edit_url %}https://github.com/{{ site.github.organization }}/{{ site.github.repository }}/edit/{{ site.github.default_branch }}/{{ page.path }}{% endcapture %}
+        
+<small><a href="{{ edit_url }}" class="usa-sidenav-edit" target="_blank">Edit this page</a></small>
       </div>
       
     </div>

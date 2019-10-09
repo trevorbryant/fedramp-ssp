@@ -9,7 +9,8 @@ primary:
     href: cmplan/#top
     links: cmplan
   - text: FEDRAMP Tailored Template
-    href: fedramp-tailored 
+    href: fedramp-tailored/#top
+    links: fedramp-tailored
 
 overview:
   - text: Home
@@ -79,3 +80,65 @@ cmplan:
      href: cmplan/#seccm-reporting
    - text: Suggested SecCM Plan Appendices
      href: cmplan/#suggested-seccm-plan-appendices
+
+fedramp-tailored:
+   - text: FEDRAMP Tailored Template
+     href: fedramp-tailored/#top
+   - text: 1. Information System Name
+     href: fedramp-tailored/#1-information-system-name
+   - text: 2. Information System Categorization
+     href: fedramp-tailored/#2-information-system-categorization
+   - text: 2.1. Information Types
+     href: fedramp-tailored/#21-information-types
+   - text: 2.2. Security Objectives Categorization (FIPS 199)
+     href: fedramp-tailored/#22-security-objectives-categorization-fips-199
+   - text: 3. Information System Owner
+     href: fedramp-tailored/#3-information-system-owner
+   - text: 4. Independent Assessor
+     href: fedramp-tailored/#4-independent-assessor
+   - text: 5. Authorizing Official
+     href: fedramp-tailored/#5-authorizing-official
+   - text: 6. Other Designated Contacts
+     href: fedramp-tailored/#6-other-designated-contacts
+   - text: 7. Assignment of Security Responsibility
+     href: fedramp-tailored/#7-assignment-of-security-responsibility
+   - text: 8. Information System Operational Status
+     href: fedramp-tailored/#8-information-system-operational-status
+   - text: 9. Information System Type
+     href: fedramp-tailored/#9-information-system-type
+   - text: 9.1. Cloud Service Models
+     href: fedramp-tailored/#91-cloud-service-models
+   - text: 9.2. Cloud Deployment Models
+     href: fedramp-tailored/#92-cloud-deployment-models
+   - text: 9.3. Leveraged Authorizations
+     href: fedramp-tailored/#93-leveraged-authorizations
+   - text: 10. General System Description
+     href: fedramp-tailored/#10-general-system-description
+   - text: 10.1. System Function or Purpose
+     href: fedramp-tailored/#101-system-function-or-purpose
+   - text: 10.2. Information System Components and Boundaries
+     href: fedramp-tailored/#102-information-system-components-and-boundaries
+   - text: 10.3. Types of Users
+     href: fedramp-tailored/#103-types-of-users
+   - text: 10.4. Network Architecture
+     href: fedramp-tailored/#104-network-architecture
+   - text: 11. System Environment
+     href: fedramp-tailored/#11-system-environment
+   - text: 11.1. Hardware Inventory
+     href: fedramp-tailored/#111-hardware-inventory
+   - text: 11.2. Software Inventory
+     href: fedramp-tailored/#112-software-inventory
+   - text: 11.3. Network Inventory
+     href: fedramp-tailored/#113-network-inventory
+   - text: 11.4. Data Flow
+     href: fedramp-tailored/#114-data-flow
+   - text: 11.5. Ports, Protocols, and Services
+     href: fedramp-tailored/#115-ports-protocols-and-services
+   - text: 12. System Interconnections
+     href: fedramp-tailored/#12-system-interconnections
+   - text: 13. FedRAMP Applicable Laws and Regulations
+     href: fedramp-tailored/#13-fedramp-applicable-laws-and-regulations
+   - text: 13.1. FedRAMP Tailored LI-SaaS Guidance
+     href: fedramp-tailored/#131-fedramp-tailored-li-saas-guidance
+   - text: 13.2. APPLICABLE STANDARDS AND GUIDANCE
+     href: fedramp-tailored/#132-information-system-name-applicable-standards-and-guidance

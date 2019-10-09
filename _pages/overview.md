@@ -19,4 +19,4 @@ The active and passive inconsistencies to the authoritative sources (ie; the wor
   * Different font sizes
   * Obvious different authors lead to inconsistent styles
 
-Note that this is _not_ an official government site. An attempt to move Information Assurance in a cost-effective route.
+Note that this is _not_ an official government site. This website and its code are to demonstrate automating Risk Management Framework documentation.

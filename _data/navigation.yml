@@ -2,15 +2,18 @@ primary:
   - text: Overview
     href: overview/#top
     links: overview
-  - text: System Security Plan
+  - text: System Security Plan Moderate Template
     href: fedramp_moderate/
     links: fedramp_moderate
-  - text: Configuration Management Plan
-    href: cmplan/#top
-    links: cmplan
   - text: FEDRAMP Tailored Template
     href: fedramp-tailored/#top
     links: fedramp-tailored
+  - text: Configuration Management Plan Template
+    href: cmplan/#top
+    links: cmplan
+    #  - text: POA&M Template
+    #href: poam_template/#top
+    #links: poam_template
 
 overview:
   - text: Home
@@ -142,3 +145,7 @@ fedramp-tailored:
      href: fedramp-tailored/#131-fedramp-tailored-li-saas-guidance
    - text: 13.2. APPLICABLE STANDARDS AND GUIDANCE
      href: fedramp-tailored/#132-information-system-name-applicable-standards-and-guidance
+
+poam_template:
+    - text: POA&M Template
+      href: poam_template/#top
